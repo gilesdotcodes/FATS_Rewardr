@@ -1,12 +1,12 @@
 <head>
 
 	<title>Rewardr</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
 
 	<!-- FONT -->
 	<script src="//use.typekit.net/mqc5gvv.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
 
-	<link rel="stylesheet" type="text/css" href="index.css">
 
  	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -28,6 +28,12 @@
 				</section>
 			</a>
 
+			<a href="/users/sign_up">
+				<section id="signup">
+					<p id="signuptext"><span class="small">New User</span> Sign Up</p>
+				</section>
+			</a>
+
 		</section>
 
 		<section id="caption">
@@ -39,9 +45,9 @@
 			Private team plans begin from £5 per user per month.
 		</h3>
 
-		<section id="signupbutton">
+		<section id="linkedinbutton">
 			<img id="linkedin" src="/images/linked-01.png">
-			<p id="signuptext">Sign up with LinkedIn</p>
+			<p id="linkedintext">Sign up with LinkedIn</p>
 		</section>
 
 		<h3 id="terms">
