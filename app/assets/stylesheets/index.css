@@ -131,9 +131,9 @@ INDEX CSS
 	position: fixed;
 	top: 0px;
 	display: block;
-	margin-left: 50px;
-	margin-right: 50px;
-	margin-top: 50px;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 55px;
 }
 
 .nav {
