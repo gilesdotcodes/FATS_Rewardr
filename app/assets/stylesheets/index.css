@@ -128,8 +128,8 @@ INDEX CSS
 	height: 900px;
 	width: 90%;
 	z-index: 1;
-	border-style: solid;
-	border-color: white;
+/*	border-style: solid;
+	border-color: white;*/
 	border-width: 2px;
 	position: fixed;
 	top: 0px;
@@ -142,7 +142,6 @@ INDEX CSS
 	height: 35px;
 	width: 100%;
 	position: relative;
-	background-color: salmon;
 	display: block;
 }
 
@@ -153,23 +152,57 @@ INDEX CSS
 	width: 299px;
 	height: 55px;
 	margin-top: 100px;
+	box-shadow: 1px 1px 1px #303030;
+
+}
+
+#signuptext {
 	color: white;
 	font-size: 12px;
-  font-family: "proxima-nova-soft",sans-serif;
+  	font-family: "proxima-nova-soft",sans-serif;
 	font-weight: 500;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	text-align: center;
-	vertical-align: middle;
+	padding-left: 10px;
+	padding-top: 20px;
+	display: inline;
+	float: left;
+	-webkit-font-smoothing: antialiased;
+}
+
+#linkedin {
+	padding-left: 20px;
+	float: left;
 }
 
 #caption {
 	margin-top: 65px;
 	color: white;
-  font-family: "proxima-nova-soft",sans-serif;
-	font-weight: 400;
+ 	font-family: "proxima-nova-soft",sans-serif;
+	font-weight: 800;
 	font-size: 60px;
+	color:#fff;
+	text-shadow: 1px 1px 1px #303030;
+	-webkit-font-smoothing: antialiased;
+}
 
-color:#fff;
-text-shadow: 1px 1px 1px #303030;
+#caption2 {
+	margin-top: 45px;
+ 	font-family: "proxima-nova-soft",sans-serif;
+	color: white;
+	font-weight: 400;
+	letter-spacing: 1px;
+	font-size: 21px;
+	-webkit-font-smoothing: antialiased;
+}
+
+#logo {
+	margin-top: 7.5px;
+	margin-left: 10px;
+	height: 20px;
+	opacity: 0.5;
+}
+
+#logo:hover {
+	opacity: 1;
 }
