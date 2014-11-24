@@ -206,3 +206,26 @@ INDEX CSS
 #logo:hover {
 	opacity: 1;
 }
+
+#login {
+	float: right;
+	width: 214px;
+	height: 34px;
+	font-weight: bold;
+	border-radius: 6px;
+	margin-right: 10px;
+	text-transform: uppercase;
+	background-color: rgba(0, 0, 0, 0.2);
+	text-align: center;
+}
+
+#logintext {
+	text-align: center;
+	text-transform: uppercase;
+	-webkit-font-smoothing: antialiased;
+	color: white;
+	font-size: 12px;
+	font-family: "proxima-nova-soft",sans-serif;
+	letter-spacing: 2px;
+	margin-top: 10px;
+}
