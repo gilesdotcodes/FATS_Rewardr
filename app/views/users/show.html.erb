@@ -8,4 +8,11 @@
 <% else %>
   <h1>Employee Dashboard</h1>
   <p>This page is what a normal employee sees.</p>
+  <% if @my_badges.any? %>
+    <% @my_badges.each do |badge| %>
+      <ul>
+      <li><%= badge.name %> awarded on <%= badge.created_at.strftime("%d %B %Y") %></li>
+      </ul>
+    <% end %>
+  <% end %>
 <% end %>
