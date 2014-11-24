@@ -3,5 +3,5 @@
   <%= f.collection_select :user, User.all, :id, :email %>
   <%= f.label :badge %>
   <%= f.collection_select :name, Badge::BADGES, :to_s, :humanize %>
-   <%= f.submit 'Reward' %>gi
+   <%= f.submit 'Reward' %>
 <% end %>
