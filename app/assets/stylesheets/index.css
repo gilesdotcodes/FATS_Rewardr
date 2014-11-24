@@ -134,9 +134,9 @@ INDEX CSS
 	border-width: 2px;
 	position: fixed;
 	top: 0px;
-	margin-left: 5%;
-	margin-right: 5%;
-	margin-top: 5%;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 50px;
 }
 
 .nav {
@@ -165,7 +165,7 @@ INDEX CSS
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	padding-left: 10px;
-	padding-top: 20px;
+	padding-top: 24px;
 	display: inline;
 	float: left;
 	-webkit-font-smoothing: antialiased;
@@ -174,6 +174,10 @@ INDEX CSS
 #linkedin {
 	padding-left: 20px;
 	float: left;
+}
+
+#signupbutton:hover {
+	background-color: #4EE5B6;
 }
 
 #caption {
@@ -195,8 +199,10 @@ INDEX CSS
 	color: white;
 	font-weight: 400;
 	letter-spacing: 2px;
+	line-height: 32px;
 	font-size: 21px;
 	-webkit-font-smoothing: antialiased;
+	opacity: 0.7;
 }
 
 #logo {
@@ -235,4 +241,13 @@ INDEX CSS
 	font-family: "proxima-nova-soft",sans-serif;
 	letter-spacing: 2px;
 	margin-top: 10px;
+}
+
+#terms {
+	-webkit-font-smoothing: antialiased;
+	font-family: "proxima-nova-alt",sans-serif;
+	color: white;
+	font-weight: 500;
+	margin-top: 18px;
+	opacity: 0.7;
 }
