@@ -227,7 +227,7 @@ INDEX CSS
 }
 
 #login:hover {
-		background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.4);
 }
 
 #logintext {
@@ -239,6 +239,10 @@ INDEX CSS
 	font-family: "proxima-nova-soft",sans-serif;
 	letter-spacing: 2px;
 	margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
 }
 
 #terms {

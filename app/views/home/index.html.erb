@@ -9,8 +9,8 @@
 	<link rel="stylesheet" type="text/css" href="index.css">
 
  	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  	<%= csrf_meta_tags %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
 
 </head>
 
@@ -22,9 +22,11 @@
 
 			<img id="logo" src="/images/logo-01.png">
 
-			<section id="login">
-				<p id="logintext"><span class="small">Existing User</span> Login</p>
-			</section>
+			<a href="users/sign_in">
+				<section id="login">
+					<p id="logintext"><span class="small">Existing User</span> Login</p>
+				</section>
+			</a>
 
 		</section>
 
