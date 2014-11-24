@@ -153,15 +153,23 @@ INDEX CSS
 	width: 299px;
 	height: 55px;
 	margin-top: 100px;
-}
-
-#signuptext {
 	color: white;
 	font-size: 12px;
-	font-family: "proxima-nova",sans-serif;
+  font-family: "proxima-nova-soft",sans-serif;
 	font-weight: 500;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	text-align: center;
-	vertical-align: bottom;
+	vertical-align: middle;
+}
+
+#caption {
+	margin-top: 65px;
+	color: white;
+  font-family: "proxima-nova-soft",sans-serif;
+	font-weight: 400;
+	font-size: 60px;
+
+color:#fff;
+text-shadow: 1px 1px 1px #303030;
 }
