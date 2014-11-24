@@ -8,6 +8,8 @@
 <% else %>
   <h1>Employee Dashboard</h1>
   <p>This page is what a normal employee sees.</p>
+<% end %>
+
   <% if @my_badges.any? %>
     <% @my_badges.each do |badge| %>
       <ul>
@@ -15,4 +17,3 @@
       </ul>
     <% end %>
   <% end %>
-<% end %>
