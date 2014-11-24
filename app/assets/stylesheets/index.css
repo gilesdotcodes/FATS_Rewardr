@@ -83,8 +83,9 @@ hr {
 input, select {
     vertical-align:middle;
 }
-/*Minified Version (1.16KB)
-*/
+
+/*Minified Version (1.16KB)*/
+
 /* html5doctor.com Reset v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/) - http://cssreset.com */
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
 body{line-height:1}
@@ -136,71 +137,17 @@ INDEX CSS
 	margin-top: 55px;
 }
 
+/*================
+
+    NAV BAR
+
+================*/
+
 .nav {
 	height: 35px;
 	width: 100%;
 	position: relative;
 	display: block;
-}
-
-#signupbutton {
-	background-color: #45cba1;
-	border-style: solid 1px;
-	border-radius: 6px;
-	width: 299px;
-	height: 55px;
-	margin-top: 65px;
-	box-shadow: 3px 3px 10px #303030;
-
-}
-
-#signuptext {
-	color: white;
-	font-size: 12px;
-  	font-family: "proxima-nova-alt",sans-serif;
-	font-weight: 500;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	padding-left: 10px;
-	padding-top: 24px;
-	display: inline;
-	float: left;
-	-webkit-font-smoothing: antialiased;
-}
-
-#linkedin {
-	padding-left: 20px;
-	padding-top: 2px;
-	float: left;
-}
-
-#signupbutton:hover {
-	background-color: #4EE5B6;
-}
-
-#caption {
-	margin-top: 65px;
-	color: white;
- 	font-family: "proxima-nova-soft",sans-serif;
- 	letter-spacing: 2px;
- 	line-height: 60px;
-	font-weight: 200;
-	font-size: 60px;
-	color:#fff;
-	text-shadow: 2px 2px 10px #303030;
-	-webkit-font-smoothing: antialiased;
-}
-
-#caption2 {
-	margin-top: 45px;
- 	font-family: "proxima-nova-alt",sans-serif;
-	color: white;
-	font-weight: 400;
-	letter-spacing: 2px;
-	line-height: 32px;
-	font-size: 21px;
-	-webkit-font-smoothing: antialiased;
-	opacity: 0.7;
 }
 
 #logo {
@@ -227,7 +174,7 @@ INDEX CSS
 }
 
 #login:hover {
-		background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.4);
 }
 
 #logintext {
@@ -241,6 +188,119 @@ INDEX CSS
 	margin-top: 10px;
 }
 
+#signup {
+  float: right;
+  width: 214px;
+  height: 34px;
+  font-weight: bold;
+  border-radius: 6px;
+  margin-right: 10px;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+#signup:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#signuptext {
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  color: white;
+  font-size: 12px;
+  font-family: "proxima-nova-soft",sans-serif;
+  letter-spacing: 2px;
+  margin-top: 0px;
+  margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*==================
+
+  LINKEDIN BUTTON
+
+====================
+*/
+
+#linkedinbutton {
+  background-color: #45cba1;
+  border-style: solid 1px;
+  border-radius: 6px;
+  width: 299px;
+  height: 55px;
+  margin-top: 65px;
+  box-shadow: 3px 3px 10px #303030;
+
+}
+
+#linkedintext {
+  color: white;
+  font-size: 12px;
+  font-family: "proxima-nova-alt",sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-left: 10px;
+  padding-top: 24px;
+  display: inline;
+  float: left;
+  -webkit-font-smoothing: antialiased;
+}
+
+#linkedin {
+  padding-left: 20px;
+  padding-top: 2px;
+  float: left;
+}
+
+#linkedinbutton:hover {
+  background-color: #4EE5B6;
+}
+
+/*==================
+
+      HEADING
+
+==================*/
+
+#caption {
+  margin-top: 65px;
+  color: white;
+  font-family: "proxima-nova-soft",sans-serif;
+  letter-spacing: 2px;
+  line-height: 60px;
+  font-weight: 200;
+  font-size: 60px;
+  color:#fff;
+  text-shadow: 2px 2px 10px #303030;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+/*==================
+
+    MAIN TEXT
+
+==================*/
+
+#caption2 {
+  margin-top: 45px;
+  font-family: "proxima-nova-alt",sans-serif;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 32px;
+  font-size: 21px;
+  -webkit-font-smoothing: antialiased;
+  opacity: 0.7;
+}
+
+
 #terms {
 	-webkit-font-smoothing: antialiased;
 	font-family: "proxima-nova-alt",sans-serif;
@@ -252,14 +312,52 @@ INDEX CSS
 	opacity: 0.7;
 }
 
-@media screen and (max-width: 480px) {
+/*=====================
 
-.small {
-	display:none;
+   FLASH MESSAGES
+
+=====================*/
+
+#notice {
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  font-family: "proxima-nova-alt",sans-serif;
+  padding-top: 10px;
+  padding-left: 10px;
+  position: fixed;
+  z-index: 99;
+  color: white;
 }
 
-#login {
-	width: 96px;
+#alert {
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  font-family: "proxima-nova-alt",sans-serif;
+  padding-top: 10px;
+  padding-left: 10px;
+  position: fixed;
+  z-index: 99;
+  color: white;
 }
+
+/*================
+
+  MEDIA SCREEN
+
+================*/
+
+@media screen and (max-width: 690px) {
+
+  .small {
+  	display:none;
+  }
+
+  #login {
+  	width: 96px;
+  }
+
+  #signup {
+    width: 96px;
+  }
 
 }
