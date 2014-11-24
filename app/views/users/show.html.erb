@@ -1,0 +1,7 @@
+<% if current_user.email=='bob@test.com' %>
+  <h1>Owner Dashboard</h1>
+  <p>This page is what Bob sees.</p>
+<% else %>
+  <h1>Employee Dashboard</h1>
+  <p>This page is what a normal employee sees.</p>
+<% end %>
