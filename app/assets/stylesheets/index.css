@@ -109,10 +109,6 @@ INDEX CSS
 
 */
 
-#title {
-	color: pink;
-}
-
 .wrap {
 	width: 100%;
 	height: 100%;
@@ -129,11 +125,12 @@ INDEX CSS
 	height: 900px;
 	width: 90%;
 	z-index: 1;
-/*	border-style: solid;
-	border-color: white;*/
-	border-width: 2px;
+/*	border-width: 2px;
+	border-color: white;
+	border-style: solid;*/
 	position: fixed;
 	top: 0px;
+	display: block;
 	margin-left: 50px;
 	margin-right: 50px;
 	margin-top: 50px;
@@ -152,7 +149,7 @@ INDEX CSS
 	border-radius: 6px;
 	width: 299px;
 	height: 55px;
-	margin-top: 100px;
+	margin-top: 65px;
 	box-shadow: 1px 1px 1px #303030;
 
 }
@@ -249,5 +246,19 @@ INDEX CSS
 	color: white;
 	font-weight: 500;
 	margin-top: 18px;
+	font-size: 18px;
+	line-height: 25px;
 	opacity: 0.7;
+}
+
+@media screen and (max-width: 480px) {
+
+.small {
+	display:none;
+}
+
+#login {
+	width: 96px;
+}
+
 }
