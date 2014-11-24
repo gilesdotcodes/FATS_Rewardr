@@ -1,6 +1,10 @@
 <% if current_user.email=='bob@test.com' %>
   <h1>Owner Dashboard</h1>
   <p>This page is what Bob sees.</p>
+
+  <%= link_to 'Reward Employee', new_badge_path, 'data-no-turbolink' => true %>
+
+
 <% else %>
   <h1>Employee Dashboard</h1>
   <p>This page is what a normal employee sees.</p>

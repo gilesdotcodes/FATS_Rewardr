@@ -1,0 +1,7 @@
+<%= form_for @badge do |f| %>
+  <%= f.label :employee %>
+  <%= f.collection_select :user, User.all, :id, :email %>
+  <%= f.label :badge %>
+  <%= f.collection_select :name, Badge::BADGES, :to_s, :humanize %>
+   <%= f.submit 'Reward' %>gi
+<% end %>
