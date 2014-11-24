@@ -17,7 +17,7 @@ Testing: RSpec, Capybara
 ## Job List
 
 - [x] Setup Rails App
-- [ ] Create plan for next two days
+- [x] Create plan for next two days
 
 ## Favourite Code Snippet
 
@@ -30,7 +30,6 @@ andrewhercules - (http://www.github.com/andrewhercules)
 fadieh = (http://www.github.com/fadieh)
 HatStephens = (http://www.github.com/HatStephens)
 Scully87 = (http://www.github.com/Scully87)
-
 
 ## Still to complete/refactor
 
