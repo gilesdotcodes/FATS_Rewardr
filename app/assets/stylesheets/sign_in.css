@@ -36,30 +36,40 @@
 ==============*/
 
 .login-form {
-  box-shadow:2.5px 2.5px #E7E7E7;
-  border-color: #E7E7E7;
+  box-shadow:3px 3px 10px #303030;
   background-color: white;
-  width: 35%;
-  height: 310px;
-  padding: 2%;
+  width: 400px;
+  height: 360px;
   text-align:center;
-  margin-top: auto;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 5px;
-  margin-top: 10%;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-top: -180px;
+  margin-left: -200px;
+  border-radius: 6px;
+  border-bottom-width: 2px;
+  border-width: 1px;
+  border-color: #E7E7E7;
+}
+
+.signup-header1 {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  background-color: black;
+  height: 48px;
+  width: 100%;
+  z-index: 99;
+  padding: 0;
+  margin: 0;
 }
 
 .userlogin {
-  float: left;
-  height: 45px;
+  text-align: center;
   font-size: 20px;
-}
-
-.forgot {
-  text-decoration: none;
-  float:right;
-  color: black;
+  font-family: "proxima-nova-soft",sans-serif;
+  font-size: 24px;
+  margin-top: 30px;
+  letter-spacing: 1px;
 }
 
 .forgot:visited {
@@ -69,61 +79,89 @@
 }
 
 .fields {
-  padding-top: 45px;
+  padding-top: 30px;
 }
 
 .email {
   border-color: #E7E7E7;
+  border-width: 2px;
+  border-bottom-width: 4px;
+  border-style: solid;
+  font-family: "proxima-nova-soft",sans-serif;
+  font-size: 14px;
   background: url("../images/mail-01.png") left no-repeat;
   background-size: 19.2px 19.2px;
-  background-position: 5px 11.9px;
-  padding: 7px;
-  width: 70%;
+  background-position: 3px 4.5px;
+  width: 340px;
   text-indent: 25px;
-  height: 30px;
-  margin-top: 10px;
+  border-radius: 3px;
+  height: 24px;
+  letter-spacing: 0.5px;
 }
 
 .password {
   border-color: #E7E7E7;
+  font-size: 14px;
+  border-style: solid;
+  font-family: "proxima-nova-soft",sans-serif;
+  border-radius: 3px;
   background: url("../images/lock-01.png") left no-repeat;
   background-size: 19.2px 19.2px;
-  background-position: 5px 11.9px;
-  margin-top: 10px;
-  padding: 7px;
-  width: 70%;
-  height: 30px;
-  text-indent: 30px;
+  background-position: 3px 3.5px;
+  border-width: 2px;
+  border-bottom-width: 4px;
+  width: 340px;
+  height: 24px;
+  text-indent: 25px;
+  margin-top: 7.5px;
+  box-sizing:content-box;
+  letter-spacing: 0.5px;
 }
 
-.actions {
-  border-color: #E7E7E7;
-  position: inline;
-  float:right;
-  padding-top: 15px;
-  padding-right: 55px;
-  width: 150px;
+.login1 {
+  width: 333px;
+  font-family: "proxima-nova-soft",sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  background-color: #45cba1;
+  border-radius: 3px;
+  border-bottom-color: #2B7F65;
+  border-bottom-width: 2px;
+  border-style: none;
+  height: 24px;
+  text-align: center;
+  color: white;
+  vertical-align: middle;
+  box-sizing:content-box;
+  letter-spacing: 1px;
 }
 
 .remember {
+  margin-top: 15px;
   position: inline;
-  padding: 15px;
-  padding-left: 55px;
-  float: left;
+  text-align: center;
+
 }
 
 .actions input {
-  width: 151px;
+/*  width: 151px;
   height: 100px;
   padding-top: 55px;
-  font-size: 7em;
+  font-size: 7em;*/
 }
 
 
 #logo1 {
-  margin-top: 7.5px;
-  margin-left: 10px;
-  height: 20px;
-  
+  height: 24px;
+  margin-top: 12px;
 }
 
+
+.forgot {
+  text-decoration: none;
+  margin-top: 7.5px;
+  color: black;
+  line-height: 25px;
+  letter-spacing: 0.5px;
+}
