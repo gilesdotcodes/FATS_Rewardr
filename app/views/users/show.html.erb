@@ -1,8 +1,11 @@
-<h1>Personal Dashboard</h1>
-
-<h2><%= current_user.name %></h2>
-
-<h3>My Badges:</h3>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="show.css">
+</head>
+<body>
+  <h1>Personal Dashboard</h1>
+  <h2><%= current_user.name %></h2>
+  <h3>My Badges:</h3>
 
   <% if @my_badges.any? %>
     <% @my_badges.each do |badge| %>
@@ -11,13 +14,12 @@
       </ul>
     <% end %>
   <% end %>
-
-<br />
-<br />
-
-
+  <br />
+  <br />
 <!-- This is the button that Bob can click on to issue a badge to an employee -->
-<% if current_user.email=='bob@test.com' %>
-  <%= link_to 'Reward Employee', new_badge_path, 'data-no-turbolink' => true %>
-<% end %>
+  <% if current_user.email=='bob@test.com' %>
+    <%= link_to 'Reward Employee', new_badge_path, 'data-no-turbolink' => true %>
+  <% end %>
+</body>
+</html>
 
