@@ -1,0 +1,13 @@
+* {font-family: "proxima-nova-soft",sans-serif;  -webkit-font-smoothing: antialiased;}
+
+.dashboard {
+  border: black 2px solid;
+  width: 1800px;
+  height: 1800px;
+}
+
+.menu {
+  border: black 2px solid;
+  float: left;
+  height: 100%;
+}
