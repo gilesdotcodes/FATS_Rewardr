@@ -144,14 +144,6 @@
   letter-spacing: 0.5px;
 }
 
-.actions input {
-/*  width: 151px;
-  height: 100px;
-  padding-top: 55px;
-  font-size: 7em;*/
-}
-
-
 #logo1 {
   height: 24px;
   margin-top: 12px;
@@ -164,4 +156,27 @@
   color: black;
   line-height: 25px;
   letter-spacing: 0.5px;
+}
+
+/* placeholder colours */
+/* have to specify for */
+/* all browsers or     */
+/* they'll be ignored  */
+
+::-webkit-input-placeholder { /* webkit browsers */
+  color: #E7E7E7;
+}
+
+:-moz-placeholder { /* Firefox 4-18 */
+  color: #E7E7E7;
+  opacity: 1;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+  color: #E7E7E7;
+  opacity: 1;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+  color: #E7E7E7;
 }
