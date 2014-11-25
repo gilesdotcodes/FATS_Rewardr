@@ -197,17 +197,14 @@ section.link {
   opacity: 0.7;
 }
 
-
-#terms {
+#terms1 {
 	-webkit-font-smoothing: antialiased;
 	font-family: "proxima-nova-alt",sans-serif;
 	color: white;
 	font-weight: 500;
-	/*margin-top: 18px;*/
 	font-size: 18px;
 	line-height: 25px;
 	opacity: 0.7;
-  text-align: left;
 }
 
 /*=====================
