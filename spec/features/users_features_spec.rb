@@ -6,30 +6,26 @@ include ApplicationHelper
 describe 'User' do
   context 'not signed up' do
     it 'can sign up via the homepage' do
-      visit ('/users/sign_up')
-      click_link('Sign up')
-      fill_in('Email', with: 'test@email.com')
-      fill_in('Password', with: '12345678')
-      fill_in('Password confirmation', with: '12345678')
-      click_button('Sign up')
-      expect(page).to have_link('Sign out')
+      sign_up('employee@test.com', 'Test Employee')
+      sign_in('employee@test.com')
+      expect(page).to have_content('Personal Dashboard')
     end
   end
 
   context 'signed up' do
     before do
-      sign_up('bob@test.com')
-      sign_up('employee@test.com')
+      sign_up('bob@test.com', 'Bob Owner')
+      sign_up('employee@test.com', 'Test Employee')
     end
 
     it 'can sign in as employee' do
       sign_in('employee@test.com')
-      expect(page).to have_content('Employee Dashboard')
+      expect(page).to have_content('Personal Dashboard')
     end
 
     it 'can sign in as Bob, the owner' do
       sign_in('bob@test.com')
-      expect(page).to have_content('Owner Dashboard')
+      expect(page).to have_content('Personal Dashboard')
     end
 
     it 'can sign out if signed in' do
