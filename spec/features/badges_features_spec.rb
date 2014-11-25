@@ -3,29 +3,46 @@ require 'helpers/application'
 
 include ApplicationHelper
 
-describe 'Owner' do
-  context 'awarding badges' do
+describe 'Badges' do
+
+  before do
+    visit '/'
+    sign_up('bob@test.com', 'Bob Owner')
+    sign_up('employee@test.com', 'Test Employee')
+  end
+
+  context 'Owner' do
     it 'can award a single badge' do
-      visit '/'
-      sign_up('bob@test.com')
-      sign_up('employee@test.com')
-      sign_in('bob@test.com')
-      click_link 'Reward Employee'
-      select 'employee@test.com', from: 'badge_user'
-      select 'Office angel', from: 'badge_name'
-      click_button 'Reward'
+      award_badge('Test Employee')
       expect(page).to have_content 'Success'
     end
-  end
-end
 
-describe 'Staff member' do
-  context 'receiving badges' do
-    it 'can see the badge it has received' do
-      visit '/'
-      sign_up('employee@test.com')
-      sign_in('employee@test.com')
-      expect(page).to have_content 'Office angel'
+    it 'can award a badge to himself or herself' do
+      award_badge('Bob Owner')
+      expect(page).to have_content 'Office Angel'
     end
   end
+
+  context 'Employee' do
+    it 'can receive a single badge' do
+      award_badge('Test Employee')
+      click_link 'Sign out'
+      visit '/'
+      sign_in('employee@test.com')
+      expect(page).to have_content 'Office Angel'
+    end
+    
+    it 'can receive multiple badges' do
+      award_badge('Test Employee')
+      click_link 'Sign out'
+      award_badge('Test Employee', 'Badge 2')
+      click_link 'Sign out'
+      visit '/'
+      sign_in('employee@test.com')
+      expect(page).to have_content 'Office sngel'
+      expect(page).to have_content 'Badge 2'
+    end
+  end
+
+
 end
