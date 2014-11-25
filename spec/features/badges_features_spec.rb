@@ -13,19 +13,27 @@ describe 'Badges' do
 
   context 'Owner' do
     it 'can award a single badge' do
-      award_badge('Test Employee')
-      expect(page).to have_content 'Success'
+      award_regular_badge('Test Employee')
+      expect(page).to have_link 'Reward Employee'
+      expect(current_path).to eq '/users/show'
     end
 
     it 'can award a badge to himself or herself' do
-      award_badge('Bob Owner')
+      award_regular_badge('Bob Owner')
       expect(page).to have_content 'Office Angel'
     end
+
+    it 'can award a custom badge' do
+      award_custom_badge('Test Employee', 'Epic Win')
+      expect(page).to have_link 'Reward Employee'
+      expect(current_path).to eq '/users/show'
+    end
+
   end
 
   context 'Employee' do
     it 'can receive a single badge' do
-      award_badge('Test Employee')
+      award_regular_badge('Test Employee')
       click_link 'Sign out'
       visit '/'
       sign_in('employee@test.com')
@@ -33,14 +41,14 @@ describe 'Badges' do
     end
     
     it 'can receive multiple badges' do
-      award_badge('Test Employee')
+      award_regular_badge('Test Employee')
       click_link 'Sign out'
-      award_badge('Test Employee', 'Badge 2')
+      award_regular_badge('Test Employee', 'Star Man')
       click_link 'Sign out'
       visit '/'
       sign_in('employee@test.com')
-      expect(page).to have_content 'Office sngel'
-      expect(page).to have_content 'Badge 2'
+      expect(page).to have_content 'Office Angel'
+      expect(page).to have_content 'Star Man'
     end
   end
 
