@@ -4,7 +4,8 @@ class Badge < ActiveRecord::Base
 
   BADGES = ['Office Angel', 'Badge 2', 'Badge 3']
 
-  def create_new_badge
+  def create_new_badge(name)
+    BADGES << name.to_s
   end
 
 end

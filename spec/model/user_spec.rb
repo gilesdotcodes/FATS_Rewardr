@@ -31,7 +31,7 @@ RSpec.describe User, :type => :model do
       expect(user).to be_valid
     end
 
-    it 'must have a password of at least 8 characters' do
+    it 'cannot have a password of less than 8 characters' do
       user = User.new(email: 'a@a.com', name: 'Me', password: 'test')
       expect(user).not_to be_valid
     end
@@ -42,5 +42,4 @@ RSpec.describe User, :type => :model do
       expect(user_two).not_to be_valid
     end
   end
-
 end
