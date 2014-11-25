@@ -4,11 +4,12 @@
 *{-webkit-font-smoothing: antialiased;  font-family: "proxima-nova-soft",sans-serif;
 }
 
-.wrap {
+.wrap1 {
   width: 100%;
   height: 100%;
   position: fixed;
   background-image: url("../images/background.jpg");
+  /*background-color: #1C3E45;*/
   display: block;
   background-repeat: no-repeat;
   background-size: 1800px 1800px;
@@ -20,9 +21,6 @@
   height: 900px;
   width: 90%;
   z-index: 1;
-  /*border-width: 2px;
-  border-color: white;
-  border-style: solid;*/
   position: fixed;
   top: 0px;
   display: block;
@@ -35,8 +33,8 @@
       FORM
 ==============*/
 
-.login-form {
-  box-shadow:3px 3px 10px #303030;
+.signup-form {
+  box-shadow: 3px 3px 10px #303030;
   background-color: white;
   width: 400px;
   height: 360px;
@@ -52,7 +50,7 @@
   border-color: #E7E7E7;
 }
 
-.signup-header1 {
+.signup-header {
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   background-color: black;
@@ -63,7 +61,7 @@
   margin: 0;
 }
 
-.userlogin {
+.usersignup {
   text-align: center;
   font-size: 20px;
   font-family: "proxima-nova-soft",sans-serif;
@@ -74,15 +72,14 @@
 
 .forgot:visited {
   text-decoration: none;
-  float:right;
   color: black;
 }
 
-.fields {
-  padding-top: 30px;
+.fields1 {
+  margin-top: 30px;
 }
 
-.email {
+.email1 {
   border-color: #E7E7E7;
   border-width: 2px;
   border-bottom-width: 4px;
@@ -99,7 +96,25 @@
   letter-spacing: 0.5px;
 }
 
-.password {
+.name {
+  border-color: #E7E7E7;
+  border-width: 2px;
+  font-size: 14px;
+  border-bottom-width: 4px;
+  border-style: solid;
+  font-family: "proxima-nova-soft",sans-serif;
+  background: url("../images/user-01.png") left no-repeat;
+  background-size: 19.2px 19.2px;
+  background-position: 3px 4.5px;
+  border-radius: 3px;
+  width: 340px;
+  text-indent: 25px;
+  height: 24px;
+  margin-top: 7.5px;
+}
+
+
+.password1 {
   border-color: #E7E7E7;
   font-size: 14px;
   border-style: solid;
@@ -118,7 +133,12 @@
   letter-spacing: 0.5px;
 }
 
-.login1 {
+#logo1 {
+  height: 24px;
+  margin-top: 12px;
+}
+
+.signup {
   width: 333px;
   font-family: "proxima-nova-soft",sans-serif;
   font-weight: 600;
@@ -132,36 +152,13 @@
   height: 24px;
   text-align: center;
   color: white;
+  margin-top: 7.5px;
   vertical-align: middle;
   box-sizing:content-box;
   letter-spacing: 1px;
 }
 
-.remember {
-  margin-top: 15px;
-  position: inline;
-  text-align: center;
-  letter-spacing: 0.5px;
-}
-
-.actions input {
-/*  width: 151px;
-  height: 100px;
-  padding-top: 55px;
-  font-size: 7em;*/
-}
-
-
-#logo1 {
-  height: 24px;
-  margin-top: 12px;
-}
-
-
-.forgot {
-  text-decoration: none;
+.login {
   margin-top: 7.5px;
-  color: black;
-  line-height: 25px;
-  letter-spacing: 0.5px;
 }
+
