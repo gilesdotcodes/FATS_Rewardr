@@ -1,0 +1,128 @@
+/*================
+      BODY
+=================*/
+*{-webkit-font-smoothing: antialiased;  font-family: "proxima-nova-soft",sans-serif;
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-image: url("../images/background.jpg");
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 1800px 1800px;
+  position: fixed;
+  z-index: 0;
+}
+
+.holder {
+  height: 900px;
+  width: 90%;
+  z-index: 1;
+  /*border-width: 2px;
+  border-color: white;
+  border-style: solid;*/
+  position: fixed;
+  top: 0px;
+  display: block;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 55px;
+}
+
+/*==============
+      FORM
+==============*/
+
+.login-form {
+  box-shadow:2.5px 2.5px #E7E7E7;
+  border-color: #E7E7E7;
+  background-color: white;
+  width: 35%;
+  height: 310px;
+  padding: 2%;
+  text-align:center;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  margin-top: 10%;
+}
+
+.userlogin {
+  float: left;
+  height: 45px;
+  font-size: 20px;
+}
+
+.forgot {
+  text-decoration: none;
+  float:right;
+  color: black;
+}
+
+.forgot:visited {
+  text-decoration: none;
+  float:right;
+  color: black;
+}
+
+.fields {
+  padding-top: 45px;
+}
+
+.email {
+  border-color: #E7E7E7;
+  background: url("../images/mail-01.png") left no-repeat;
+  background-size: 19.2px 19.2px;
+  background-position: 5px 11.9px;
+  padding: 7px;
+  width: 70%;
+  text-indent: 25px;
+  height: 30px;
+  margin-top: 10px;
+}
+
+.password {
+  border-color: #E7E7E7;
+  background: url("../images/lock-01.png") left no-repeat;
+  background-size: 19.2px 19.2px;
+  background-position: 5px 11.9px;
+  margin-top: 10px;
+  padding: 7px;
+  width: 70%;
+  height: 30px;
+  text-indent: 30px;
+}
+
+.actions {
+  border-color: #E7E7E7;
+  position: inline;
+  float:right;
+  padding-top: 15px;
+  padding-right: 55px;
+  width: 150px;
+}
+
+.remember {
+  position: inline;
+  padding: 15px;
+  padding-left: 55px;
+  float: left;
+}
+
+.actions input {
+  width: 151px;
+  height: 100px;
+  padding-top: 55px;
+  font-size: 7em;
+}
+
+
+#logo1 {
+  margin-top: 7.5px;
+  margin-left: 10px;
+  height: 20px;
+}
+
