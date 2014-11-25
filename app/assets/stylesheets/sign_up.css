@@ -20,7 +20,7 @@
   height: 900px;
   width: 90%;
   z-index: 1;
-  /*border-width: 2px;
+/*  border-width: 2px;
   border-color: white;
   border-style: solid;*/
   position: fixed;
@@ -36,29 +36,48 @@
 ==============*/
 
 .signup-form {
-  box-shadow:2.5px 2.5px #E7E7E7;
+  box-shadow: 3px 3px 10px #303030;
   background-color: white;
-  width: 35%;
-  height: 400px;
-  padding: 2%;
+  width: 400px;
+  height: 360px;
   text-align:center;
-  margin-top: auto;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 5px;
-  margin-top: 10%;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-top: -180px;
+  margin-left: -200px;
+  border-radius: 6px;
+  border-bottom-width: 2px;
+  border-width: 1px;
+  border-color: #E7E7E7;
+}
+
+.signup-header {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  background-color: black;
+  height: 48px;
+  width: 100%;
+  z-index: 99;
+  padding: 0;
+  margin: 0;
 }
 
 .usersignup {
-  float: left;
+  text-align: center;
   height: 45px;
   font-size: 20px;
+  font-family: "proxima-nova-soft",sans-serif;
+  font-size: 24px;
+  margin-top: 30px;
 }
 
 .login {
   text-decoration: none;
-  float:right;
+  text-align: center;
   color: black;
+  font-family: "proxima-nova-soft",sans-serif;
+
 }
 
 .forgot:visited {
@@ -68,53 +87,81 @@
 }
 
 .fields {
-  padding-top: 45px;
+  padding-top: 25px;
 }
 
-.email {
+.email1 {
   border-color: #E7E7E7;
+  border-width: 2px;
+  border-bottom-width: 4px;
+  border-style: solid;
+  font-family: "proxima-nova-soft",sans-serif;
+  font-size: 14px;
   background: url("../images/mail-01.png") left no-repeat;
   background-size: 19.2px 19.2px;
-  background-position: 5px 11.9px;
-  padding: 7px;
-  width: 70%;
+  background-position: 6px 7.5px;
+  background-position: 3px 1.6px;
+  width: 340px;
   text-indent: 25px;
-  height: 30px;
-  margin-top: 10px;
+    border-radius: 3px;
+  height: 24px;
+  margin-top: 5px;
 }
 
 .name {
   border-color: #E7E7E7;
+  border-width: 2px;
+  font-size: 14px;
+  border-bottom-width: 4px;
+  border-style: solid;
+  font-family: "proxima-nova-soft",sans-serif;
   background: url("../images/user-01.png") left no-repeat;
   background-size: 19.2px 19.2px;
-  background-position: 5px 11.9px;
-  padding: 7px;
-  width: 70%;
+  background-position: 3px 0.5px;
+  border-radius: 3px;
+  width: 340px;
   text-indent: 25px;
-  height: 30px;
-  margin-top: 10px;
+  height: 24px;
+  margin-top: 5px;
 }
 
 
-.password {
+.password1 {
   border-color: #E7E7E7;
+  font-size: 14px;
+  border-style: solid;
+  font-family: "proxima-nova-soft",sans-serif;
+  border-radius: 3px;
   background: url("../images/lock-01.png") left no-repeat;
   background-size: 19.2px 19.2px;
-  background-position: 5px 11.9px;
-  margin-top: 10px;
-  padding: 7px;
-  width: 70%;
-  height: 30px;
-  text-indent: 30px;
+  background-position: 6px 6px;
+  border-width: 2px;
+  border-bottom-width: 4px;
+  width: 340px;
+  height: 24px;
+  text-indent: 25px;
+  margin-top: 5px;
 }
 
 #logo1 {
-  margin-top: 7.5px;
-  margin-left: 10px;
-  height: 20px;
+  height: 24px;
+  margin-top: 12px;
 }
 
-.actions {
-  padding-right: 125px;
+.signup {
+  width: 340px;
+  font-family: "proxima-nova-soft",sans-serif;
+  font-size: 14px;
+  text-align: center;
+  background-color: #45cba1;
+  border-radius: 3px;
+  border-width: 1px;
+  border-color: #45cba1;
+  border-style: solid;
+  height: 24px;
+  text-align: center;
+  color: white;
+  margin-top: 5px;
+  vertical-align: middle;
 }
 

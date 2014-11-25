@@ -115,6 +115,7 @@ INDEX CSS
 	height: 100%;
 	position: fixed;
 	background-image: url("../images/background.jpg");
+	background-position: -100px -500px;
 	display: block;
 	background-repeat: no-repeat;
 	background-size: 1800px 1800px;
