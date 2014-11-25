@@ -21,23 +21,56 @@
       </section>
 
     </section>
-
-    <section class="mybadges">
-      My Badges:
+    <!-- Boys, I have added a class to the next section without doing any CSS -->
+    <section class="mystats">
+      <h3>My Stats:</h3>
+      <section class="statsdisplay">
+        <section id="dayssince">
+          <%= days_since_last_reward(current_user) %>
+          <p>DAYS SINCE LAST REWARD</p>
+        </section>
+        <section id="mostrewarded">
+          <%= most_popular_reward(current_user) %>
+          <p>MOST REWARDED REWARD</p>
+        </section>
+        <section id="totalrewards">
+          <%= total_number_of_rewards(current_user) %>
+          <p>TOTAL NUMBER OF REWARDS</p>
+        </section>
+      </section>
     </section>
-
-    <section class="badgesdisplay">
-      <% if @my_badges.any? %>
-        <% @my_badges.each do |badge| %>
-          <ul>
-          <li><%= badge.name.titleize %> awarded on <%= badge.created_at.strftime("%d %B %Y") %></li>
-          </ul>
-        <% end %>
-      <% end %>
+    <br />
+    <hr />
+    <br />
+    <section class="myrewards">
+      <h3>My Rewards:</h3>
+      <section class="rewardsdisplay">
+        <section>
+          <% if @my_badges.length > 0 %>
+            <%= show_last_six_rewards(current_user, 1) %>
+          <% else %>
+            <p>There is no reward</p>
+          <% end %>
+        </section>
+        <section>
+          <% if @my_badges.length > 1 %>
+            <%= show_last_six_rewards(current_user, 2) %>
+          <% else %>
+            <p>There is no reward</p>
+          <% end %>
+        </section>
+        <section>
+          <% if @my_badges.length > 2 %>
+            <%= show_last_six_rewards(current_user, 3) %>
+          <% else %>
+            <p>There is no reward</p>
+          <% end %>
+        </section>
+      </section>
     </section>
-
-      <br />
-      <br />
+    <br />
+    <hr />
+    <br />
 
     <section class="rewardlink">
       <!-- This is the button that Bob can click on to issue a badge to an employee -->
