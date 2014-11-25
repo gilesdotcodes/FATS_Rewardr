@@ -19,8 +19,8 @@
         <%= devise_error_messages! %>
         <section class="fields1">
           <%= f.email_field :email, class: "email1", autofocus: true, :placeholder => "Email" %>
-          <%= f.text_field :name, class: "name", autofocus: true, :placeholder => "Name (Minimum Characters 8)"%>
-          <%= f.password_field :password, autocomplete: "off", class: "password1", :placeholder => "Password" %>
+          <%= f.text_field :name, class: "name", autofocus: true, :placeholder => "Name"%>
+          <%= f.password_field :password, autocomplete: "off", class: "password1", :placeholder => "Password (Minimum Characters 8)" %>
           <%= f.password_field :password_confirmation, autocomplete: "off", class: "password1", :placeholder => "Password Confirmation" %>
         </section>
         <div class="action">

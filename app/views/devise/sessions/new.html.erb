@@ -23,7 +23,7 @@
           </section>
             <% if devise_mapping.rememberable? -%>
           <div class="remember">
-            <%= f.check_box :remember_me %>
+            <%= f.check_box :remember_me, class: "rememberbox" %>
             <%= f.label :remember_me %>
           </div>
             <% end -%>

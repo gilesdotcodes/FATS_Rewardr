@@ -144,6 +144,10 @@
   letter-spacing: 0.5px;
 }
 
+.rememberbox {
+  
+}
+
 .actions input {
 /*  width: 151px;
   height: 100px;
@@ -164,4 +168,27 @@
   color: black;
   line-height: 25px;
   letter-spacing: 0.5px;
+}
+
+/* placeholder colours */
+/* have to specify for */
+/* all browsers or     */
+/* they'll be ignored  */
+
+::-webkit-input-placeholder { /* webkit browsers */
+  color: #E7E7E7;
+}
+
+:-moz-placeholder { /* Firefox 4-18 */
+  color: #E7E7E7;
+  opacity: 1;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+  color: #E7E7E7;
+  opacity: 1;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+  color: #E7E7E7;
 }
