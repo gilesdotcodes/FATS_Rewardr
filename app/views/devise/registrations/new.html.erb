@@ -1,37 +1,25 @@
-<html>
-<head>
-
-  <link rel="stylesheet" type="text/css" href="sign_up.css">
-
-  <script src="//use.typekit.net/mqc5gvv.js"></script>
-  <script>try{Typekit.load();}catch(e){}</script>
-
-</head>
-<body>
-  <section class="wrap1">
-    <section class="holder">
-      <section class="signup-form">
-        <section class ="signup-header">
-        <img id="logo1" src="../images/logo-01.png">
+<section class="wrap1">
+  <section class="holder">
+    <section class="signup-form">
+      <section class ="signup-header">
+      <img id="logo1" src="../images/logo-01.png">
+    </section>
+      <section class="usersignup">Registration</section>
+      <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= devise_error_messages! %>
+      <section class="fields1">
+        <%= f.email_field :email, class: "email1", autofocus: true, :placeholder => "Email" %>
+        <%= f.text_field :name, class: "name", autofocus: true, :placeholder => "Name"%>
+        <%= f.password_field :password, autocomplete: "off", class: "password1", :placeholder => "Password (Minimum Characters 8)" %>
+        <%= f.password_field :password_confirmation, autocomplete: "off", class: "password1", :placeholder => "Password Confirmation" %>
       </section>
-        <section class="usersignup">Registration</section>
-        <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-        <%= devise_error_messages! %>
-        <section class="fields1">
-          <%= f.email_field :email, class: "email1", autofocus: true, :placeholder => "Email" %>
-          <%= f.text_field :name, class: "name", autofocus: true, :placeholder => "Name"%>
-          <%= f.password_field :password, autocomplete: "off", class: "password1", :placeholder => "Password (Minimum Characters 8)" %>
-          <%= f.password_field :password_confirmation, autocomplete: "off", class: "password1", :placeholder => "Password Confirmation" %>
-        </section>
-        <div class="action">
-          <%= f.submit "Sign up", :class => "signup" %>
-        </div>
-        <section class="login">
-          <%= render "devise/shared/links" %>
-        </section>
-          <% end %>
+      <div class="action">
+        <%= f.submit "Sign up", :class => "signup" %>
+      </div>
+      <section class="login">
+        <%= render "devise/shared/links" %>
       </section>
+        <% end %>
     </section>
   </section>
-</body>
-</html>
+</section>
