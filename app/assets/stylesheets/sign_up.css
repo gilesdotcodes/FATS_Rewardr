@@ -35,12 +35,11 @@
       FORM
 ==============*/
 
-.login-form {
+.signup-form {
   box-shadow:2.5px 2.5px #E7E7E7;
-  border-color: #E7E7E7;
   background-color: white;
   width: 35%;
-  height: 310px;
+  height: 400px;
   padding: 2%;
   text-align:center;
   margin-top: auto;
@@ -50,13 +49,13 @@
   margin-top: 10%;
 }
 
-.userlogin {
+.usersignup {
   float: left;
   height: 45px;
   font-size: 20px;
 }
 
-.forgot {
+.login {
   text-decoration: none;
   float:right;
   color: black;
@@ -84,6 +83,19 @@
   margin-top: 10px;
 }
 
+.name {
+  border-color: #E7E7E7;
+  background: url("../images/user-01.png") left no-repeat;
+  background-size: 19.2px 19.2px;
+  background-position: 5px 11.9px;
+  padding: 7px;
+  width: 70%;
+  text-indent: 25px;
+  height: 30px;
+  margin-top: 10px;
+}
+
+
 .password {
   border-color: #E7E7E7;
   background: url("../images/lock-01.png") left no-repeat;
@@ -96,33 +108,13 @@
   text-indent: 30px;
 }
 
-.actions {
-  border-color: #E7E7E7;
-  position: inline;
-  float:right;
-  padding-top: 15px;
-  padding-right: 55px;
-  width: 150px;
-}
-
-.remember {
-  position: inline;
-  padding: 15px;
-  padding-left: 55px;
-  float: left;
-}
-
-.actions input {
-  width: 151px;
-  height: 100px;
-  padding-top: 55px;
-  font-size: 7em;
-}
-
-
 #logo1 {
   margin-top: 7.5px;
   margin-left: 10px;
   height: 20px;
+}
+
+.actions {
+  padding-right: 125px;
 }
 
