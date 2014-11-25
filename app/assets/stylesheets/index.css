@@ -240,7 +240,61 @@ a {
 }
 
 #linkedintext {
+  text-decoration: none;
   color: white;
+  height: 55px;
+  font-size: 12px;
+  font-family: "proxima-nova-alt",sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-left: 10px;
+  padding-top: 24px;
+  display: inline;
+  float: left;
+  -webkit-font-smoothing: antialiased;
+}
+
+#linkedintext:visited {
+  text-decoration: none;
+  color: white;
+  height: 55px;
+  font-size: 12px;
+  font-family: "proxima-nova-alt",sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-left: 10px;
+  padding-top: 24px;
+  display: inline;
+  float: left;
+  -webkit-font-smoothing: antialiased;
+}
+
+#linkedintext:focus {
+  text-decoration: none;
+  color: white;
+  height: 55px;
+  font-size: 12px;
+  font-family: "proxima-nova-alt",sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-left: 10px;
+  padding-top: 24px;
+  display: inline;
+  float: left;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+}
+
+#linkedintext:hover, #linkedintext:active {
+  text-decoration: none;
+  color: white;
+  height: 55px;
   font-size: 12px;
   font-family: "proxima-nova-alt",sans-serif;
   font-weight: 500;

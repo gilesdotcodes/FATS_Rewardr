@@ -1,23 +1,54 @@
-<h1>Personal Dashboard</h1>
+<html>
 
-<h2><%= current_user.name %></h2>
+<body>
 
-<h3>My Badges:</h3>
+  <section class="dashboard">
 
-  <% if @my_badges.any? %>
-    <% @my_badges.each do |badge| %>
-      <ul>
-      <li><%= badge.name %> awarded on <%= badge.created_at.strftime("%d %B %Y") %></li>
-      </ul>
-    <% end %>
-  <% end %>
+    <section class="menu">
 
-<br />
-<br />
+      <section class="title">
+        Personal Dashboard
+      </section>
 
+      <section class="username">
+        <%= current_user.name %>
+      </section>
 
-<!-- This is the button that Bob can click on to issue a badge to an employee -->
-<% if current_user.email=='bob@test.com' %>
-  <%= link_to 'Reward Employee', new_badge_path, 'data-no-turbolink' => true %>
-<% end %>
+      <section class="signout">
+        <% if user_signed_in? %>
+          <%= link_to 'Sign out', destroy_user_session_path, method: :delete %>
+        <% end %>
+      </section>
+
+    </section>
+
+    <section class="mybadges">
+      My Badges:
+    </section>
+
+    <section class="badgesdisplay">
+      <% if @my_badges.any? %>
+        <% @my_badges.each do |badge| %>
+          <ul>
+          <li><%= badge.name %> awarded on <%= badge.created_at.strftime("%d %B %Y") %></li>
+          </ul>
+        <% end %>
+      <% end %>
+    </section>
+
+      <br />
+      <br />
+
+    <section class="rewardlink">
+      <!-- This is the button that Bob can click on to issue a badge to an employee -->
+      <% if current_user.email=='bob@test.com' %>
+        <%= link_to 'Reward Employee', new_badge_path, 'data-no-turbolink' => true %>
+      <% end %>
+    </section>
+
+  </section>
+
+</body>
+
+</html>
 
