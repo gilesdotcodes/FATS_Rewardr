@@ -17,5 +17,15 @@ describe 'Owner' do
       expect(page).to have_content 'Success'
     end
   end
+end
 
+describe 'Staff member' do
+  context 'receiving badges' do
+    it 'can see the badge it has received' do
+      visit '/'
+      sign_up('employee@test.com')
+      sign_in('employee@test.com')
+      expect(page).to have_content 'Office angel'
+    end
+  end
 end
