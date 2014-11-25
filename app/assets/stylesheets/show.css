@@ -4,6 +4,8 @@
   border: black 2px solid;
   width: 1800px;
   height: 1800px;
+  z-index:2;
+  background-color: salmon;
 }
 
 .menu {
@@ -11,4 +13,6 @@
   float: left;
   height: 100%;
   width: 15%;
+  z-index:1;
+  background-color: yellow;
 }
