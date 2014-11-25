@@ -17,7 +17,7 @@ RSpec.describe Badge, :type => :model do
 
     it 'should be present in the list of pre-defined badges' do
       badge = Badge.new(name: 'Office Angel', user_id: 1)
-      expect(badge.name).to be_in(Badge::BADGES)
+      expect(badge.name.downcase).to be_in(Badge::BADGES)
     end
   end
 
