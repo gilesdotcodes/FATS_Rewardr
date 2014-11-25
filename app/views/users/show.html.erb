@@ -30,7 +30,7 @@
       <% if @my_badges.any? %>
         <% @my_badges.each do |badge| %>
           <ul>
-          <li><%= badge.name %> awarded on <%= badge.created_at.strftime("%d %B %Y") %></li>
+          <li><%= badge.name.titleize %> awarded on <%= badge.created_at.strftime("%d %B %Y") %></li>
           </ul>
         <% end %>
       <% end %>

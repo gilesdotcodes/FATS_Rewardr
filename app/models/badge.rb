@@ -2,10 +2,8 @@ class Badge < ActiveRecord::Base
 
   belongs_to :user
 
-  BADGES = ['Office Angel', 'Badge 2', 'Badge 3']
+  validates_presence_of :name, :user_id
 
-  def create_new_badge(name)
-    BADGES << name.to_s
-  end
+  BADGES = ['office angel', 'star man', 'best sales', 'outstanding customer service', 'lean on me', 'positive vibes']
 
 end
