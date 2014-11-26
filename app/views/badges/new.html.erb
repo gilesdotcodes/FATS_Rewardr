@@ -8,43 +8,7 @@
 
     </section>
 
-    <section class="main">
 
-      <h3>Reward your Employees:</h3>
-
-      <section id='built_in_badges'>
-        <%= form_for @badge do |f| %>
-          <%= f.label :employee %>
-          <%= f.collection_select :user, User.all, :id, :name %>
-          <%= f.hidden_field :name %>
-          <%= f.submit 'Reward' %>
-        <% end %>
-          <br />
-          <br />
-          <section class="rewarding">
-              <!-- <button id="left"></button> -->
-              <section class="reward">
-                <img src='/images/mail-01.png' id="reward_image"/>
-              </section>
-              <button id="right"></button>
-          </section>
-          <br />
-          <br />
-      </section>
-
-      <br />
-      <br />
-
-      <section id='custom_badges'>
-        <h3>Or create your own Reward below:</h3>
-        <%= form_for @badge do |f| %>
-          <%= f.label :employee %>
-          <%= f.collection_select :user, User.all, :id, :name %>
-          <%= f.label :name %>
-          <%= f.text_field :name %>
-          <%= f.submit 'Custom Reward' %>
-      <% end %>
-      </section>
 
       <br />
       <br />
