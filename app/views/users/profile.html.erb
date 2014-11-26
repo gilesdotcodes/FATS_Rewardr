@@ -3,6 +3,8 @@
 <br />
 <br />
 
+
+
 <h3>Recent News:</h3>
 
   <section id='recent-news'>
@@ -11,7 +13,7 @@
 
     <ul id='recent-badges-awarded'>
       <% @all_badges.each do |badge| %>
-        <li>--><%= badge_name(badge) %> earned by <%= badge_recipient_name(badge) %> on <%= badge_award_date(badge) %></li>
+        <li><%= badge_name(badge) %> earned by <%= badge_recipient_name(badge) %> on <%= badge_award_date(badge) %></li>
       <% end %>
     </ul>
 

@@ -37,50 +37,49 @@ describe 'Profile page' do
       expect(page).to have_link('Edit My Profile')
     end
 
-    it 'the Recent News section should list badges given to all employees' do
-      click_link 'Return to Personal Dashboard'
-      click_link 'Sign out'
-      award_regular_badge('Test Employee', 'Star Man')
-      click_link 'Sign out'
-      award_regular_badge('Bob Owner', 'Office Angel')
-      click_link 'Sign out'
-      sign_in('employee@test.com')
-      visit '/users/profile'
-      within('#recent-news') do
-        expect(page).to have_content('Star Man earned by Test Employee')
-        expect(page).to have_content('Office Angel earned by Bob Owner')
+    context 'the Recent News Section' do
+
+      it 'should list badges given to all employees' do
+        click_link 'Return to Personal Dashboard'
+        click_link 'Sign out'
+        award_3_badges
+        sign_in('employee@test.com')
+        visit '/users/profile'
+        within('#recent-news') do
+          expect(page).to have_content('Star Man earned by Test Employee')
+          expect(page).to have_content('Office Angel earned by Bob Owner')
+        end
       end
+
+      it 'should display a notice if no badges have been given' do
+        within('#recent-news') do
+          expect(page).to have_content('There are no recent news items!')
+        end
+      end
+
     end
 
-    it 'the Recent News section should display a notice if no badges have been given' do
-      within('#recent-news') do
-        expect(page).to have_content('There are no recent news items!')
+    context 'the My Badges Archive section' do
+
+      it 'should list all badges user has been given' do
+        click_link 'Return to Personal Dashboard'
+        click_link 'Sign out'
+        award_3_badges
+        sign_in('employee@test.com')
+        visit '/users/profile'
+        within('#my-badges-archive') do
+          expect(page).to have_content('Earned Star Man')
+          expect(page).to have_content('Earned Office Angel')
+        end
       end
-    end
 
-    it 'the My Badges Archive section should list all badges user has been given' do
-      click_link 'Return to Personal Dashboard'
-      click_link 'Sign out'
-      award_regular_badge('Test Employee', 'Star Man')
-      click_link 'Sign out'
-      award_regular_badge('Test Employee', 'Office Angel')
-      click_link 'Sign out'
-      sign_in('employee@test.com')
-      visit '/users/profile'
-      within('#my-badges-archive') do
-        expect(page).to have_content('Earned Star Man')
-        expect(page).to have_content('Earned Office Angel')
+      it 'should display a notice if no badges have been received' do
+        within('#my-badges-archive') do
+          expect(page).to have_content('You have not won any badges yet!')
+        end
       end
+
     end
-
-    it 'the My Badges Archive section should display a notice if no badges have been received' do
-      within('#my-badges-archive') do
-        expect(page).to have_content('You have not won any badges yet!')
-      end
-    end
-
-
-
 
   end
 
