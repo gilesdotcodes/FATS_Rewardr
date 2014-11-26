@@ -4,7 +4,7 @@
   -webkit-font-smoothing: antialiased;
 }
 
-.h3-header-title {
+.h2-header-title, #h2-edit-profile-title {
   font-size: 1.75em;
   padding-bottom: 2%;
 }
@@ -26,7 +26,7 @@ section#my-badges-archive {
   flex-grow: 2;
 }
 
-#profile-page-container{
+#profile-page-container {
   display: flex;
   -webkit-flex-direction: row
   flex-direction: row;
@@ -41,7 +41,26 @@ section#my-badges-archive {
   -webkit-font-smoothing: antialiased;
 }
 
+#edit-profile-form-box {
+  font-family: "proxima-nova-alt",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: #2F4F4F;
+  color: white;
+  width: 70%;
+  margin: 4% auto;
+  text-align: center;
+}
+
 .li-award-entry {
   padding-left: 2%;
   padding-top: 2%;
+}
+
+p#password-change-notice {
+  font-size: 0.75em;
+  font-style: italic;
+}
+
+.update-button {
+  color: #2F4F4F;
 }

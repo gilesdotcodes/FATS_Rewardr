@@ -5,7 +5,7 @@
     <section class="navbar">
       <a href="/users/show"><img src="/images/logo-01.png" class="navlogo"></a>
       <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: "signoutnav" %>
-      <%= link_to 'Return to Dashboard', users_show_path, class: 'signoutnav' %>
+      <%= link_to 'Dashboard', users_show_path, class: 'signoutnav' %>
       <%= link_to 'Edit Profile', edit_user_registration_path, class: 'signoutnav'%>
       <a href="users/profile"><section class="avatarnav"></section></a>
 
@@ -25,7 +25,7 @@
 
     <section id='my-badges-archive' class='profile-page-information-box'>
 
-    <h3 class='h3-header-title'>My Badges Archive:</h3>
+    <h2 class='h2-header-title'>My Badges Archive:</h2>
     
     <% if @my_badges.any? %>
 
@@ -45,7 +45,7 @@
 
     <section id='recent-news' class='profile-page-information-box'>
 
-      <h3 class='h3-header-title'>Recent News:</h3>  
+      <h2 class='h2-header-title'>Recent News:</h2>  
 
       <% if @all_badges.any? %>
 
