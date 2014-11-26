@@ -11,16 +11,6 @@ body {
 
 /* TILE WRAPS */
 
-#tile5 {
-  position: absolute;
-  left: 430px;
-  top: 213px;
-  height: 213px;
-  width: 430px;
-  background-color: red;
-  display: inline-block;
-}
-
 #tile6 {
   position: absolute;
   left: 860px;
@@ -279,3 +269,49 @@ font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
   vertical-align: middle;
   padding-top: 5px;
 }
+
+/* TILE 5 */
+
+#tile5 {
+  position: absolute;
+  left: 430px;
+  top: 213px;
+  height: 213px;
+  width: 430px;
+  display: inline-block;
+}
+
+#infotile5 {
+  height: 131px;
+  width: 266px;
+  position: relative;
+  margin-left: 50%;
+  left: -133px;
+}
+
+#tile5badge {
+  background-color: #F06FA6;
+  width: 100%;
+  height: 100px;
+  color: white;
+  font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
+  font-size: 24px;
+  text-align: center;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+#tile5text {
+  height: 31px;
+  width: 100%;
+  background-color: #F075AD;
+  font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
+  text-align: center;
+  color: white;
+  vertical-align: middle;
+  padding-top: 5px;
+}
+
+/* TILE 6 */
+
+
