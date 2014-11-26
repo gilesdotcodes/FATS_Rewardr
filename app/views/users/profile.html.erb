@@ -1,0 +1,51 @@
+<h1><%= current_user.name %>'s Profile Page</h1>
+
+<br />
+<br />
+
+<h3>Recent News:</h3>
+
+  <section id='recent-news'>
+
+  <% if @all_badges.any? %>
+
+    <ul id='recent-badges-awarded'>
+      <% @all_badges.each do |badge| %>
+        <li>--><%= badge_name(badge) %> earned by <%= badge_recipient_name(badge) %> on <%= badge_award_date(badge) %></li>
+      <% end %>
+    </ul>
+
+  <% else %>
+
+    There are no recent news items!
+
+  <% end %>
+
+  </section>
+
+<br />
+<br />
+
+<h3>My Badges Archive:</h3>
+
+  <section id='my-badges-archive'>
+
+  <% if @my_badges.any? %>
+
+    <ul id='badge-archive'>
+    <% @my_badges.each do |badge| %>
+      <li>Earned <%= badge_name(badge) %> received on <%= badge_award_date(badge) %></li>
+    <% end %>
+    </ul>
+  
+  <% else %>
+
+    You have not won any badges yet!
+  
+  <% end %>
+
+<br />
+<br />
+<%= link_to 'Return to Personal Dashboard', users_show_path %>
+<br />
+<%= link_to 'Edit My Profile', edit_user_registration_path %>

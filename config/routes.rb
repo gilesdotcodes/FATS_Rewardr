@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'users/profile'
+
   get 'users/show'
 
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
