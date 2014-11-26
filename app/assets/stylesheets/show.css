@@ -15,6 +15,7 @@
   width: 430px;
   height: 213px;
   background-color: salmon;
+  display: inline;
 }
 
 #tile2 {
@@ -35,4 +36,34 @@
   width: 430px;
   background-color: green;
   display: inline-block;
+}
+
+#tile4 {
+  position: fixed;
+  left: 0px;
+  top: 213px;
+  height: 213px;
+  width: 430px;
+  background-color: green;
+  display: inline;
+}
+
+#tile5 {
+  position: fixed;
+  left: 430px;
+  top: 213px;
+  height: 213px;
+  width: 430px;
+  background-color: red;
+  display: inline-block;
+}
+
+#tile6 {
+  position: fixed;
+  left: 860px;
+  top: 213px;
+  height: 213px;
+  width: 430px;
+  background-color: salmon;
+  display: inline;
 }

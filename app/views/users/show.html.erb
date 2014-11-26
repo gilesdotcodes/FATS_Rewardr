@@ -66,6 +66,8 @@
     <br />
     <hr />
     <br />
+
+    <section id="tile4">
     <section class="myrewards">
       <h3>My Rewards:</h3>
       <section class="rewardsdisplay">
@@ -76,6 +78,11 @@
             <p>There is no reward</p>
           <% end %>
         </section>
+    </section>
+    </section>
+    </section>
+
+    <section id="tile5">
         <section>
           <% if @my_badges.length > 1 %>
             <%= show_last_six_rewards(current_user, 2) %>
@@ -83,6 +90,9 @@
             <p>There is no reward</p>
           <% end %>
         </section>
+      </section>
+
+      <section id="tile6">
         <section>
           <% if @my_badges.length > 2 %>
             <%= show_last_six_rewards(current_user, 3) %>
@@ -91,7 +101,9 @@
           <% end %>
         </section>
       </section>
-    </section>
+    
+
+
     <br />
     <hr />
     <br />
