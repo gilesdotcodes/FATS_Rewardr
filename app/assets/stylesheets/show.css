@@ -9,18 +9,6 @@ body {
 
 }
 
-/* TILE WRAPS */
-
-#tile9 {
-  position: absolute;
-  left: 860px;
-  top: 426px;
-  height: 213px;
-  width: 430px;
-  background-color: red;
-  display: inline-block;
-}
-
 /* TILE 1 */
 
 #tile1 {
@@ -409,3 +397,43 @@ font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
 }
 
 /* TILE 9 */
+
+#tile9 {
+  position: absolute;
+  left: 860px;
+  top: 426px;
+  height: 213px;
+  width: 430px;
+  display: inline-block;
+}
+
+#infotile9 {
+  height: 131px;
+  width: 266px;
+  position: relative;
+  margin-left: 50%;
+  left: -133px;
+}
+
+#tile9badge {
+  background-color: #73CFED;
+  width: 100%;
+  height: 100px;
+  color: white;
+  font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
+  font-size: 24px;
+  text-align: center;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+#tile9text {
+  height: 31px;
+  width: 100%;
+  background-color: #86D5F5;
+  font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
+  text-align: center;
+  color: white;
+  vertical-align: middle;
+  padding-top: 5px;
+}
