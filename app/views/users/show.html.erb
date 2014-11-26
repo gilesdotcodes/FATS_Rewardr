@@ -82,18 +82,20 @@
 
     </section>
     <section id="tile4">
+    <section id="infotile4">
     <section class="myrewards">
-      <h3>My Rewards:</h3>
-      <section class="rewardsdisplay">
-        <section>
+      <section class="tile4badge">
           <% if @my_badges.length > 0 %>
             <%= show_last_six_rewards(current_user, 1) %>
           <% else %>
             <p>There is no reward</p>
           <% end %>
+    </section>
+    <section id="tile4text">
+      <h3>My Rewards</h3>
+    </section>
+    </section>
         </section>
-    </section>
-    </section>
     </section>
 
     <section id="tile5">
