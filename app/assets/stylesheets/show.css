@@ -118,6 +118,25 @@ body {
   font-family: "proxima-nova-soft",sans-serif;  -webkit-font-smoothing: antialiased;
   font-size: 80px;
   text-align: center;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  text-shadow:
+    0 1px 0px #5E7F27,
+    0px 0 0px #5E7F27,
+    0px 2px 1px #5E7F27,
+    0px 1px 1px #5E7F27,
+    0px 3px 2px #5E7F27,
+    0px 2px 2px #5E7F27,
+    0px 4px 2px #5E7F27,
+    0px 3px 3px #5E7F27,
+    0px 5px 3px #5E7F27,
+    0px 4px 2px #5E7F27,
+    0px 6px 2px #5E7F27,
+    0px 5px 2px #5E7F27,
+    0px 7px 1px #5E7F27,
+    0px 6px 1px #5E7F27,
+    0px 8px 0px #5E7F27,
+    0px 7px 0px #5E7F27;
   }
 
 #tile1text {
@@ -127,4 +146,6 @@ body {
 font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
   text-align: center;
   color: white;
+  vertical-align: middle;
+  padding-top: 5px;
 }
