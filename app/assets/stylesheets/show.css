@@ -1,13 +1,14 @@
 body {
   height: 640px;
   width: 1290px;
+  background-color: #fff8ee;
 }
 
-/* */
-/* */
+/*              */
+/*              */
 /* TILE CLASSES */
-/* */
-/* */
+/*              */
+/*              */
 
 .infotile {
   height: 131px;
@@ -15,38 +16,43 @@ body {
   position: relative;
   margin-left: 50%;
   left: -133px;
+  margin-top: 50%;
+  top: -165.5px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
 }
 
-/* */
-/* */
+/*                   */
+/*                   */
 /* TOP TILES CLASSES */
-/* */
-/* */
+/*                   */
+/*                   */
 
 .topnumbertiles {
-  background-color: #94C83D;
   width: 100%;
   height: 100px;
-  color: white;
+  color: #2F4F4F;
   font-family: "proxima-nova-soft",sans-serif;  -webkit-font-smoothing: antialiased;
   font-size: 80px;
   text-align: center;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
 }
 
 .toptexttiles {
   height: 31px;
   width: 100%;
-  background-color: #ADD149;
+  background-color: #2F4F4F;
   font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
   text-align: center;
   color: white;
   vertical-align: middle;
-  padding-top: 5px;
+  border-radius: 3px;
+  font-size: 14px;
+  vertical-align: text-bottom;
+  box-shadow: 1px 1px 10px #C1C1C1;
 }
 
-/* TILE 1 */
+/*      TILE 1      */
 
 #tile1 {
   position: absolute;
@@ -67,7 +73,7 @@ body {
   display: inline;
 }
 
-/* TILE 3 */
+/*      TILE 3      */
 
 #tile3 {
   position: absolute;
@@ -78,38 +84,39 @@ body {
   display: inline-block;
 }
 
-/* */
-/* */
+/*                     */
+/*                     */
 /* MIDDLE TILE CLASSES */
-/* */
-/* */
+/*                     */
+/*                     */
 
-/* CLASSES */
+/*       CLASSES       */
 
 .middlebadgetiles {
-  background-color: #F06FA6;
   width: 100%;
   height: 100px;
+  -webkit-font-smoothing: antialiased;
   color: white;
   font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
   font-size: 24px;
   text-align: center;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  color: #2F4F4F;
 }
 
 .middletexttiles {
   height: 31px;
   width: 100%;
-  background-color: #F075AD;
+  background-color: #2F4F4F;
   font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
   text-align: center;
   color: white;
   vertical-align: middle;
-  padding-top: 5px;
+  border-radius: 3px;
+  font-size: 14px;
+  box-shadow: 1px 1px 10px #C1C1C1;
 }
 
-/* TILE 4 */
+/*      TILE 4      */
 
 #tile4 {
   position: absolute;
@@ -120,7 +127,7 @@ body {
   display: inline;
 }
 
-/* TILE 5 */
+/*      TILE 5      */
 
 #tile5 {
   position: absolute;
@@ -142,38 +149,38 @@ body {
   display: inline;
 }
 
-/* */
-/* */
-/* BOTTOM TILES */
-/* */
-/* */
+/*                    */
+/*                    */
+/*    BOTTOM TILES    */
+/*                    */
+/*                    */
 
-/* CLASSES */
+/*      CLASSES       */
 
 .bottombadgetiles {
-  background-color: #73CFED;
   width: 100%;
   height: 100px;
   color: white;
   font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
   font-size: 24px;
   text-align: center;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  color: #2F4F4F;
 }
 
 .bottomtexttiles {
   height: 31px;
   width: 100%;
-  background-color: #86D5F5;
+  background-color: #2F4F4F;
   font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
   text-align: center;
   color: white;
   vertical-align: middle;
-  padding-top: 5px;
+  font-size: 14px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 10px #C1C1C1;
 }
 
-/* TILE 7 */
+/*      TILE 7      */
 
 #tile7 {
   position: absolute;
@@ -184,7 +191,7 @@ body {
   display: inline-block;
 }
 
-/* TILE 8 */
+/*      TILE 8      */
 
 #tile8 {
   position: absolute;
@@ -195,7 +202,7 @@ body {
   display: inline-block;
 }
 
-/* TILE 9 */
+/*      TILE 9      */
 
 #tile9 {
   position: absolute;
