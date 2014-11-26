@@ -14,7 +14,7 @@ body {
 }
 
 #tile1 {
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   width: 430px;
@@ -24,7 +24,7 @@ body {
 }
 
 #tile2 {
-  position: fixed;
+  position: absolute;
   left: 430px;
   top: 0px;
   height: 213px;
@@ -34,7 +34,7 @@ body {
 }
 
 #tile3 {
-  position: fixed;
+  position: absolute;
   left: 860px;
   top: 0px;
   height: 213px;
@@ -44,7 +44,7 @@ body {
 }
 
 #tile4 {
-  position: fixed;
+  position: absolute;
   left: 0px;
   top: 213px;
   height: 213px;
@@ -54,7 +54,7 @@ body {
 }
 
 #tile5 {
-  position: fixed;
+  position: absolute;
   left: 430px;
   top: 213px;
   height: 213px;
@@ -64,7 +64,7 @@ body {
 }
 
 #tile6 {
-  position: fixed;
+  position: absolute;
   left: 860px;
   top: 213px;
   height: 213px;
@@ -74,7 +74,7 @@ body {
 }
 
 #tile7 {
-  position: fixed;
+  position: absolute;
   left: 0px;
   top: 426px;
   height: 213px;
@@ -84,7 +84,7 @@ body {
 }
 
 #tile8 {
-  position: fixed;
+  position: absolute;
   left: 430px;
   top: 426px;
   height: 213px;
@@ -94,7 +94,7 @@ body {
 }
 
 #tile9 {
-  position: fixed;
+  position: absolute;
   left: 860px;
   top: 426px;
   height: 213px;
