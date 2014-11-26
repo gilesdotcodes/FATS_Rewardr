@@ -25,19 +25,29 @@
     <section class="mystats">
       <h3>My Stats:</h3>
       <section class="statsdisplay">
+        
         <section id="dayssince">
+
           <%= days_since_last_reward(current_user) %>
           <p>DAYS SINCE LAST REWARD</p>
         </section>
+
         <section id="mostrewarded">
-          <%= most_popular_reward(current_user) %>
+        <% if @my_badges.any? %>
+          <%= most_popular_reward(current_user) %><% end %>
           <p>MOST REWARDED REWARD</p>
         </section>
+
         <section id="totalrewards">
-          <%= total_number_of_rewards(current_user) %>
+        <% if @my_badges.any? %>
+          <%= total_number_of_rewards(current_user) %><% end %>
           <p>TOTAL NUMBER OF REWARDS</p>
         </section>
+
       </section>
+
+      
+
     </section>
     <br />
     <hr />
@@ -71,7 +81,26 @@
     <br />
     <hr />
     <br />
-
+  <section class="recentrewards">
+      <h3>Recent Rewards:</h3>
+      <section class="recentrewardsdisplay">
+        <section>
+          <% if @all_badges.length > 0 %>
+          <%= show_recent_badge(0) %><% end %>
+        </section>
+        <section>
+          <% if @all_badges.length > 1 %>
+          <%= show_recent_badge(1) %><% end %>
+        </section>
+        <section>
+          <% if @all_badges.length > 2 %>
+          <%= show_recent_badge(2) %><% end %>
+        </section>
+      </section>
+    </section>
+    <br />
+    <hr />
+    <br />
     <section class="rewardlink">
       <!-- This is the button that Bob can click on to issue a badge to an employee -->
       <% if current_user.email=='bob@test.com' %>

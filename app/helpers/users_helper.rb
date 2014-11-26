@@ -7,8 +7,12 @@ module UsersHelper
   end
 
   def days_since_last_reward(user)
-    difference = Time.now - @my_badges[-1].created_at
-    (((difference/60)/60)/24).floor
+    if @my_badges.any?
+      difference = Time.now - (@my_badges[-1].created_at)
+    else
+      difference = Time.now - user.created_at 
+    end
+      (((difference/60)/60)/24).floor
   end
 
   def total_number_of_rewards(user)
