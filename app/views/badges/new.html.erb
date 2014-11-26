@@ -2,21 +2,14 @@
   <section class="holderbadgepage">
     <section class="navbar">
 
-      <!-- <section class="navlogo"> -->
-        <img src="/images/logo-01.png" class="navlogo">
-      <!-- </section> -->
-      <!-- <section class="signoutnav"> -->
-        <a href="/users/sign_out" class="signoutnav">Sign Out</a>
-      <!-- </section> -->
+      <a href="/users/show"><img src="/images/logo-01.png" class="navlogo"></a>
+      <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: "signoutnav" %>
+      <a href="users/profile"><section class="avatarnav"></section></a>
 
     </section>
 
-
-
-
-
-
     <section class="main">
+
       <h3>Reward your Employees:</h3>
 
       <section id='built_in_badges'>
@@ -42,6 +35,31 @@
           <%= f.submit 'Custom Reward' %>
       <% end %>
       </section>
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
+    <section class="rewarding">
+
+      <!-- <section class="buttonleft"> -->
+        <button id="left"></button>
+      <!-- </section> -->
+
+        <section class="reward">
+          <img src="/images/logo_black-01.png" id="reward_image"/>
+        </section>
+
+
+
+    </section>
+
+
+
+
+
     </section>
 
   </section>

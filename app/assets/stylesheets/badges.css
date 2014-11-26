@@ -15,10 +15,10 @@
   height: 90%;
   width: 90%;
   z-index: 1;
-  /*border-width: 2px;
+  border-width: 2px;
   border-color: black;
   border-style: solid;
-  background-color: yellow;*/
+  /*background-color: yellow;*/
   position: fixed;
   display: block;
   margin-left: 5%;
@@ -54,6 +54,11 @@
   padding: 13px 0 0 10px;
   height: 30px;
   width: 200px;
+  opacity: 0.7;
+}
+
+.navlogo:hover {
+  opacity: 1;
 }
 
 .signoutnav {
@@ -65,4 +70,42 @@
   font-family: "proxima-nova-alt",sans-serif;
   -webkit-font-smoothing: antialiased;
   padding: 19px 10px 0 10px;
+  opacity: 0.5;
+}
+
+.signoutnav:hover {
+  opacity: 1;
+}
+
+.avatarnav {
+  display: inline;
+  float: right;
+  height:35px;
+  width: 35px;
+  background-color: #9370DB;
+  margin: 10px 0 0 0;
+  border-width: 1px;
+  border-color: white;
+  border-style: solid;
+  opacity: 0.7;
+}
+
+.avatarnav:hover {
+  opacity: 1;
+}
+
+/*======================
+      REWARD IMAGE
+======================*/
+
+#left {
+  position:inline;
+}
+
+#right {
+  display:inline;
+}
+
+#reward_image {
+  position:inline;
 }
