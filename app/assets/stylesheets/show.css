@@ -1,12 +1,43 @@
-* {font-family: "proxima-nova-soft",sans-serif;  -webkit-font-smoothing: antialiased;}
-
 body {
   height: 640px;
   width: 1290px;
 }
 
-.menu {
+/* */
+/* */
+/* TOP TILES CLASSES */
+/* */
+/* */
 
+.topinfotiles {
+  height: 131px;
+  width: 266px;
+  position: relative;
+  margin-left: 50%;
+  left: -133px;
+}
+
+.topnumbertiles {
+  background-color: #94C83D;
+  width: 100%;
+  height: 100px;
+  color: white;
+  font-family: "proxima-nova-soft",sans-serif;  -webkit-font-smoothing: antialiased;
+  font-size: 80px;
+  text-align: center;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.toptexttiles {
+  height: 31px;
+  width: 100%;
+  background-color: #ADD149;
+  font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
+  text-align: center;
+  color: white;
+  vertical-align: middle;
+  padding-top: 5px;
 }
 
 /* TILE 1 */
@@ -20,55 +51,6 @@ body {
   display: inline;
 }
 
-#infotile1 {
-  height: 131px;
-  width: 266px;
-  position: relative;
-  margin-left: 50%;
-  left: -133px;
-}
-
-#tile1number {
-  background-color: #94C83D;
-  width: 100%;
-  height: 100px;
-  color: white;
-  font-family: "proxima-nova-soft",sans-serif;  -webkit-font-smoothing: antialiased;
-  font-size: 80px;
-  text-align: center;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  text-shadow:
-    0 1px 0px #5E7F27,
-    0px 0 0px #5E7F27,
-    0px 2px 1px #5E7F27,
-    0px 1px 1px #5E7F27,
-    0px 3px 2px #5E7F27,
-    0px 2px 2px #5E7F27,
-    0px 4px 2px #5E7F27,
-    0px 3px 3px #5E7F27,
-    0px 5px 3px #5E7F27,
-    0px 4px 2px #5E7F27,
-    0px 6px 2px #5E7F27,
-    0px 5px 2px #5E7F27,
-    0px 7px 1px #5E7F27,
-    0px 6px 1px #5E7F27,
-    0px 8px 0px #5E7F27,
-    0px 7px 0px #5E7F27;
-  }
-
-#tile1text {
-  height: 31px;
-  width: 100%;
-  background-color: #ADD149;
-font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
-  text-align: center;
-  color: white;
-  vertical-align: middle;
-  padding-top: 5px;
-}
-
-/* TILE 2 */
 
 #tile2 {
   position: absolute;
@@ -77,54 +59,6 @@ font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
   height: 213px;
   width: 430px;
   display: inline;
-}
-
-#infotile2 {
-  height: 131px;
-  width: 266px;
-  position: relative;
-  margin-left: 50%;
-  left: -133px;
-}
-
-#tile2badge {
-  background-color: #94C83D;
-  width: 100%;
-  height: 100px;
-  color: white;
-  font-family: "proxima-nova-soft",sans-serif;  -webkit-font-smoothing: antialiased;
-  font-size: 80px;
-  text-align: center;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  text-shadow:
-    0 1px 0px #5E7F27,
-    0px 0 0px #5E7F27,
-    0px 2px 1px #5E7F27,
-    0px 1px 1px #5E7F27,
-    0px 3px 2px #5E7F27,
-    0px 2px 2px #5E7F27,
-    0px 4px 2px #5E7F27,
-    0px 3px 3px #5E7F27,
-    0px 5px 3px #5E7F27,
-    0px 4px 2px #5E7F27,
-    0px 6px 2px #5E7F27,
-    0px 5px 2px #5E7F27,
-    0px 7px 1px #5E7F27,
-    0px 6px 1px #5E7F27,
-    0px 8px 0px #5E7F27,
-    0px 7px 0px #5E7F27;
-  }
-
-#tile2text {
-  height: 31px;
-  width: 100%;
-  background-color: #ADD149;
-font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
-  text-align: center;
-  color: white;
-  vertical-align: middle;
-  padding-top: 5px;
 }
 
 /* TILE 3 */
@@ -138,7 +72,15 @@ font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
   display: inline-block;
 }
 
-#infotile3 {
+/* */
+/* */
+/* MIDDLE TILE CLASSES */
+/* */
+/* */
+
+/* CLASSES */
+
+.middleinfotiles {
   height: 131px;
   width: 266px;
   position: relative;
@@ -146,40 +88,23 @@ font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
   left: -133px;
 }
 
-#tile3number {
-  background-color: #94C83D;
+.middlebadgetiles {
+  background-color: #F06FA6;
   width: 100%;
   height: 100px;
   color: white;
-  font-family: "proxima-nova-soft",sans-serif;  -webkit-font-smoothing: antialiased;
-  font-size: 80px;
+  font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
+  font-size: 24px;
   text-align: center;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
-  text-shadow:
-    0 1px 0px #5E7F27,
-    0px 0 0px #5E7F27,
-    0px 2px 1px #5E7F27,
-    0px 1px 1px #5E7F27,
-    0px 3px 2px #5E7F27,
-    0px 2px 2px #5E7F27,
-    0px 4px 2px #5E7F27,
-    0px 3px 3px #5E7F27,
-    0px 5px 3px #5E7F27,
-    0px 4px 2px #5E7F27,
-    0px 6px 2px #5E7F27,
-    0px 5px 2px #5E7F27,
-    0px 7px 1px #5E7F27,
-    0px 6px 1px #5E7F27,
-    0px 8px 0px #5E7F27,
-    0px 7px 0px #5E7F27;
-  }
+}
 
-  #tile3text {
+.middletexttiles {
   height: 31px;
   width: 100%;
-  background-color: #ADD149;
-font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
+  background-color: #F075AD;
+  font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
   text-align: center;
   color: white;
   vertical-align: middle;
@@ -197,37 +122,6 @@ font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
   display: inline;
 }
 
-#infotile4 {
-  height: 131px;
-  width: 266px;
-  position: relative;
-  margin-left: 50%;
-  left: -133px;
-}
-
-.tile4badge {
-  background-color: #F06FA6;
-  width: 100%;
-  height: 100px;
-  color: white;
-  font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
-  font-size: 24px;
-  text-align: center;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  }
-
-#tile4text {
-  height: 31px;
-  width: 100%;
-  background-color: #F075AD;
-  font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
-  text-align: center;
-  color: white;
-  vertical-align: middle;
-  padding-top: 5px;
-}
-
 /* TILE 5 */
 
 #tile5 {
@@ -237,37 +131,6 @@ font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
   height: 213px;
   width: 430px;
   display: inline-block;
-}
-
-#infotile5 {
-  height: 131px;
-  width: 266px;
-  position: relative;
-  margin-left: 50%;
-  left: -133px;
-}
-
-#tile5badge {
-  background-color: #F06FA6;
-  width: 100%;
-  height: 100px;
-  color: white;
-  font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
-  font-size: 24px;
-  text-align: center;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-}
-
-#tile5text {
-  height: 31px;
-  width: 100%;
-  background-color: #F075AD;
-  font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
-  text-align: center;
-  color: white;
-  vertical-align: middle;
-  padding-top: 5px;
 }
 
 /* TILE 6 */
@@ -281,7 +144,15 @@ font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
   display: inline;
 }
 
-#infotile6 {
+/* */
+/* */
+/* BOTTOM TILES */
+/* */
+/* */
+
+/* CLASSES */
+
+.bottominfotiles {
   height: 131px;
   width: 266px;
   position: relative;
@@ -289,8 +160,8 @@ font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
   left: -133px;
 }
 
-#tile6badge {
-  background-color: #F06FA6;
+.bottombadgetiles {
+  background-color: #73CFED;
   width: 100%;
   height: 100px;
   color: white;
@@ -301,10 +172,10 @@ font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
   border-top-right-radius: 12px;
 }
 
-#tile6text {
+.bottomtexttiles {
   height: 31px;
   width: 100%;
-  background-color: #F075AD;
+  background-color: #86D5F5;
   font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
   text-align: center;
   color: white;
@@ -323,37 +194,6 @@ font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
   display: inline-block;
 }
 
-#infotile7 {
-  height: 131px;
-  width: 266px;
-  position: relative;
-  margin-left: 50%;
-  left: -133px;
-}
-
-#tile7badge {
-  background-color: #73CFED;
-  width: 100%;
-  height: 100px;
-  color: white;
-  font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
-  font-size: 24px;
-  text-align: center;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-}
-
-#tile7text {
-  height: 31px;
-  width: 100%;
-  background-color: #86D5F5;
-  font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
-  text-align: center;
-  color: white;
-  vertical-align: middle;
-  padding-top: 5px;
-}
-
 /* TILE 8 */
 
 #tile8 {
@@ -365,37 +205,6 @@ font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
   display: inline-block;
 }
 
-#infotile8 {
-  height: 131px;
-  width: 266px;
-  position: relative;
-  margin-left: 50%;
-  left: -133px;
-}
-
-#tile8badge {
-  background-color: #73CFED;
-  width: 100%;
-  height: 100px;
-  color: white;
-  font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
-  font-size: 24px;
-  text-align: center;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-}
-
-#tile8text {
-  height: 31px;
-  width: 100%;
-  background-color: #86D5F5;
-  font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
-  text-align: center;
-  color: white;
-  vertical-align: middle;
-  padding-top: 5px;
-}
-
 /* TILE 9 */
 
 #tile9 {
@@ -405,35 +214,4 @@ font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
   height: 213px;
   width: 430px;
   display: inline-block;
-}
-
-#infotile9 {
-  height: 131px;
-  width: 266px;
-  position: relative;
-  margin-left: 50%;
-  left: -133px;
-}
-
-#tile9badge {
-  background-color: #73CFED;
-  width: 100%;
-  height: 100px;
-  color: white;
-  font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
-  font-size: 24px;
-  text-align: center;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-}
-
-#tile9text {
-  height: 31px;
-  width: 100%;
-  background-color: #86D5F5;
-  font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
-  text-align: center;
-  color: white;
-  vertical-align: middle;
-  padding-top: 5px;
 }

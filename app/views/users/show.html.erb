@@ -32,89 +32,78 @@
         <!-- TILE 1 -->
 
 <!--           </section> -->
+
+      <!-- TOP ROW -->
+
         <section id="tile1">
-
-          <section id="infotile1">
-          <section id="dayssince">
-          <section id="tile1number">
-          <%= days_since_last_reward(current_user) %>
+          <section class="topinfotiles">
+            <section class="topnumbertiles">
+              <%= days_since_last_reward(current_user) %>
+            </section>
+              <section class="toptexttiles">
+                <p>DAYS SINCE LAST REWARD</p>
+              </section>
           </section>
-          <section id="tile1text">
-          <p>DAYS SINCE LAST REWARD</p>
-        </section>
-        </section>
-      </section>
-
         </section>
 
         <section id="tile2">
-
-        <section id="infotile2">
-        <section id="mostrewarded">
-        <section id="tile2badge">
-        <% if @my_badges.any? %>
-          <%= most_popular_reward(current_user) %><% end %>
+          <section class="topinfotiles">
+            <section class="topnumbertiles">
+              <% if @my_badges.any? %>
+              <%= most_popular_reward(current_user) %><% end %>
+            </section>
+              <section class="toptexttiles">
+                <p>MOST REWARDED REWARD</p>
+              </section>
+          </section>
         </section>
-        <section id="tile2text">
-          <p>MOST REWARDED REWARD</p>
-        </section>
-        </section>
-      </section>
-      </section>
 
       <section id="tile3">
-
-        <section id="infotile3">
-        <section id="totalrewards">
-          <section id="tile3number">
-        <% if @my_badges.any? %>
-          <%= total_number_of_rewards(current_user) %><% end %>
-        </section>
-        <section id="tile3text">
-          <p>TOTAL NUMBER OF REWARDS</p>
-        </section>
+        <section class="topinfotiles">
+          <section class="topnumbertiles">
+            <% if @my_badges.any? %>
+            <%= total_number_of_rewards(current_user) %><% end %>
+          </section>
+            <section class="toptexttiles">
+              <p>TOTAL NUMBER OF REWARDS</p>
+            </section>
         </section>
       </section>
-      </section>
-    </section>
 
-      
+    <!-- MIDDLE ROW  -->
 
-    </section>
     <section id="tile4">
-    <section id="infotile4">
-    <section class="myrewards">
-      <section class="tile4badge">
+      <section class="middleinfotiles">
+        <section class="middlebadgetiles">
           <% if @my_badges.length > 0 %>
             <%= show_last_six_rewards(current_user, 1) %>
           <% else %>
             <p>There is no reward</p>
           <% end %>
-    </section>
-    <section id="tile4text">
-      <h3>My Rewards</h3>
-    </section>
-    </section>
         </section>
+          <section class="middletexttiles">
+            <h3>My Rewards</h3>
+          </section>
+      </section>
     </section>
 
     <section id="tile5">
-      <section id="infotile5">
-        <section id="tile5badge">
+      <section class="middleinfotiles">
+        <section class="middlebadgetiles">
           <% if @my_badges.length > 1 %>
             <%= show_last_six_rewards(current_user, 2) %>
           <% else %>
             <p>There is no reward</p>
           <% end %>
         </section>
-          <section id="tile5text">
+          <section class="middletexttiles">
           </section>
       </section>
     </section>
 
       <section id="tile6">
-        <section id="infotile6">
-          <section id="tile6badge">
+        <section class="middleinfotiles">
+          <section class="middlebadgetiles">
         <section>
           <% if @my_badges.length > 2 %>
             <%= show_last_six_rewards(current_user, 3) %>
@@ -123,48 +112,50 @@
           <% end %>
         </section>
         </section>
-        <section id="tile6text">
+        <section class="middletexttiles">
         </section>
       </section>
     </section>
 
+    <!-- BOTTOM ROW -->
+
     <section id="tile7">
-      <section id="infotile7">
-  <section class="recentrewards">
-      <section class="recentrewardsdisplay">
-        <section id="tile7badge">
+      <section class="bottominfotiles">
+        <section class="bottombadgetiles">
           <% if @all_badges.length > 0 %>
           <%= show_recent_badge(0) %><% end %>
         </section>
-          <section id="tile7text">
-      <h3>Recent Rewards:</h3>
-    </section>
+          <section class="bottomtexttiles">
+            <h3>Recent Rewards:</h3>
+          </section>
       </section>
     </section>
-  </section>
-</section>
 
     <section id="tile8">
-    <section id="infotile8">
-        <section id="tile8badge">
+      <section class="bottominfotiles">
+        <section class="bottombadgetiles">
           <% if @all_badges.length > 1 %>
           <%= show_recent_badge(1) %><% end %>
         </section>
-        <section id="tile8text">
-        </section>
+          <section class="bottomtexttiles">
+          </section>
       </section>
     </section>
 
         <section id="tile9">
-        <section id="infotile9">
-          <section id="tile9badge">
-          <% if @all_badges.length > 2 %>
-          <%= show_recent_badge(2) %><% end %>
-        </section>
-        <section id="tile9text">
-        </section>
+          <section class="bottominfotiles">
+            <section class="bottombadgetiles">
+              <% if @all_badges.length > 2 %>
+              <%= show_recent_badge(2) %><% end %>
+            </section>
+              <section class="bottomtexttiles">
+              </section>
         </section>
       </section>
+
+      <!--  -->
+
+
     <section class="rewardlink">
       <!-- This is the button that Bob can click on to issue a badge to an employee -->
       <% if current_user.email=='bob@test.com' %>
