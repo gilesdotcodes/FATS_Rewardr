@@ -5,6 +5,7 @@ class UsersController < ApplicationController
   def show
     @my_badges = []
     @my_badges = Badge.where(:user_id => current_user.id)
+    @all_badges = Badge.last(3).reverse
   end
 
 end

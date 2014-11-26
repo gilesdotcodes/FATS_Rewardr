@@ -51,6 +51,7 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+    chronic (0.10.2)
     coderay (1.1.0)
     coffee-rails (4.1.0)
       coffee-script (>= 2.2.0)
@@ -62,6 +63,8 @@ GEM
     columnize (0.8.9)
     debug_inspector (0.0.2)
     debugger-linecache (1.2.0)
+    delorean (2.1.0)
+      chronic
     devise (3.4.1)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -211,6 +214,7 @@ DEPENDENCIES
   byebug
   capybara
   coffee-rails (~> 4.1.0)
+  delorean
   devise
   jbuilder (~> 2.0)
   jquery-rails (~> 4.0.0.beta2)
