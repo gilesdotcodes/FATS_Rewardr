@@ -1,18 +1,236 @@
-* {font-family: "proxima-nova-soft",sans-serif;  -webkit-font-smoothing: antialiased;}
-
-.dashboard {
-  border: black 2px solid;
-  width: 1800px;
-  height: 1800px;
-  z-index:2;
-  background-color: salmon;
+body {
+  height: 640px;
+  width: 1290px;
+  background-color: #fff8ee;
 }
 
-.menu {
-  border: black 2px solid;
-  float: left;
-  height: 100%;
-  width: 15%;
-  z-index:1;
-  background-color: yellow;
+/*              */
+/*              */
+/* TILE CLASSES */
+/*              */
+/*              */
+
+.infotile {
+  height: 131px;
+  width: 266px;
+  position: relative;
+  margin-left: 50%;
+  left: -133px;
+  margin-top: 50%;
+  top: -165.5px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+.textcenter {
+  width: 250px;
+  height: 50px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/*                   */
+/*                   */
+/* TOP TILES CLASSES */
+/*                   */
+/*                   */
+
+.topnumbertiles {
+  width: 100%;
+  height: 100px;
+  color: #2F4F4F;
+  font-family: "proxima-nova-soft",sans-serif;  -webkit-font-smoothing: antialiased;
+  font-size: 80px;
+  text-align: center;
+  transition: all .2s ease-in-out;
+}
+
+.topnumbertiles:hover {
+  transform: scale(1.1);
+}
+
+.toptexttiles {
+  height: 31px;
+  width: 100%;
+  background-color: #2F4F4F;
+  font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  color: white;
+  vertical-align: middle;
+  border-radius: 3px;
+  font-size: 14px;
+  vertical-align: text-bottom;
+  box-shadow: 1px 1px 10px #C1C1C1;
+}
+
+/*      TILE 1      */
+
+#tile1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 430px;
+  height: 213px;
+  display: inline;
+}
+
+
+#tile2 {
+  position: absolute;
+  left: 430px;
+  top: 0px;
+  height: 213px;
+  width: 430px;
+  display: inline;
+}
+
+/*      TILE 3      */
+
+#tile3 {
+  position: absolute;
+  left: 860px;
+  top: 0px;
+  height: 213px;
+  width: 430px;
+  display: inline-block;
+}
+
+/*                     */
+/*                     */
+/* MIDDLE TILE CLASSES */
+/*                     */
+/*                     */
+
+/*       CLASSES       */
+
+.middlebadgetiles {
+  width: 100%;
+  height: 100px;
+  -webkit-font-smoothing: antialiased;
+  color: white;
+  font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
+  font-size: 14px;
+  text-align: center;
+  color: #2F4F4F;
+  transition: all .2s ease-in-out;
+}
+
+.middlebadgetiles:hover {
+  transform: scale(1.1);
+}
+
+.middletexttiles {
+  height: 31px;
+  width: 100%;
+  background-color: #2F4F4F;
+  font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
+  text-align: center;
+  color: white;
+  vertical-align: middle;
+  border-radius: 3px;
+  font-size: 14px;
+  box-shadow: 1px 1px 10px #C1C1C1;
+}
+
+/*      TILE 4      */
+
+#tile4 {
+  position: absolute;
+  left: 0px;
+  top: 213px;
+  height: 213px;
+  width: 430px;
+  display: inline;
+}
+
+/*      TILE 5      */
+
+#tile5 {
+  position: absolute;
+  left: 430px;
+  top: 213px;
+  height: 213px;
+  width: 430px;
+  display: inline-block;
+}
+
+/* TILE 6 */
+
+#tile6 {
+  position: absolute;
+  left: 860px;
+  top: 213px;
+  height: 213px;
+  width: 430px;
+  display: inline;
+}
+
+/*                    */
+/*                    */
+/*    BOTTOM TILES    */
+/*                    */
+/*                    */
+
+/*      CLASSES       */
+
+.bottombadgetiles {
+  width: 100%;
+  height: 100px;
+  color: white;
+  font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
+  font-size: 24px;
+  text-align: center;
+  color: #2F4F4F;
+  transition: all .2s ease-in-out;
+}
+
+.bottombadgetiles:hover {
+  transform: scale(1.1);
+}
+
+.bottomtexttiles {
+  height: 31px;
+  width: 100%;
+  background-color: #2F4F4F;
+  font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
+  text-align: center;
+  color: white;
+  vertical-align: middle;
+  font-size: 14px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 10px #C1C1C1;
+}
+
+/*      TILE 7      */
+
+#tile7 {
+  position: absolute;
+  left: 0px;
+  top: 426px;
+  height: 213px;
+  width: 430px;
+  display: inline-block;
+}
+
+/*      TILE 8      */
+
+#tile8 {
+  position: absolute;
+  left: 430px;
+  top: 426px;
+  height: 213px;
+  width: 430px;
+  display: inline-block;
+}
+
+/*      TILE 9      */
+
+#tile9 {
+  position: absolute;
+  left: 860px;
+  top: 426px;
+  height: 213px;
+  width: 430px;
+  display: inline-block;
 }
