@@ -5,23 +5,11 @@ body {
   width: 1290px;
 }
 
-.dashboard {
-
-}
-
 .menu {
 
 }
 
-#tile1 {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 430px;
-  height: 213px;
-  background-color: salmon;
-  display: inline;
-}
+/* TILE WRAPS */
 
 #tile2 {
   position: absolute;
@@ -101,4 +89,42 @@ body {
   width: 430px;
   background-color: red;
   display: inline-block;
+}
+
+/* SUB TILES */
+
+#tile1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 430px;
+  height: 213px;
+  display: inline;
+}
+
+#infotile1 {
+  height: 131px;
+  width: 266px;
+  position: relative;
+  margin-left: 50%;
+  left: -133px;
+}
+
+#tile1number {
+  background-color: #94C83D;
+  width: 100%;
+  height: 100px;
+  color: white;
+  font-family: "proxima-nova-soft",sans-serif;  -webkit-font-smoothing: antialiased;
+  font-size: 80px;
+  text-align: center;
+  }
+
+#tile1text {
+  height: 31px;
+  width: 100%;
+  background-color: #ADD149;
+font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
+  text-align: center;
+  color: white;
 }
