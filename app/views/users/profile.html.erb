@@ -1,0 +1,69 @@
+<section class="wrapbadgepage">
+  
+  <section class="holderbadgepage">
+   
+    <section class="navbar">
+      <a href="/users/show"><img src="/images/logo-01.png" class="navlogo"></a>
+      <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: "signoutnav" %>
+      <%= link_to 'Dashboard', users_show_path, class: 'signoutnav' %>
+      <%= link_to 'Edit Profile', edit_user_registration_path, class: 'signoutnav'%>
+      <a href="users/profile"><section class="avatarnav"></section></a>
+
+    </section>
+
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+      
+  <p id='profile-flash-notice'><%= notice %></p>
+
+  <h1 id='h1-profile-page-name'><%= current_user.name %>'s Profile Page</h1>
+
+  <section id='profile-page-container'>
+
+    <section id='my-badges-archive' class='profile-page-information-box'>
+
+    <h2 class='h2-header-title'>My Badges Archive:</h2>
+    
+    <% if @my_badges.any? %>
+
+      <ul id='badge-archive'>
+      <% @my_badges.each do |badge| %>
+        <li class='li-award-entry'><img src='/images/small-badge-icon-1.png' alt='Small icon of badge' />Earned <%= badge_name(badge) %> received on <%= badge_award_date(badge) %></li>
+      <% end %>
+      </ul>
+    
+    <% else %>
+
+      You have not won any badges yet!
+    
+    <% end %>
+
+    </section>
+
+    <section id='recent-news' class='profile-page-information-box'>
+
+      <h2 class='h2-header-title'>Recent News:</h2>  
+
+      <% if @all_badges.any? %>
+
+        <ul id='recent-badges-awarded'>
+          <% @all_badges.each do |badge| %>
+            <li class='li-award-entry'><img src='/images/small-badge-icon-2.png' alt='Small icon of badge' /><%= badge_name(badge) %> earned by <%= badge_recipient_name(badge) %> on <%= badge_award_date(badge) %></li>
+          <% end %>
+        </ul>
+
+      <% else %>
+
+        There are no recent news items!
+
+      <% end %>
+
+    </section>
+
+
+  </section>
+
+</section>

@@ -11,8 +11,8 @@ module ApplicationHelper
   def sign_in(email)
     visit '/'
     click_link 'Existing User Login'
-    fill_in 'Email', with: email
-    fill_in 'Password', with: '12345678'
+    fill_in 'user_email', with: email
+    fill_in 'user_password', with: '12345678'
     click_button 'Log in'
   end
 
@@ -37,4 +37,13 @@ module ApplicationHelper
   end
 
 
+  def award_3_badges
+    award_regular_badge('Test Employee', 'Star Man')
+    click_link 'Sign out'
+    award_regular_badge('Bob Owner', 'Office Angel')
+    click_link 'Sign out'
+    award_regular_badge('Test Employee', 'Office Angel')
+    click_link 'Sign out'
+  end
+  
 end
