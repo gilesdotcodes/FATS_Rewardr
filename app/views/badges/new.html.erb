@@ -16,10 +16,20 @@
         <%= form_for @badge do |f| %>
           <%= f.label :employee %>
           <%= f.collection_select :user, User.all, :id, :name %>
-          <%= f.label :badge %>
-          <%= f.collection_select :name, Badge::BADGES, :to_s, :titleize %>
+          <%= f.hidden_field :name %>
           <%= f.submit 'Reward' %>
         <% end %>
+          <br />
+          <br />
+          <section class="rewarding">
+              <!-- <button id="left"></button> -->
+              <section class="reward">
+                <img src='/images/mail-01.png' id="reward_image"/>
+              </section>
+              <button id="right"></button>
+          </section>
+          <br />
+          <br />
       </section>
 
       <br />
@@ -42,19 +52,6 @@
       <br />
       <br />
 
-    <section class="rewarding">
-
-      <!-- <section class="buttonleft"> -->
-        <button id="left"></button>
-      <!-- </section> -->
-
-        <section class="reward">
-          <img src="/images/logo_black-01.png" id="reward_image"/>
-        </section>
-
-
-
-    </section>
 
 
 
