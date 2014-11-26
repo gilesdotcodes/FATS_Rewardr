@@ -6,37 +6,10 @@
 
 <body>
 
-
-<!--     <section class="menu">
-
-      <section class="title">
-        Profile
-      </section>
-
-      <section class="username">
-        <%= current_user.name %>
-      </section>
-
-      <section class="signout">
-        <% if user_signed_in? %>
-          <%= link_to 'Sign out', destroy_user_session_path, method: :delete %>
-        <% end %>
-      </section>
-
-    </section> -->
-    <!-- Boys, I have added a class to the next section without doing any CSS -->
-<!--     <section class="mystats">
-      <h3>My Stats:</h3>
-          <section class="statsdisplay"> -->
-        
-        <!-- TILE 1 -->
-
-<!--           </section> -->
-
       <!-- TOP ROW -->
 
         <section id="tile1">
-          <section class="topinfotiles">
+          <section class="infotile">
             <section class="topnumbertiles">
               <%= days_since_last_reward(current_user) %>
             </section>
@@ -47,7 +20,7 @@
         </section>
 
         <section id="tile2">
-          <section class="topinfotiles">
+          <section class="infotile">
             <section class="topnumbertiles">
               <% if @my_badges.any? %>
               <%= most_popular_reward(current_user) %><% end %>
@@ -59,7 +32,7 @@
         </section>
 
       <section id="tile3">
-        <section class="topinfotiles">
+        <section class="infotile">
           <section class="topnumbertiles">
             <% if @my_badges.any? %>
             <%= total_number_of_rewards(current_user) %><% end %>
@@ -73,7 +46,7 @@
     <!-- MIDDLE ROW  -->
 
     <section id="tile4">
-      <section class="middleinfotiles">
+      <section class="infotile">
         <section class="middlebadgetiles">
           <% if @my_badges.length > 0 %>
             <%= show_last_six_rewards(current_user, 1) %>
@@ -88,7 +61,7 @@
     </section>
 
     <section id="tile5">
-      <section class="middleinfotiles">
+      <section class="infotile">
         <section class="middlebadgetiles">
           <% if @my_badges.length > 1 %>
             <%= show_last_six_rewards(current_user, 2) %>
@@ -102,7 +75,7 @@
     </section>
 
       <section id="tile6">
-        <section class="middleinfotiles">
+        <section class="infotile">
           <section class="middlebadgetiles">
         <section>
           <% if @my_badges.length > 2 %>
@@ -120,7 +93,7 @@
     <!-- BOTTOM ROW -->
 
     <section id="tile7">
-      <section class="bottominfotiles">
+      <section class="infotile">
         <section class="bottombadgetiles">
           <% if @all_badges.length > 0 %>
           <%= show_recent_badge(0) %><% end %>
@@ -132,7 +105,7 @@
     </section>
 
     <section id="tile8">
-      <section class="bottominfotiles">
+      <section class="infotile">
         <section class="bottombadgetiles">
           <% if @all_badges.length > 1 %>
           <%= show_recent_badge(1) %><% end %>
@@ -143,7 +116,7 @@
     </section>
 
         <section id="tile9">
-          <section class="bottominfotiles">
+          <section class="infotile">
             <section class="bottombadgetiles">
               <% if @all_badges.length > 2 %>
               <%= show_recent_badge(2) %><% end %>
@@ -152,18 +125,6 @@
               </section>
         </section>
       </section>
-
-      <!--  -->
-
-
-    <section class="rewardlink">
-      <!-- This is the button that Bob can click on to issue a badge to an employee -->
-      <% if current_user.email=='bob@test.com' %>
-        <%= link_to 'Reward Employee', new_badge_path, 'data-no-turbolink' => true %>
-      <% end %>
-    </section>
-
-  </section>
 
 </body>
 

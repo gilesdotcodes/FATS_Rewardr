@@ -5,17 +5,23 @@ body {
 
 /* */
 /* */
-/* TOP TILES CLASSES */
+/* TILE CLASSES */
 /* */
 /* */
 
-.topinfotiles {
+.infotile {
   height: 131px;
   width: 266px;
   position: relative;
   margin-left: 50%;
   left: -133px;
 }
+
+/* */
+/* */
+/* TOP TILES CLASSES */
+/* */
+/* */
 
 .topnumbertiles {
   background-color: #94C83D;
@@ -80,14 +86,6 @@ body {
 
 /* CLASSES */
 
-.middleinfotiles {
-  height: 131px;
-  width: 266px;
-  position: relative;
-  margin-left: 50%;
-  left: -133px;
-}
-
 .middlebadgetiles {
   background-color: #F06FA6;
   width: 100%;
@@ -151,14 +149,6 @@ body {
 /* */
 
 /* CLASSES */
-
-.bottominfotiles {
-  height: 131px;
-  width: 266px;
-  position: relative;
-  margin-left: 50%;
-  left: -133px;
-}
 
 .bottombadgetiles {
   background-color: #73CFED;
