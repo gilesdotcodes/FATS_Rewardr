@@ -15,7 +15,7 @@
   height: 90%;
   width: 90%;
   z-index: 1;
- /* border-width: 2px;
+  /*border-width: 2px;
   border-color: black;
   border-style: solid;
   background-color: yellow;*/
@@ -23,6 +23,16 @@
   display: block;
   margin-left: 5%;
   margin-right: 5%;
+}
+
+.main {
+  margin-top: 62px;
+  width: 90%;
+  height: 100%;
+  position: fixed;
+  /*border-width: 2px;
+  border-color: black;
+  border-style: solid;*/
 }
 
 /*==============
@@ -33,14 +43,26 @@
   /*border-width: 2px;
   border-color: black;
   border-style: solid;*/
-  width: 99.8%;
+  position: fixed;
+  width: 90%;
   background-color: #2F4F4F;
   height: 60px;
   margin-top:1px;
 }
 
 .navlogo {
-  padding: 15px 10px 10px 10px;
+  padding: 13px 0 0 10px;
   height: 30px;
   width: 200px;
+}
+
+.signoutnav {
+  text-decoration:none;
+  display: inline;
+  float: right;
+  color: white;
+  font-size: 1.2em;
+  font-family: "proxima-nova-alt",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  padding: 19px 10px 0 10px;
 }

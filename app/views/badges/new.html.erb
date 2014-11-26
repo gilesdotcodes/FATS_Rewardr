@@ -2,7 +2,12 @@
   <section class="holderbadgepage">
     <section class="navbar">
 
+      <!-- <section class="navlogo"> -->
         <img src="/images/logo-01.png" class="navlogo">
+      <!-- </section> -->
+      <!-- <section class="signoutnav"> -->
+        <a href="/users/sign_out" class="signoutnav">Sign Out</a>
+      <!-- </section> -->
 
     </section>
 
@@ -11,31 +16,32 @@
 
 
 
+    <section class="main">
+      <h3>Reward your Employees:</h3>
 
-    <h3>Reward your Employees:</h3>
+      <section id='built_in_badges'>
+        <%= form_for @badge do |f| %>
+          <%= f.label :employee %>
+          <%= f.collection_select :user, User.all, :id, :name %>
+          <%= f.label :badge %>
+          <%= f.collection_select :name, Badge::BADGES, :to_s, :titleize %>
+          <%= f.submit 'Reward' %>
+        <% end %>
+      </section>
 
-    <section id='built_in_badges'>
-      <%= form_for @badge do |f| %>
-        <%= f.label :employee %>
-        <%= f.collection_select :user, User.all, :id, :name %>
-        <%= f.label :badge %>
-        <%= f.collection_select :name, Badge::BADGES, :to_s, :titleize %>
-        <%= f.submit 'Reward' %>
+      <br />
+      <br />
+
+      <section id='custom_badges'>
+        <h3>Or create your own Reward below:</h3>
+        <%= form_for @badge do |f| %>
+          <%= f.label :employee %>
+          <%= f.collection_select :user, User.all, :id, :name %>
+          <%= f.label :name %>
+          <%= f.text_field :name %>
+          <%= f.submit 'Custom Reward' %>
       <% end %>
-    </section>
-
-    <br />
-    <br />
-
-    <section id='custom_badges'>
-      <h3>Or create your own Reward below:</h3>
-      <%= form_for @badge do |f| %>
-        <%= f.label :employee %>
-        <%= f.collection_select :user, User.all, :id, :name %>
-        <%= f.label :name %>
-        <%= f.text_field :name %>
-        <%= f.submit 'Custom Reward' %>
-    <% end %>
+      </section>
     </section>
 
   </section>
