@@ -49,22 +49,32 @@
 
         <section id="tile2">
 
+        <section id="infotile2">
         <section id="mostrewarded">
+        <section id="tile2badge">
         <% if @my_badges.any? %>
           <%= most_popular_reward(current_user) %><% end %>
+        </section>
+        <section id="tile2text">
           <p>MOST REWARDED REWARD</p>
         </section>
-
+        </section>
+      </section>
       </section>
 
       <section id="tile3">
 
+        <section id="infotile3">
         <section id="totalrewards">
+          <section id="tile3number">
         <% if @my_badges.any? %>
           <%= total_number_of_rewards(current_user) %><% end %>
+        </section>
+        <section id="tile3text">
           <p>TOTAL NUMBER OF REWARDS</p>
         </section>
-
+        </section>
+      </section>
       </section>
     </section>
 

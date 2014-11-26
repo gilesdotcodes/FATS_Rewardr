@@ -11,26 +11,6 @@ body {
 
 /* TILE WRAPS */
 
-#tile2 {
-  position: absolute;
-  left: 430px;
-  top: 0px;
-  height: 213px;
-  width: 430px;
-  background-color: blue;
-  display: inline;
-}
-
-#tile3 {
-  position: absolute;
-  left: 860px;
-  top: 0px;
-  height: 213px;
-  width: 430px;
-  background-color: green;
-  display: inline-block;
-}
-
 #tile4 {
   position: absolute;
   left: 0px;
@@ -91,7 +71,7 @@ body {
   display: inline-block;
 }
 
-/* SUB TILES */
+/* TILE 1 */
 
 #tile1 {
   position: absolute;
@@ -140,6 +120,124 @@ body {
   }
 
 #tile1text {
+  height: 31px;
+  width: 100%;
+  background-color: #ADD149;
+font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
+  text-align: center;
+  color: white;
+  vertical-align: middle;
+  padding-top: 5px;
+}
+
+/* TILE 2 */
+
+#tile2 {
+  position: absolute;
+  left: 430px;
+  top: 0px;
+  height: 213px;
+  width: 430px;
+  display: inline;
+}
+
+#infotile2 {
+  height: 131px;
+  width: 266px;
+  position: relative;
+  margin-left: 50%;
+  left: -133px;
+}
+
+#tile2badge {
+  background-color: #94C83D;
+  width: 100%;
+  height: 100px;
+  color: white;
+  font-family: "proxima-nova-soft",sans-serif;  -webkit-font-smoothing: antialiased;
+  font-size: 80px;
+  text-align: center;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  text-shadow:
+    0 1px 0px #5E7F27,
+    0px 0 0px #5E7F27,
+    0px 2px 1px #5E7F27,
+    0px 1px 1px #5E7F27,
+    0px 3px 2px #5E7F27,
+    0px 2px 2px #5E7F27,
+    0px 4px 2px #5E7F27,
+    0px 3px 3px #5E7F27,
+    0px 5px 3px #5E7F27,
+    0px 4px 2px #5E7F27,
+    0px 6px 2px #5E7F27,
+    0px 5px 2px #5E7F27,
+    0px 7px 1px #5E7F27,
+    0px 6px 1px #5E7F27,
+    0px 8px 0px #5E7F27,
+    0px 7px 0px #5E7F27;
+  }
+
+#tile2text {
+  height: 31px;
+  width: 100%;
+  background-color: #ADD149;
+font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
+  text-align: center;
+  color: white;
+  vertical-align: middle;
+  padding-top: 5px;
+}
+
+/* TILE 3 */
+
+#tile3 {
+  position: absolute;
+  left: 860px;
+  top: 0px;
+  height: 213px;
+  width: 430px;
+  display: inline-block;
+}
+
+#infotile3 {
+  height: 131px;
+  width: 266px;
+  position: relative;
+  margin-left: 50%;
+  left: -133px;
+}
+
+#tile3number {
+  background-color: #94C83D;
+  width: 100%;
+  height: 100px;
+  color: white;
+  font-family: "proxima-nova-soft",sans-serif;  -webkit-font-smoothing: antialiased;
+  font-size: 80px;
+  text-align: center;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  text-shadow:
+    0 1px 0px #5E7F27,
+    0px 0 0px #5E7F27,
+    0px 2px 1px #5E7F27,
+    0px 1px 1px #5E7F27,
+    0px 3px 2px #5E7F27,
+    0px 2px 2px #5E7F27,
+    0px 4px 2px #5E7F27,
+    0px 3px 3px #5E7F27,
+    0px 5px 3px #5E7F27,
+    0px 4px 2px #5E7F27,
+    0px 6px 2px #5E7F27,
+    0px 5px 2px #5E7F27,
+    0px 7px 1px #5E7F27,
+    0px 6px 1px #5E7F27,
+    0px 8px 0px #5E7F27,
+    0px 7px 0px #5E7F27;
+  }
+
+  #tile3text {
   height: 31px;
   width: 100%;
   background-color: #ADD149;
