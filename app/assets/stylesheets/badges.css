@@ -1,0 +1,45 @@
+.wrapbadgepage {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-position: -100px -500px;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 1800px 1800px;
+  position: fixed;
+  z-index: 0;
+  background-color: salmon;
+}
+
+.holderbadgepage {
+  height: 90%;
+  width: 90%;
+  z-index: 1;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+  background-color: yellow;
+  position: fixed;
+  display: block;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/*==============
+    NAVBAR
+==============*/
+
+.navbar {
+  width: 99.9%;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+  background-color: green;
+  height: 60px;
+}
+
+.navlogo {
+  padding: 15px 10px 10px 10px;
+  height: 30px;
+  width: 200px;
+}
