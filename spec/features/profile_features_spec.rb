@@ -37,7 +37,7 @@ describe 'Profile page' do
       expect(page).to have_link('Edit My Profile')
     end
 
-    context 'the Recent News Section' do
+    context 'the Recent News section' do
 
       it 'should list badges given to all employees' do
         click_link 'Return to Personal Dashboard'
@@ -80,6 +80,35 @@ describe 'Profile page' do
       end
 
     end
+
+    context 'the Edit Profile form' do
+
+      it 'should allow user to update his or her name' do
+        click_link 'Edit My Profile'
+        fill_in 'Name', with: 'New Employee'
+        click_button 'Update'
+        expect(page).to have_content('Thank you! Your profile has been successfully updated.')
+      end
+
+      it 'should allow user to update his or her email address' do
+        click_link 'Edit My Profile'
+        fill_in 'Email', with: 'new_employee@test.com'
+        click_button 'Update'
+        expect(page).to have_content('Thank you! Your profile has been successfully updated.')
+      end
+
+      it 'should allow user to update his or her password' do
+        click_link 'Edit My Profile'
+        fill_in 'Password', with: 'abcd1234'
+        fill_in 'Password confirmation', with: 'abcd1234'
+        click_button 'Update'
+        expect(page).to have_content('Thank you! Your profile has been successfully updated.')
+      end
+
+
+    end
+
+
 
   end
 

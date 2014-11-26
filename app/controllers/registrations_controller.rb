@@ -10,9 +10,9 @@ class RegistrationsController < Devise::RegistrationsController
 
     @user = User.find(current_user.id)
     if @user.update_attributes(account_update_params)
-      set_flash_message :notice, :updated
+      flash[:notice] = 'Thank you! Your profile has been successfully updated.'
       sign_in @user, :bypass => true
-      redirect_to after_update_path_for(@user)
+      redirect_to users_profile_path
     else
       render "edit"
     end
