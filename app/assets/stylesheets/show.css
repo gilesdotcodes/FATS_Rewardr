@@ -1,18 +1,38 @@
 * {font-family: "proxima-nova-soft",sans-serif;  -webkit-font-smoothing: antialiased;}
 
 .dashboard {
-  border: black 2px solid;
-  width: 1800px;
-  height: 1800px;
-  z-index:2;
-  background-color: salmon;
+
 }
 
 .menu {
-  border: black 2px solid;
-  float: left;
-  height: 100%;
-  width: 15%;
-  z-index:1;
-  background-color: yellow;
+
+}
+
+#tile1 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 430px;
+  height: 213px;
+  background-color: salmon;
+}
+
+#tile2 {
+  position: fixed;
+  left: 430px;
+  top: 0px;
+  height: 213px;
+  width: 430px;
+  background-color: blue;
+  display: inline;
+}
+
+#tile3 {
+  position: fixed;
+  left: 860px;
+  top: 0px;
+  height: 213px;
+  width: 430px;
+  background-color: green;
+  display: inline-block;
 }

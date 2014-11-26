@@ -24,19 +24,32 @@
     <!-- Boys, I have added a class to the next section without doing any CSS -->
     <section class="mystats">
       <h3>My Stats:</h3>
-      <section class="statsdisplay">
+          <section class="statsdisplay">
         
-        <section id="dayssince">
+        <!-- TILE 1 -->
+
+          </section>
+        <section id="tile1">
+
+          <section id="dayssince">
 
           <%= days_since_last_reward(current_user) %>
           <p>DAYS SINCE LAST REWARD</p>
+          </section>
+
         </section>
+
+        <section id="tile2">
 
         <section id="mostrewarded">
         <% if @my_badges.any? %>
           <%= most_popular_reward(current_user) %><% end %>
           <p>MOST REWARDED REWARD</p>
         </section>
+
+      </section>
+
+      <section id="tile3">
 
         <section id="totalrewards">
         <% if @my_badges.any? %>
@@ -45,6 +58,7 @@
         </section>
 
       </section>
+    </section>
 
       
 
