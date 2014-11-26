@@ -8,17 +8,17 @@
   background-size: 1800px 1800px;
   position: fixed;
   z-index: 0;
-  background-color: salmon;
+  /*background-color: salmon;*/
 }
 
 .holderbadgepage {
   height: 90%;
   width: 90%;
   z-index: 1;
-  border-width: 2px;
+ /* border-width: 2px;
   border-color: black;
   border-style: solid;
-  background-color: yellow;
+  background-color: yellow;*/
   position: fixed;
   display: block;
   margin-left: 5%;
@@ -30,12 +30,13 @@
 ==============*/
 
 .navbar {
-  width: 99.9%;
-  border-width: 2px;
+  /*border-width: 2px;
   border-color: black;
-  border-style: solid;
-  background-color: green;
+  border-style: solid;*/
+  width: 99.8%;
+  background-color: #2F4F4F;
   height: 60px;
+  margin-top:1px;
 }
 
 .navlogo {
