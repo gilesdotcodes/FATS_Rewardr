@@ -4,6 +4,23 @@ body {
   background-color: #fff8ee;
 }
 
+#tileswrap {
+  position: relative;
+  margin-top:30px;
+}
+
+#topwrap {
+  position:relative;
+}
+
+#middlewrap {
+  position: relative;
+}
+
+#bottomwrap {
+  position: relative;
+}
+
 /*              */
 /*              */
 /* TILE CLASSES */
@@ -29,6 +46,10 @@ body {
   margin-bottom: auto;
 }
 
+.stringformat {
+  font-size: 10px;
+}
+
 /*                   */
 /*                   */
 /* TOP TILES CLASSES */
@@ -40,7 +61,7 @@ body {
   height: 100px;
   color: #2F4F4F;
   font-family: "proxima-nova-soft",sans-serif;  -webkit-font-smoothing: antialiased;
-  font-size: 80px;
+  font-size: 50px;
   text-align: center;
   transition: all .2s ease-in-out;
 }
@@ -60,7 +81,6 @@ body {
   vertical-align: middle;
   border-radius: 3px;
   font-size: 14px;
-  vertical-align: text-bottom;
   box-shadow: 1px 1px 10px #C1C1C1;
 }
 

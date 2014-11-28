@@ -6,7 +6,19 @@
 
 <body>
 
+  <section class="navbar">
+      <a href="/users/show"><img src="/images/logo-01.png" class="navlogo"></a>
+      <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: "signoutnav" %>
+      <%= link_to 'Dashboard', users_show_path, class: 'signoutnav' %>
+      <%= link_to 'Edit Profile', edit_user_registration_path, class: 'signoutnav'%>
+      <a href="/users/profile"><section class="avatarnav"></section></a>
+  </section>ras
+
       <!-- TOP ROW -->
+
+      <section id="tileswrap">
+
+        <section id="topwrap">
 
         <section id="tile1">
           <section class="infotile">
@@ -43,7 +55,11 @@
         </section>
       </section>
 
+    </section>
+
     <!-- MIDDLE ROW  -->
+
+    <section id ="middlewrap">
 
     <section id="tile4">
       <section class="infotile">
@@ -55,7 +71,7 @@
           <% end %>
         </section>
           <section class="middletexttiles">
-            <h3>My Rewards</h3>
+            <h3>LATEST REWARD</h3>
           </section>
       </section>
     </section>
@@ -70,6 +86,7 @@
           <% end %>
         </section>
           <section class="middletexttiles">
+            <h3>SECOND MOST RECENT REWARD</h3>
           </section>
       </section>
     </section>
@@ -86,11 +103,16 @@
         </section>
         </section>
         <section class="middletexttiles">
+          <h3>THIRD MOST RECENT AWARD</h3>
         </section>
       </section>
     </section>
 
+  </section>
+
     <!-- BOTTOM ROW -->
+
+    <section id="bottomwrap">
 
     <section id="tile7">
       <section class="infotile">
@@ -125,6 +147,8 @@
           </section>
       </section>
     </section>
+
+  </section>
 
 </body>
 
