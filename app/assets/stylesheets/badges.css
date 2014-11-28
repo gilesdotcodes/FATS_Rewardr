@@ -106,6 +106,10 @@
   position: relative;
 }
 
+.reward-heading {
+  padding-top: 10px;
+}
+
 .preset-holder {
   width: 99%;
   height: 100%;
@@ -206,6 +210,10 @@ img {
   background-color: #2F4F4F;
 }
 
+.custom-heading {
+  padding-top: 10px;
+}
+
 #custom_badges {
   text-align: center;
   font-family: "proxima-nova-alt",sans-serif;
@@ -227,13 +235,19 @@ img {
 .custom-badges-form#name {
   margin-left: auto;
   margin-right: auto;
+  width: 550px;
+}
+
+.custom-badges-form input[type=text] {
+  padding: 5px;
 }
 
 .submit1 {
+  font-family: "proxima-nova-alt",sans-serif;
+  -webkit-font-smoothing: antialiased;
   font-size: 1.2em;
   position: relative;
   width: 200px;
   margin-left: auto;
   margin-right: auto;
 }
-
