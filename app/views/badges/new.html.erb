@@ -1,13 +1,13 @@
 <section class="wrapbadgepage">
   <section class="holderbadgepage">
     <section class="navbar">
-
       <a href="/users/show"><img src="/images/logo-01.png" class="navlogo"></a>
       <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: "signoutnav" %>
-      <a href="users/profile"><section class="avatarnav"></section></a>
+      <%= link_to 'Dashboard', users_show_path, class: 'signoutnav' %>
+      <%= link_to 'Edit Profile', edit_user_registration_path, class: 'signoutnav'%>
+      <a href="/users/profile"><section class="avatarnav"></section></a>
 
     </section>
-
     <section class="main-body">
       <section class="main-preset">
         <section class="preset-holder">
