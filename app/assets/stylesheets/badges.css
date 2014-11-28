@@ -17,29 +17,27 @@
 
 .holderbadgepage {
   height: 100%;
-  width: 90%;
+  width: 100%;
   z-index: 1;
   position: fixed;
   display: block;
-  margin-left: 5%;
-  margin-right: 5%;
 }
 
 .main-body {
-  margin-top: 62px;
-  width: 90%;
+  margin-top: 72px;
+  width: 100%;
   height: 100%;
   position: fixed;
 }
 
 .main-preset {
-  width: 62.7%;
+  width: 65%;
   height: 100%;
   position: fixed;
 }
 
 .main-custom {
-  width: 30.7%;
+  width: 35%;
   height: 100%;
   float: right;
 }
@@ -91,7 +89,18 @@
   opacity: 1;
 }
 
+.my-edit-profile {
+  width: 20px;
+}
+
+.avatar-square {
+  float: right;
+  display: inline;
+  position: relative;
+}
+
 .avatarnav {
+  position: relative;
   display: inline;
   float: right;
   height:30px;
@@ -116,15 +125,16 @@
   position: relative;
 }
 
-.reward-heading {
-  padding-top: 10px;
-}
-
 .preset-holder {
-  width: 99%;
+  border-width: 0px;
+  border-color: #2F4F4F;
+  border-style: solid;
+  width: 97%;
   height: 100%;
+  margin-left: 1%;
   margin-top: 0.15%;
-  background-color: #2F4F4F;
+  color: #2F4F4F;
+  /*background-color: #2F4F4F;*/
 }
 
 #built_in_badges {
@@ -136,7 +146,7 @@
 
 .reward {
   border-width: 2px;
-  border-color: white;
+  border-color: #2F4F4F;
   border-style: solid;
   width: 250px;
   height: 250px;
@@ -145,30 +155,32 @@
 }
 
 .reward-heading {
-  color: white;
+  /*color: white;*/
   font-family: "proxima-nova-alt",sans-serif;
   -webkit-font-smoothing: antialiased;
   text-align: center;
   font-size: 3em;
+  padding-top: 10px;
 }
 
-img {
+.reward img {
   margin-right: auto;
   margin-left: auto;
-  width: 249px;
-  height: 249px;
+  width: 250px;
+  height: 250px;
 }
 
 .employee {
-  color: white;
+  /*color: white;*/
   font-size: 2em;
   margin-top: 15px;
 }
 
 .dropdown {
-  color: white;
+  /*background: black;*/
+  /*padding-left: 30px;*/
   font-size: 2em;
-  width: 200px;
+  /*width: 500px;*/
   text-align: center;
   position: relative;
   margin-left: auto;
@@ -213,15 +225,15 @@ img {
 ======================*/
 
 .custom-holder {
-  width: 100%;
+  border-width: 1.5px;
+  border-color: #2F4F4F;
+  border-style: dashed;
+  width: 98%;
   height: 100%;
-  margin-right: 10%;
+  /*margin-right: 10%;*/
   margin-top: 0.15%;
-  background-color: #2F4F4F;
-}
-
-.custom-heading {
-  padding-top: 10px;
+  /*background-color: #2F4F4F;*/
+  color: #2F4F4F;
 }
 
 #custom_badges {
@@ -231,10 +243,11 @@ img {
 }
 
 .custom-heading {
-  color: white;
+  /*color: white;*/
   font-family: "proxima-nova-alt",sans-serif;
   -webkit-font-smoothing: antialiased;
-  font-size: 2.8em;
+  font-size: 3em;
+  padding-top: 10px;
 }
 
 .custom-badges-form.employee {

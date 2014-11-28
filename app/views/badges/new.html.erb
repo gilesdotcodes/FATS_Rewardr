@@ -5,7 +5,9 @@
       <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: "signoutnav" %>
       <%= link_to 'Dashboard', users_show_path, class: 'signoutnav' %>
       <%= link_to 'Edit Profile', edit_user_registration_path, class: 'signoutnav'%>
-      <a href="/users/profile"><section class="avatarnav"></section></a>
+      <section class="avatar-square">
+        <a href="/users/profile"><section class="avatarnav"></section></a>
+      </section>
     </section>
     <section class="main-body">
       <section class="main-preset">
@@ -40,8 +42,8 @@
               <section class="custom-badges-form">
                 <%= form_for @badge do |f| %>
                   <%= f.label :employee, class: "employee" %><br><br>
-                  <section class="dropdown">
-                    <%= f.collection_select :user, User.all, :id, :name %>
+                  <section class="dropdownarea">
+                    <%= f.collection_select :user, User.all, :id, :name, class: "dropdown" %>
                   </section><br>
                   <section id="name">
                     <%= f.text_field :name, placeholder: "Custom Reward Name" %>
