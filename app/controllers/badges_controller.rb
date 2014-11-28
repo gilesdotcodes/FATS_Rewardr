@@ -1,7 +1,13 @@
 class BadgesController < ApplicationController
 
+  before_action :authenticate_user!
+
   def new
-    @badge = Badge.new
+    if current_user.role == "admin"
+      @badge = Badge.new
+    else
+      redirect_to '/users/show'
+    end
   end
 
   def create
