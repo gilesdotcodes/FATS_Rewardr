@@ -65,17 +65,22 @@
   border-style: solid;*/
   /*margin-top: 0.15%;*/
   position: fixed;
-  width: 90%;
+  width: 100%;
   background-color: #2F4F4F;
-  height: 60px;
+  height: 52px;
+  z-index: 99;
+  border-bottom-style: solid;
+  border-bottom-width: 8px;
+  border-bottom-color: #264040;
   /*margin-top:1px;*/
 }
 
 .navlogo {
   padding: 13px 0 0 10px;
-  height: 30px;
-  width: 200px;
+  height: 22px;
   opacity: 0.7;
+  margin-top: 6.5px;
+  margin-left: 20px;
 }
 
 .navlogo:hover {
@@ -87,11 +92,14 @@
   display: inline;
   float: right;
   color: white;
-  font-size: 1.2em;
+  font-size: 0.8em;
   font-family: "proxima-nova-alt",sans-serif;
   -webkit-font-smoothing: antialiased;
   padding: 19px 10px 0 10px;
   opacity: 0.5;
+  margin-right: 20px;
+  margin-top: 4px;
+  vertical-align: middle;
 }
 
 .signoutnav:hover {
@@ -101,14 +109,15 @@
 .avatarnav {
   display: inline;
   float: right;
-  height:35px;
-  width: 35px;
+  height:30px;
+  width: 30px;
   background-color: #9370DB;
-  margin: 10px 0 0 0;
+  margin: 12px 0 0 0;
   border-width: 1px;
   border-color: white;
   border-style: solid;
   opacity: 0.7;
+  margin-right: 20px;
 }
 
 .avatarnav:hover {
