@@ -25,12 +25,13 @@ p {
 }
 
 #tileswrap {
-  position: relative;
-  margin-top:30px;
+  position: absolute;
+  margin-top: 60px;
 }
 
 #topwrap {
   position:relative;
+  width: 1290px;
 }
 
 #middlewrap {
@@ -41,7 +42,7 @@ p {
   position: relative;
 }
 
-#rewardicon {
+.rewardicon {
   height: 36.1px;
   width: 21.75px;
   float: left;
@@ -75,7 +76,7 @@ p {
 
 .tileheader {
   background-color: rgba(114, 127, 127, 0.4);
-  width: 100%;
+  width: 1000px;
   height: 32px;
   text-align: center;
   color: white;

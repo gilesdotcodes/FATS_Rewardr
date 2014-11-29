@@ -28,7 +28,7 @@
             <section id="tile1">
               <section class="infotile">
                 <section class="topnumbertiles">
-                  <img id="rewardicon" src="/images/rewardicon-01.png">
+                  <img class="rewardicon" src="/images/rewardicon-01.png">
                   <h2><%= days_since_last_reward(current_user) %></h2>
                   <p>days ago</p>
                 </section>
@@ -41,6 +41,7 @@
             <section id="tile2">
               <section class="infotile">
                 <section class="topnumbertiles">
+                  <img class="rewardicon" src="/images/rewardicon2-01.png">
                   <% if @my_badges.any? %>
                   <h2><%= most_popular_reward(current_user) %> </h2><% end %>
                   <p>3 times</p>
