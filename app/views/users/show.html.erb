@@ -72,6 +72,10 @@
 
     <section id ="middlewrap">
 
+      <section class="tileheader">
+            <h1 class="headertitle">My Latest Rewards</h1>
+          </section>
+
     <section id="tile4">
       <section class="infotile">
         <section class="middlebadgetiles">
@@ -126,14 +130,19 @@
 
     <section id="bottomwrap">
 
+      <section class="tileheader">
+            <h1 class="headertitle">Latest rewards in the Company</h1>
+          </section>
+
     <section id="tile7">
       <section class="infotile">
         <section class="bottombadgetiles">
+                      <img class="rewardicon" src="/images/rewardicon2-01.png">
           <% if @all_badges.length > 0 %>
-          <%= show_recent_badge(0) %><% end %>
+          <h3><%= show_recent_badge(0) %></h3><% end %>
         </section>
           <section class="bottomtexttiles">
-            <h3>Recent Rewards:</h3>
+            <h3>RECENT REWARDS</h3>
           </section>
       </section>
     </section>
@@ -141,10 +150,12 @@
     <section id="tile8">
       <section class="infotile">
         <section class="bottombadgetiles">
+                      <img class="rewardicon" src="/images/rewardicon2-01.png">
           <% if @all_badges.length > 1 %>
-          <%= show_recent_badge(1) %><% end %>
+          <h3><%= show_recent_badge(1) %></h3><% end %>
         </section>
           <section class="bottomtexttiles">
+            <h3>RECENT REWARDS</h3>
           </section>
       </section>
     </section>
@@ -152,10 +163,12 @@
     <section id="tile9">
       <section class="infotile">
         <section class="bottombadgetiles">
+            <img class="rewardicon" src="/images/rewardicon2-01.png">
           <% if @all_badges.length > 2 %>
-          <%= show_recent_badge(2) %><% end %>
+          <h3><%= show_recent_badge(2) %></h3><% end %>
         </section>
           <section class="bottomtexttiles">
+                        <h3>RECENT REWARDS</h3>
           </section>
       </section>
     </section>

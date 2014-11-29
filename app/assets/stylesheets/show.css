@@ -1,6 +1,4 @@
 body {
-  height: 640px;
-/*  width: 1290px;*/
   background-color: #fff8ee;
 }
 
@@ -27,6 +25,7 @@ p {
 #tileswrap {
   position: absolute;
   margin-top: 60px;
+  width: 100%;
 }
 
 #topwrap {
@@ -60,6 +59,7 @@ p {
 
 .infotile {
   width: 245px;
+  margin-left: auto;
   position: absolute;
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
@@ -86,6 +86,8 @@ p {
   position: relative;
   margin-left: 50px;
   margin-right: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /*                   */
@@ -103,12 +105,7 @@ p {
   font-size: 50px;
   text-align: right;
   position: relative;
-/*  transition: all .2s ease-in-out;*/
 }
-
-/*.topnumbertiles:hover {
-  transform: scale(1.1);
-}*/
 
 .toptexttiles {
   height: 31px;
@@ -129,7 +126,7 @@ p {
   position: relative;
   left: 0;
   top: 0;
-  width: 430px;
+  width: 130px;
   height: 153px;
   display: inline;
 }
@@ -140,7 +137,7 @@ p {
   left: 430px;
   top: 0px;
   height: 113px;
-  width: 430px;
+  width: 330px;
   display: inline;
 }
 
@@ -151,7 +148,7 @@ p {
   left: 860px;
   top: 0px;
   height: 113px;
-  width: 430px;
+  width: 330px;
   display: inline-block;
 }
 
@@ -174,19 +171,6 @@ p {
   text-align: right;
   background-color: #2F4F4F;
 }
-
-  /*  
-  height: 31px;
-  width: 100%;
-  background-color: #264040;
-  font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
-  -webkit-font-smoothing: antialiased;
-  text-align: left;
-  color: white;
-  vertical-align: middle;
-  font-size: 14px;
-  position: absolute;
-  */
 
 .middletexttiles {
   height: 31px;
@@ -240,39 +224,30 @@ p {
 
 .bottombadgetiles {
   width: 100%;
-  height: 100px;
+  height: 70px;
+  position: relative;
   color: white;
-  font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
+  font-family: "proxima-nova-soft",sans-serif;
   font-size: 24px;
-  text-align: center;
-  color: #2F4F4F;
-  transition: all .2s ease-in-out;
-}
-
-.bottombadgetiles:hover {
-  transform: scale(1.1);
+  text-align: right;
+  background-color: #2F4F4F;
 }
 
 .bottomtexttiles {
   height: 31px;
   width: 100%;
-  background-color: #2F4F4F;
-  font-family: "jaf-domus-titling-web",sans-serif;  font-size: 18px;
-  text-align: center;
+  background-color: #264040;
+  font-family: "proxima-nova-soft",sans-serif;  font-size: 18px;
+  text-align: left;
   color: white;
   vertical-align: middle;
-  font-size: 14px;
-  border-radius: 3px;
-  box-shadow: 1px 1px 10px #C1C1C1;
+  font-size: 24px;
 }
-
-/*      TILE 7      */
 
 #tile7 {
   position: absolute;
   left: 0px;
-  top: 426px;
-  height: 213px;
+  height: 113px;
   width: 430px;
   display: inline-block;
 }
@@ -282,8 +257,7 @@ p {
 #tile8 {
   position: absolute;
   left: 430px;
-  top: 426px;
-  height: 213px;
+  height: 113px;
   width: 430px;
   display: inline-block;
 }
@@ -293,8 +267,7 @@ p {
 #tile9 {
   position: absolute;
   left: 860px;
-  top: 426px;
-  height: 213px;
+  height: 113px;
   width: 430px;
   display: inline-block;
 }
