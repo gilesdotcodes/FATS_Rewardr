@@ -1,3 +1,7 @@
+/*===============
+  PAGE LAYOUT
+================*/
+
 .wrapbadgepage {
   width: 100%;
   height: 100%;
@@ -9,50 +13,33 @@
   position: fixed;
   z-index: 0;
   background-color: #FFF8EE;
-  /*background-color: salmon;*/
 }
 
 .holderbadgepage {
   height: 100%;
-  width: 90%;
+  width: 100%;
   z-index: 1;
-  /*border-width: 2px;
-  border-color: black;
-  border-style: solid;*/
-  /*background-color: yellow;*/
   position: fixed;
   display: block;
-  margin-left: 5%;
-  margin-right: 5%;
 }
 
 .main-body {
-  margin-top: 62px;
-  width: 90%;
+  margin-top: 72px;
+  width: 100%;
   height: 100%;
   position: fixed;
-  /*border-width: 2px;
-  border-color: black;
-  border-style: solid;*/
 }
 
 .main-preset {
-  /*border-width: 2px;
-  border-color: black;
-  border-style: solid;*/
-  width: 62.7%;
+  width: 65%;
   height: 100%;
   position: fixed;
-  /*background-color: salmon;*/
-
 }
 
 .main-custom {
-  width: 30.7%;
+  width: 35%;
   height: 100%;
   float: right;
-  /*background-color: yellow;*/
-  /*position: fixed;*/
 }
 
 /*==============
@@ -60,10 +47,6 @@
 ==============*/
 
 .navbar {
-  /*border-width: 2px;
-  border-color: black;
-  border-style: solid;*/
-  /*margin-top: 0.15%;*/
   position: fixed;
   width: 100%;
   background-color: #2F4F4F;
@@ -72,7 +55,7 @@
   border-bottom-style: solid;
   border-bottom-width: 8px;
   border-bottom-color: #264040;
-  /*margin-top:1px;*/
+  height: 60px;
 }
 
 .navlogo {
@@ -106,7 +89,18 @@
   opacity: 1;
 }
 
+.my-edit-profile {
+  width: 20px;
+}
+
+.avatar-square {
+  float: right;
+  display: inline;
+  position: relative;
+}
+
 .avatarnav {
+  position: relative;
   display: inline;
   float: right;
   height:30px;
@@ -127,47 +121,103 @@
 /*======================
       REWARD PRESET
 ======================*/
+.selection-form-custom {
+  position: relative;
+}
 
 .preset-holder {
-  width: 99%;
+  border-width: 0px;
+  border-color: #2F4F4F;
+  border-style: solid;
+  width: 97%;
   height: 100%;
-  /*margin-left: 10%;*/
+  margin-left: 1%;
   margin-top: 0.15%;
-  background-color: #2F4F4F;
+  color: #2F4F4F;
+  /*background-color: #2F4F4F;*/
 }
 
 #built_in_badges {
+  position: relative;
   font-family: "proxima-nova-alt",sans-serif;
   -webkit-font-smoothing: antialiased;
   text-align: center;
-  /*padding-top: 5%;*/
-  /*font-size: 2em;*/
+}
+
+.reward {
+  border-width: 2px;
+  border-color: #2F4F4F;
+  border-style: solid;
+  width: 250px;
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .reward-heading {
-  color: white;
+  /*color: white;*/
   font-family: "proxima-nova-alt",sans-serif;
   -webkit-font-smoothing: antialiased;
   text-align: center;
   font-size: 3em;
+  padding-top: 10px;
+}
+
+.reward img {
+  margin-right: auto;
+  margin-left: auto;
+  width: 250px;
+  height: 250px;
 }
 
 .employee {
-  color: white;
+  /*color: white;*/
   font-size: 2em;
+  margin-top: 15px;
 }
 
 .dropdown {
-  color: white;
+  /*background: black;*/
+  /*padding-left: 30px;*/
   font-size: 2em;
-  /*padding-left: 340px;*/
-  width: 200px;
+  /*width: 500px;*/
   text-align: center;
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .submit {
-  margin-top: 100px;
+  font-size: 1.5em;
+  position: relative;
+  top: 350px;
+  height: 20px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  font-size: 1.5em;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 250px;
+  height: 24px;
+  display:block ;
+  background:#bc2846 ;
+  color:#ffffff ;
+  padding:6px ;
+  border:0px ;
+  cursor:pointer ;
+}
+
+.button:hover {
+  background:#85001b
+}
+
+.button:active {
+  background:#200007
 }
 
 /*======================
@@ -175,30 +225,52 @@
 ======================*/
 
 .custom-holder {
-  width: 100%;
+  border-width: 1.5px;
+  border-color: #2F4F4F;
+  border-style: dashed;
+  width: 98%;
   height: 100%;
-  margin-right: 10%;
+  /*margin-right: 10%;*/
   margin-top: 0.15%;
-  /*margin-top: 10%;*/
-  background-color: #2F4F4F;
+  /*background-color: #2F4F4F;*/
+  color: #2F4F4F;
 }
 
 #custom_badges {
-
   text-align: center;
-  /*padding-top: 5%;*/
   font-family: "proxima-nova-alt",sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
 .custom-heading {
-  color: white;
+  /*color: white;*/
   font-family: "proxima-nova-alt",sans-serif;
   -webkit-font-smoothing: antialiased;
-  font-size: 2.8em;
+  font-size: 3em;
+  padding-top: 10px;
 }
 
-.employee1 {
+.custom-badges-form.employee {
   color: white;
   font-size: 1.8em;
+}
+
+.custom-badges-form#name {
+  margin-left: auto;
+  margin-right: auto;
+  width: 550px;
+}
+
+.custom-badges-form input[type=text] {
+  padding: 5px;
+}
+
+.submit1 {
+  font-family: "proxima-nova-alt",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.2em;
+  position: relative;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }

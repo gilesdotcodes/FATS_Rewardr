@@ -4,8 +4,8 @@
 $(document).ready(function() {
 
   var i = 0;
-  var images = ['/images/logo_black-01.png', '/images/padlock.png', '/images/logo_black-01.png', '/images/padlock.png', '/images/logo_black-01.png', '/images/padlock.png'];
-  var reward = ['Award 1', 'Award 2', 'Award 3', 'Award 4', 'Award 5', 'Award 6']
+  var images = ['/images/angel.gif', '/images/sales.jpeg', '/images/service.png', '/images/star.png', '/images/positive.png', '/images/lean.png'];
+  var reward = ['Angel', 'Sales', 'Service', 'Star', 'Positive', 'Lean']
 
   // $('#left').on('click', function(){
 
@@ -22,7 +22,7 @@ $(document).ready(function() {
 
   // });
 
-  $('#right').on('click', function(){
+  $('.button').on('click', function(){
 
     $('#reward_image').attr('src', images[i]);
 

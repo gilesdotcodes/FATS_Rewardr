@@ -1,61 +1,61 @@
 <section class="wrapbadgepage">
   <section class="holderbadgepage">
     <section class="navbar">
-
       <a href="/users/show"><img src="/images/logo-01.png" class="navlogo"></a>
       <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: "signoutnav" %>
-      <a href="users/profile"><section class="avatarnav"></section></a>
-
+      <%= link_to 'Dashboard', users_show_path, class: 'signoutnav' %>
+      <%= link_to 'Edit Profile', edit_user_registration_path, class: 'signoutnav'%>
+      <section class="avatar-square">
+        <a href="/users/profile"><section class="avatarnav"></section></a>
+      </section>
     </section>
-
     <section class="main-body">
       <section class="main-preset">
         <section class="preset-holder">
-
-          <section class="reward-heading">Reward your Employees:</section>
-
-          <section id='built_in_badges'>
-            <section class="selection-form-custom">
-              <%= form_for @badge do |f| %>
-                <%= f.label :employee, class: "employee" %>
-                <section class="dropdown">
-                  <%= f.collection_select :user, User.all, :id, :name %>
-                </section>
-                <%= f.hidden_field :name %>
-                <section class="submit">
-                  <%= f.submit 'Reward' %>
-                </section>
-              <% end %>
+          <section class="reward-heading">Reward your Employees:</section><br><br><br>
+            <section id='built_in_badges'>
+              <section class="selection-form-custom">
+                <%= form_for @badge do |f| %>
+                  <%= f.label :employee, class: "employee" %><br>
+                  <section class="dropdown">
+                    <%= f.collection_select :user, User.all, :id, :name %>
+                  </section>
+                  <%= f.hidden_field :name %>
+                  <section class="submit">
+                    <%= f.submit 'Reward' %>
+                  </section>
+                <% end %>
+              </section>
+              <section class="rewarding">
+                  <section class="reward">
+                    <img src='/images/mail-01.png' id="reward_image"/>
+                  </section>
+                  <section class="button">Change Reward</section>
+              </section>
             </section>
-
-            <section class="rewarding">
-                <section class="reward">
-                  <img src='/images/mail-01.png' id="reward_image"/>
-                </section>
-                <button id="right"></button>
-            </section>
-
-          </section>
         </section>
       </section>
-
       <section class="main-custom">
         <section class="custom-holder">
           <section id='custom_badges'>
-            <section class="custom-heading">Create your own:</section>
+            <section class="custom-heading">Create your own:</section><br><br><br>
               <section class="custom-badges-form">
                 <%= form_for @badge do |f| %>
-                  <%= f.label :employee, class: "employee1" %>
-                  <%= f.collection_select :user, User.all, :id, :name %>
-                  <%= f.text_field :name %>
-                  <%= f.submit 'Custom Reward' %>
+                  <%= f.label :employee, class: "employee" %><br><br>
+                  <section class="dropdownarea">
+                    <%= f.collection_select :user, User.all, :id, :name, class: "dropdown" %>
+                  </section><br>
+                  <section id="name">
+                    <%= f.text_field :name, placeholder: "Custom Reward Name" %>
+                  </section><br>
+                  <section class="submit1">
+                    <%= f.submit 'Reward' %>
+                  </section>
                 <% end %>
               </section>
           </section>
         </section>
       </section>
-
     </section>
-
   </section>
 </section>
