@@ -5,25 +5,40 @@
 }
 
 .h2-header-title, #h2-edit-profile-title {
-  font-size: 1.75em;
-  padding-bottom: 2%;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+    font-family: "proxima-nova-soft",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: #2F4F4F;
+  color: white;
+  border-radius: 6px;
 }
 
 #h1-profile-page-name {
-  font-family: "proxima-nova-alt",sans-serif;
+  font-family: "proxima-nova-soft",sans-serif;
   -webkit-font-smoothing: antialiased;
-  color: #2F4F4F;
-  font-size: 2.5em;
-  padding-left: 2%;
-  padding-top: 1%;
+  color: #264040;
+  text-align: center;
+  font-size: 36px;
+  padding-top: 50px;
 }
 
 section#recent-news {
-  flex-grow: 2;
+  flex-grow: 5;
+  padding-left: 50px;
+    font-family: "proxima-nova-soft",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  height: 500px;
+  padding-bottom: 20px;
 }
 
 section#my-badges-archive {
-  flex-grow: 2;
+  flex-grow: 5;
+    font-family: "proxima-nova-soft",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: 20px;
 }
 
 #profile-page-container {
@@ -32,19 +47,19 @@ section#my-badges-archive {
   flex-direction: row;
   -webkit-justify-content: center;
   justify-content: center;
-  margin-top: 4%;
+  margin-top: 50px;
 }
 
 .profile-page-information-box {
-  padding-left: 5%;
-  font-family: "proxima-nova-alt",sans-serif;
+  padding-left: 20px;
+  font-family: "proxima-nova-soft",sans-serif;
   -webkit-font-smoothing: antialiased;
+  color: #2F4F4F;
 }
 
 #edit-profile-form-box {
   font-family: "proxima-nova-alt",sans-serif;
   -webkit-font-smoothing: antialiased;
-  background-color: #2F4F4F;
   color: white;
   width: 70%;
   margin: 4% auto;
@@ -52,8 +67,8 @@ section#my-badges-archive {
 }
 
 .li-award-entry {
-  padding-left: 2%;
-  padding-top: 2%;
+  padding: 10px;
+  color: #2F4F4F;
 }
 
 p#password-change-notice {
@@ -72,4 +87,8 @@ p#password-change-notice {
   border-style: dotted, #2F4F4F;
   width: 131px;
   border-bottom-style: #2F4F4F;
+}
+
+#logo-1 {
+  height: 12px;
 }
