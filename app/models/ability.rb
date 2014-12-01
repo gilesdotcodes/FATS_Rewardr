@@ -7,5 +7,6 @@ class Ability
       can :create, Badge
     else
       can :read, :all
+    end
   end
 end
