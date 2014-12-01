@@ -23,6 +23,13 @@
   <p id='profile-flash-notice'><%= notice %></p>
 
   <h1 id='h1-profile-page-name'><%= current_user.name %>'s Profile</h1>
+  <% if current_user.role == 'admin' %>
+    <h2 id='h2-profile-page-name'>Admin <a href='#' id='add-admin'>(Add Admin)</a></h2>
+    <section id='admin-management'>
+      <%= collection_select :post, :user, User.all, :id, :name %>&nbsp&nbsp<a href='#' id='make-admin'>Make Admin</a>
+      <p id='admin-result'></p>
+    </section>
+  <% end %>
 
   <section id='profile-page-container'>
 
@@ -31,10 +38,10 @@
     <h2 class='h2-header-title'>MY REWARD ARCHIVE</h2>
 
     <% if @my_badges.any? %>
-
       <ul id='badge-archive'>
-      <% @my_badges.each do |badge| %>
-        <li class='li-award-entry'><img src='/images/small-badge-icon-1.png' alt='Small icon of badge' />Earned <%= badge_name(badge) %> received on <%= badge_award_date(badge) %></li>
+
+      <% @my_badges.reverse.each do |badge| %>
+        <li class='li-award-entry'><img src=<%= reward_image(badge_name(badge)) %> alt='Small icon of badge' class="rewardiconprofile"/>Earned <%= badge_name(badge) %> received on <%= badge_award_date(badge) %></li>
       <% end %>
       </ul>
 
@@ -54,7 +61,7 @@
 
         <ul id='recent-badges-awarded'>
           <% @all_badges.each do |badge| %>
-            <li class='li-award-entry'><img id="logo-1" src='/images/small-badge-icon-2.png' alt='Small icon of badge' />&nbsp&nbsp&nbsp<b><%= badge_recipient_name(badge) %></b> earned the <%= badge_name(badge) %> reward on <%= badge_award_date(badge) %></li>
+            <li class='li-award-entry'><img class="rewardiconprofile" src=<%= reward_image(badge_name(badge)) %> alt='Small icon of badge' />&nbsp&nbsp&nbsp<b><%= badge_recipient_name(badge) %></b> earned the <%= badge_name(badge) %> reward on <%= badge_award_date(badge) %></li>
           <% end %>
         </ul>
 

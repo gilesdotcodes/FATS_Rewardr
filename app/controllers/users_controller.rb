@@ -11,7 +11,14 @@ class UsersController < ApplicationController
   def profile
     @my_badges = Badge.where(:user_id => current_user.id)
     @all_badges = Badge.last(10).reverse
-    @all_users = User.all
+  end
+
+  def make_admin
+    if @admin = User.find(params[:name])
+      @admin.role = 'admin'
+      @admin.save
+      flash[:notice] = "You have created a new Admin."
+    end
   end
 
 end

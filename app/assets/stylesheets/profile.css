@@ -22,8 +22,27 @@
   color: #264040;
   text-align: center;
   font-size: 36px;
-  padding-top: 50px;
+  padding-top: 40px;
 }
+
+#h2-profile-page-name {
+  font-family: "proxima-nova-soft",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #264040;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 10px;
+}
+
+#admin-management {
+  display: none;
+  font-family: "proxima-nova-soft",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #264040;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 10px;
+  }
 
 section#recent-news {
   flex-grow: 5;
@@ -76,7 +95,7 @@ section#my-badges-archive {
 }
 
 .submitbutton {
-  background-color: #264040; 
+  background-color: #264040;
   border-style: none;
   border-radius: 6px;
   border-style: dotted, #2F4F4F;
@@ -86,4 +105,12 @@ section#my-badges-archive {
 
 #logo-1 {
   height: 12px;
+}
+
+.rewardiconprofile {
+  height: 27px;
+  width: 16px;
+  /*float: left;*/
+  margin-right: 20px;
+  /*margin-top: 20px;*/
 }
