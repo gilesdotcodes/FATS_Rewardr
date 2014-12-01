@@ -4,7 +4,6 @@
       <a href="/users/show"><img src="/images/logo-01.png" class="navlogo"></a>
       <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: "signoutnav" %>
       <%= link_to 'Dashboard', users_show_path, class: 'signoutnav' %>
-      <%= link_to 'Edit Profile', edit_user_registration_path, class: 'signoutnav'%>
       <section class="avatar-square">
         <a href="/users/profile"><section class="avatarnav"></section></a>
       </section>
@@ -35,6 +34,7 @@
             </section>
         </section>
       </section>
+
       <section class="main-custom">
         <section class="custom-holder">
           <section id='custom_badges'>
@@ -54,8 +54,8 @@
                 <% end %>
               </section>
           </section>
-        </section>
       </section>
     </section>
+
   </section>
 </section>

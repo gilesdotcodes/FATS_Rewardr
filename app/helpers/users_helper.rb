@@ -59,4 +59,12 @@ module UsersHelper
     "#{@all_badges[array_index].created_at.strftime("%d %B %Y")}"
   end
 
+  def reward_image(reward)
+    @images = ['/images/Angel.gif', '/images/sales.jpeg', '/images/service.png', '/images/Star.png', '/images/Positive.png', '/images/lean.png', '/images/team.png'];
+    @reward = ['Angel', 'Sales', 'Service', 'Star', 'Positive', 'Lean', 'Team']
+    @position = @reward.index(reward)
+    @images[@position]
+  end
+
+
 end

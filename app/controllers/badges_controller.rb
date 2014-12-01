@@ -5,6 +5,7 @@ class BadgesController < ApplicationController
   def new
     if current_user.role == "admin"
       @badge = Badge.new
+      # @user_list = User.all
     else
       redirect_to '/users/show'
     end
@@ -17,7 +18,6 @@ class BadgesController < ApplicationController
     @badge.user_id = @user.id
     if @badge.save
       flash[:notice] = "Success"
-      Badge::BADGES << @badge.name.to_s if !Badge::BADGES.include?(@badge.name)
       redirect_to '/users/show'
     else @badge.delete
       flash[:notice] = "Error! Something went wrong"
