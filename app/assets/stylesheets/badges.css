@@ -1,3 +1,8 @@
+body {
+  height: 2000px
+  width: 100%;
+}
+
 /*===============
   PAGE LAYOUT
 ================*/
@@ -5,12 +10,12 @@
 .wrapbadgepage {
   width: 100%;
   height: 100%;
-  position: fixed;
+/*  position: fixed;*/
   background-position: -100px -500px;
-  display: block;
+  display: inline-block;
   background-repeat: no-repeat;
   background-size: 1800px 1800px;
-  position: fixed;
+  /*position: fixed;*/
   z-index: 0;
   background-color: #FFF8EE;
 }
@@ -19,27 +24,35 @@
   height: 100%;
   width: 100%;
   z-index: 1;
-  position: fixed;
+  position: relative;
   display: block;
 }
 
 .main-body {
-  margin-top: 72px;
+  /*margin-top: 72px;*/
   width: 100%;
   height: 100%;
-  position: fixed;
+  /*position: fixed;/*/
 }
 
 .main-preset {
-  width: 65%;
+  width: 40%;
+    margin-right: 5%;
+  margin-left: 5%;
   height: 100%;
-  position: fixed;
+  display: inline-block;
+  float: left;
+  /*position: fixed;*/
 }
 
 .main-custom {
-  width: 35%;
+  width: 40%;
+  display: inline-block;
+  margin-right: 5%;
+  margin-left: 5%;
   height: 100%;
   float: right;
+    margin-top: 50px;
 }
 
 /*==============
@@ -129,12 +142,16 @@
   border-width: 0px;
   border-color: #2F4F4F;
   border-style: solid;
-  width: 97%;
-  height: 100%;
-  margin-left: 1%;
-  margin-top: 0.15%;
+  width: 500px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 118px;
   color: #2F4F4F;
-  /*background-color: #2F4F4F;*/
+  background-color: white;
+    border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  display: inline-block;
 }
 
 #built_in_badges {
@@ -145,29 +162,33 @@
 }
 
 .reward {
-  border-width: 2px;
-  border-color: #2F4F4F;
+  border-width: 3px;
+  border-color: #4C7F7F;
   border-style: solid;
-  width: 250px;
-  height: 250px;
+  border-radius: 6px;
+  width: 100px;
+  height: 100px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .reward-heading {
-  /*color: white;*/
-  font-family: "proxima-nova-alt",sans-serif;
+  color: white;
+  font-family: "proxima-nova-soft",sans-serif;
   -webkit-font-smoothing: antialiased;
   text-align: center;
-  font-size: 3em;
-  padding-top: 10px;
+  padding: 10px;
+  background-color: #2F4F4F;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  font-size: 24px;
 }
 
 .reward img {
   margin-right: auto;
   margin-left: auto;
-  width: 250px;
-  height: 250px;
+  width: 100px;
+  height: 100px;
 }
 
 .employee {
@@ -179,7 +200,7 @@
 .dropdown {
   /*background: black;*/
   /*padding-left: 30px;*/
-  font-size: 2em;
+  font-size: 18px;
   /*width: 500px;*/
   text-align: center;
   position: relative;
@@ -198,18 +219,19 @@
 }
 
 .button {
-  font-size: 1.5em;
+  font-size: 12px;
   margin-top: 20px;
   margin-right: auto;
   margin-left: auto;
-  width: 250px;
-  height: 24px;
+  width: 100px;
+  height: 12px;
   display:block ;
-  background:#bc2846 ;
+  background: #4C7F7F;
   color:#ffffff ;
   padding:6px ;
   border:0px ;
   cursor:pointer ;
+  border-radius: 24px;
 }
 
 .button:hover {
@@ -225,15 +247,20 @@
 ======================*/
 
 .custom-holder {
-  border-width: 1.5px;
-  border-color: #2F4F4F;
-  border-style: dashed;
-  width: 98%;
+  border-width: 0px;
+  width: 500px;
   height: 100%;
-  /*margin-right: 10%;*/
-  margin-top: 0.15%;
-  /*background-color: #2F4F4F;*/
+  margin: auto;
   color: #2F4F4F;
+  background-color: white;
+    border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  margin-left: 10%;
+    margin-top: 70px;
+/*  margin-right: 10%;*/
+    display: inline-block;
+    height: 600px;
+
 }
 
 #custom_badges {
@@ -243,16 +270,24 @@
 }
 
 .custom-heading {
-  /*color: white;*/
-  font-family: "proxima-nova-alt",sans-serif;
+  font-family: "proxima-nova-soft",sans-serif;
   -webkit-font-smoothing: antialiased;
-  font-size: 3em;
-  padding-top: 10px;
+  font-size: 24px;
+  padding: 10px;
+  color: white;
+  background-color: #2F4F4F;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  text-align: center;
+}
+
+.dropdown {
+  width: 300px;
 }
 
 .custom-badges-form.employee {
   color: white;
-  font-size: 1.8em;
+  font-size: 1px;
 }
 
 .custom-badges-form#name {
