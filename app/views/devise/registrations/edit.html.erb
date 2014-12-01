@@ -23,12 +23,18 @@
 
   <h2 id='h2-edit-profile-title'>Edit My Profile</h2>
 
+  <section id="labels">
+  </section>
+
+  <section id="fields">
+  </section>
+
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= devise_error_messages! %>
 
-  <div class="field">
-    <%= f.label :email %>
-    <%= f.email_field :email, autofocus: true %>
+  <div usersap>
+    <%= f.label :email %><br>
+    <%= f.email_field :email, autofocus: true, placeholder: "Email", class: 'email_field' %>
   </div>
   <br />
 
@@ -39,25 +45,25 @@
   <!-- 216px -->
 
   <div class="field">
-    <%= f.label :name %>
-    <%= f.text_field :name %>
+    <%= f.label :name %><br>
+    <%= f.text_field :name, placeholder: "Name", class: 'namefield' %>
   </div>
   <br />
 
   <div class="field">
-    <%= f.label :password %><p id='password-change-notice'>Note: leave blank if you don't want to change it</p>
-    <%= f.password_field :password, autocomplete: "off", placeholder: "Password" %>
+    <%= f.label :password %><p id='password-change-notice'>Note: leave blank if you don't want to change it</p><br>
+    <%= f.password_field :password, autocomplete: "off", placeholder: "Password", class: 'password_field' %>
   </div>
   <br />
 
   <div class="field">
-    <%= f.label :password_confirmation %>
-    <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: "Password Confirmation" %>
+    <%= f.label :password_confirmation %><br>
+    <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: "Password Confirmation", class: 'passwordcon' %>
   </div>
   <br />
 
   <div class="actions">
-    <%= f.submit "Update", class: 'submitbutton' %></section>
+    <%= f.submit "Update", class: 'submitbutton_edit' %></section>
   </div>
 <% end %>
 

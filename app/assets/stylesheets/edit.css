@@ -1,0 +1,88 @@
+.submitbutton_edit {
+	border-style: none;
+	background-color: #2F4F4F;
+	border-bottom-style: solid;
+	border-bottom-color: #264040;
+	border-bottom-width: 4px;
+	width: 200px;
+	font-family: "proxima-nova-soft",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: box-border;
+}
+
+.passwordcon {
+	  border-color: #E7E7E7;
+  font-size: 14px;
+  border-style: solid;
+  font-family: "proxima-nova-soft",sans-serif;
+  border-radius: 3px;
+  background: url("../images/lock-01.png") left no-repeat;
+  background-size: 19.2px 19.2px;
+  background-position: 3px 3.5px;
+  border-width: 2px;
+  border-bottom-width: 4px;
+  width: 340px;
+  height: 24px;
+  text-indent: 25px;
+  margin-top: 7.5px;
+  box-sizing:content-box;
+  letter-spacing: 0.5px;
+  background-color: white;
+}
+
+.password_field {
+	  border-color: #E7E7E7;
+  font-size: 14px;
+  border-style: solid;
+  font-family: "proxima-nova-soft",sans-serif;
+  border-radius: 3px;
+  background: url("../images/lock-01.png") left no-repeat;
+  background-size: 19.2px 19.2px;
+  background-position: 3px 3.5px;
+  border-width: 2px;
+  border-bottom-width: 4px;
+  width: 340px;
+  height: 24px;
+  text-indent: 25px;
+  margin-top: 7.5px;
+  box-sizing:content-box;
+  letter-spacing: 0.5px;
+  background-color: white;
+}
+
+.namefield {
+	  border-color: #E7E7E7;
+  border-width: 2px;
+  border-bottom-width: 4px;
+  border-style: solid;
+  font-family: "proxima-nova-soft",sans-serif;
+  font-size: 14px;
+  background: url("../images/user-01.png") left no-repeat;
+  background-color: white;
+  background-size: 19.2px 19.2px;
+  background-position: 3px 4.5px;
+  width: 340px;
+  text-indent: 25px;
+  border-radius: 3px;
+  height: 24px;
+  letter-spacing: 0.5px;
+}
+
+.email_field {
+	background-color: white;
+	border-color: #E7E7E7;
+	border-width: 2px;
+  border-bottom-width: 4px;
+  border-style: solid;
+  font-family: "proxima-nova-soft",sans-serif;
+  font-size: 14px;
+  background: url("../images/mail-01.png") left no-repeat;
+  background-size: 19.2px 19.2px;
+  background-position: 3px 4.5px;
+  width: 340px;
+  text-indent: 25px;
+  border-radius: 3px;
+  height: 24px;
+  letter-spacing: 0.5px;
+  background-color: white;
+}
