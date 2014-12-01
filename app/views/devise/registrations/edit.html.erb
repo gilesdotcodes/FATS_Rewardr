@@ -27,7 +27,7 @@
   <%= devise_error_messages! %>
 
   <div class="field">
-    <%= f.label :email %><br />
+    <%= f.label :email %>
     <%= f.email_field :email, autofocus: true %>
   </div>
   <br />
@@ -36,26 +36,28 @@
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
   <% end %>
 
+  <!-- 216px -->
+
   <div class="field">
-    <%= f.label :name %><br />
+    <%= f.label :name %>
     <%= f.text_field :name %>
   </div>
   <br />
 
   <div class="field">
-    <%= f.label :password %><br /><p id='password-change-notice'>Note: leave blank if you <br/>don't want to change it</p>
-    <%= f.password_field :password, autocomplete: "off" %>
+    <%= f.label :password %><p id='password-change-notice'>Note: leave blank if you don't want to change it</p>
+    <%= f.password_field :password, autocomplete: "off", placeholder: "Password" %>
   </div>
   <br />
 
   <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+    <%= f.label :password_confirmation %>
+    <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: "Password Confirmation" %>
   </div>
   <br />
 
   <div class="actions">
-    <%= f.submit "Update", class: 'update-button' %>
+    <%= f.submit "Update", class: 'submitbutton' %></section>
   </div>
 <% end %>
 

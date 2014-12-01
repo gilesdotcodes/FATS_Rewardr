@@ -11,8 +11,9 @@
       <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: "signoutnav" %>
       <%= link_to 'Dashboard', users_show_path, class: 'signoutnav' %>
       <%= link_to 'Edit Profile', edit_user_registration_path, class: 'signoutnav'%>
-      <a href="/users/profile"><section class="avatarnav"></section></a>
-  </section>ras
+      <a href="users/profile"><section class="avatarnav"></section></a>
+
+    </section>
 
       <!-- TOP ROW -->
 
@@ -20,40 +21,50 @@
 
         <section id="topwrap">
 
-        <section id="tile1">
-          <section class="infotile">
-            <section class="topnumbertiles">
-              <%= days_since_last_reward(current_user) %>
-            </section>
-              <section class="toptexttiles">
-                <h3>DAYS SINCE LAST REWARD</h3>
-              </section>
+          <section class="tileheader">
+            <h1 class="headertitle">Your Statistics</h1>
           </section>
-        </section>
 
-        <section id="tile2">
-          <section class="infotile">
-            <section class="topnumbertiles">
-              <% if @my_badges.any? %>
-              <%= most_popular_reward(current_user) %><% end %>
-            </section>
-              <section class="toptexttiles">
-                <p>MOST REWARDED REWARD</p>
+            <section id="tile1">
+              <section class="infotile">
+                <section class="topnumbertiles">
+                  <img class="rewardicon" src="/images/rewardicon-01.png">
+                  <h2><%= days_since_last_reward(current_user) %></h2>
+                  <p>days ago</p>
+                </section>
+                  <section class="toptexttiles">
+                    <h3>DAYS SINCE LAST REWARD</h3>
+                  </section>
               </section>
-          </section>
-        </section>
-
-      <section id="tile3">
-        <section class="infotile">
-          <section class="topnumbertiles">
-            <% if @my_badges.any? %>
-            <%= total_number_of_rewards(current_user) %><% end %>
-          </section>
-            <section class="toptexttiles">
-              <p>TOTAL NUMBER OF REWARDS</p>
             </section>
-        </section>
-      </section>
+
+            <section id="tile2">
+              <section class="infotile">
+                <section class="topnumbertiles">
+                  <img class="rewardicon" src="/images/rewardicon2-01.png">
+                  <% if @my_badges.any? %>
+                  <h2><%= most_popular_reward(current_user) %> </h2><% end %>
+                  <p>3 times</p>
+                </section>
+                  <section class="toptexttiles">
+                    <h3>MOST REWARDED REWARD</h3>
+                  </section>
+              </section>
+            </section>
+
+            <section id="tile3">
+              <section class="infotile">
+                <section class="topnumbertiles">
+                  <img class="rewardicon" src="/images/rewardicon2-01.png">
+                  <% if @my_badges.any? %>
+                  <h2><%= total_number_of_rewards(current_user) %></h2><% end %>
+                  <p>rewards in total</p>
+                </section>
+                  <section class="toptexttiles">
+                    <h3>TOTAL NUMBER OF REWARDS</h3>
+                  </section>
+              </section>
+            </section>
 
     </section>
 
@@ -61,11 +72,16 @@
 
     <section id ="middlewrap">
 
+      <section class="tileheader">
+            <h1 class="headertitle">My Latest Rewards</h1>
+          </section>
+
     <section id="tile4">
       <section class="infotile">
         <section class="middlebadgetiles">
+          <img class="rewardicon" src="/images/rewardicon2-01.png">
           <% if @my_badges.length > 0 %>
-            <%= show_last_six_rewards(current_user, 1) %>
+            <h2><%= show_last_six_rewards(current_user, 1) %></h2>
           <% else %>
             <p>There is no reward</p>
           <% end %>
@@ -79,6 +95,7 @@
     <section id="tile5">
       <section class="infotile">
         <section class="middlebadgetiles">
+          <img class="rewardicon" src="/images/rewardicon2-01.png">
           <% if @my_badges.length > 1 %>
             <%= show_last_six_rewards(current_user, 2) %>
           <% else %>
@@ -86,7 +103,7 @@
           <% end %>
         </section>
           <section class="middletexttiles">
-            <h3>SECOND MOST RECENT REWARD</h3>
+            <h3>LATEST REWARD</h3>
           </section>
       </section>
     </section>
@@ -94,16 +111,15 @@
       <section id="tile6">
         <section class="infotile">
           <section class="middlebadgetiles">
-        <section>
+            <img class="rewardicon" src="/images/rewardicon2-01.png">
           <% if @my_badges.length > 2 %>
             <%= show_last_six_rewards(current_user, 3) %>
           <% else %>
             <p>There is no reward</p>
           <% end %>
         </section>
-        </section>
         <section class="middletexttiles">
-          <h3>THIRD MOST RECENT AWARD</h3>
+          <h3>LATEST REWARD</h3>
         </section>
       </section>
     </section>
@@ -114,14 +130,19 @@
 
     <section id="bottomwrap">
 
+      <section class="tileheader">
+            <h1 class="headertitle">Latest Co-Worker Rewards
+          </section>
+
     <section id="tile7">
       <section class="infotile">
         <section class="bottombadgetiles">
+                      <img class="rewardicon" src="/images/rewardicon2-01.png">
           <% if @all_badges.length > 0 %>
-          <%= show_recent_badge(0) %><% end %>
+          <h3><%= show_recent_badge(0) %></h3><% end %>
         </section>
           <section class="bottomtexttiles">
-            <h3>Recent Rewards:</h3>
+            <h3>RECENT REWARD</h3>
           </section>
       </section>
     </section>
@@ -129,10 +150,12 @@
     <section id="tile8">
       <section class="infotile">
         <section class="bottombadgetiles">
+                      <img class="rewardicon" src="/images/rewardicon2-01.png">
           <% if @all_badges.length > 1 %>
-          <%= show_recent_badge(1) %><% end %>
+          <h3><%= show_recent_badge(1) %></h3><% end %>
         </section>
           <section class="bottomtexttiles">
+            <h3>RECENT REWARD</h3>
           </section>
       </section>
     </section>
@@ -140,15 +163,18 @@
     <section id="tile9">
       <section class="infotile">
         <section class="bottombadgetiles">
+            <img class="rewardicon" src="/images/rewardicon2-01.png">
           <% if @all_badges.length > 2 %>
-          <%= show_recent_badge(2) %><% end %>
+          <h3><%= show_recent_badge(2) %></h3><% end %>
         </section>
           <section class="bottomtexttiles">
+                        <h3>RECENT REWARD</h3>
           </section>
       </section>
     </section>
 
   </section>
+</section>
 
 </body>
 
