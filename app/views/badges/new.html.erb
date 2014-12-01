@@ -46,10 +46,10 @@
                     <%= f.collection_select :user, User.all, :id, :name, class: "dropdown" %>
                   </section><br>
                   <section id="name">
-                    <%= f.text_field :name, placeholder: "Custom Reward Name" %>
+                    <%= f.text_field :name, placeholder: "Custom Reward Name", class: 'boxstyle' %>
                   </section><br>
                   <section class="submit1">
-                    <%= f.submit 'Reward' %>
+                    <%= f.submit 'Reward', class: 'submit_style' %>
                   </section>
                 <% end %>
               </section>
