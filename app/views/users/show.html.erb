@@ -1,3 +1,4 @@
+
 <head>
 
 </head>
@@ -9,9 +10,10 @@
   <section class="navbar">
       <a href="/users/show"><img src="/images/logo-01.png" class="navlogo"></a>
       <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: "signoutnav" %>
-      <%= link_to 'Dashboard', users_show_path, class: 'signoutnav' %>
-      <%= link_to 'Edit Profile', edit_user_registration_path, class: 'signoutnav'%>
-      <a href="users/profile"><section class="avatarnav"></section></a>
+      <a href="/users/profile"><section class="avatarnav"></section></a>
+      <% if current_user.role == 'admin' %>
+        <%= link_to 'Reward Employee', new_badge_path, class: "signoutnav" %>
+      <% end %>
 
     </section>
 
@@ -43,8 +45,9 @@
                 <section class="topnumbertiles">
                   <img class="rewardicon" src="/images/rewardicon2-01.png">
                   <% if @my_badges.any? %>
-                  <h2><%= most_popular_reward(current_user) %> </h2><% end %>
-                  <p>3 times</p>
+                    <p><%= most_popular_reward(current_user) %> </p>
+                    <p><%= count_of_most_popular_reward(current_user) %></p>
+                  <% end %>
                 </section>
                   <section class="toptexttiles">
                     <h3>MOST REWARDED REWARD</h3>
@@ -81,7 +84,8 @@
         <section class="middlebadgetiles">
           <img class="rewardicon" src="/images/rewardicon2-01.png">
           <% if @my_badges.length > 0 %>
-            <h2><%= show_last_six_rewards(current_user, 1) %></h2>
+            <p><%= show_last_six_rewards_reward(current_user, 1) %></p>
+            <p><%= show_last_six_rewards_date(current_user, 1) %></p>
           <% else %>
             <p>There is no reward</p>
           <% end %>
@@ -97,7 +101,8 @@
         <section class="middlebadgetiles">
           <img class="rewardicon" src="/images/rewardicon2-01.png">
           <% if @my_badges.length > 1 %>
-            <%= show_last_six_rewards(current_user, 2) %>
+             <p><%= show_last_six_rewards_reward(current_user, 2) %></p>
+            <p><%= show_last_six_rewards_date(current_user, 2) %></p>
           <% else %>
             <p>There is no reward</p>
           <% end %>
@@ -113,7 +118,8 @@
           <section class="middlebadgetiles">
             <img class="rewardicon" src="/images/rewardicon2-01.png">
           <% if @my_badges.length > 2 %>
-            <%= show_last_six_rewards(current_user, 3) %>
+            <p><%= show_last_six_rewards_reward(current_user, 3) %></p>
+            <p><%= show_last_six_rewards_date(current_user, 3) %></p>
           <% else %>
             <p>There is no reward</p>
           <% end %>
@@ -139,7 +145,10 @@
         <section class="bottombadgetiles">
                       <img class="rewardicon" src="/images/rewardicon2-01.png">
           <% if @all_badges.length > 0 %>
-          <h3><%= show_recent_badge(0) %></h3><% end %>
+            <p><%= show_recent_reward_employee(0) %></p>
+            <p><%= show_recent_reward_name(0) %></p>
+            <p><%= show_recent_reward_date(0) %></p>
+          <% end %>
         </section>
           <section class="bottomtexttiles">
             <h3>RECENT REWARD</h3>
@@ -152,7 +161,10 @@
         <section class="bottombadgetiles">
                       <img class="rewardicon" src="/images/rewardicon2-01.png">
           <% if @all_badges.length > 1 %>
-          <h3><%= show_recent_badge(1) %></h3><% end %>
+            <p><%= show_recent_reward_employee(1) %></p>
+            <p><%= show_recent_reward_name(1) %></p>
+            <p><%= show_recent_reward_date(1) %></p>
+          <% end %>
         </section>
           <section class="bottomtexttiles">
             <h3>RECENT REWARD</h3>
@@ -165,7 +177,10 @@
         <section class="bottombadgetiles">
             <img class="rewardicon" src="/images/rewardicon2-01.png">
           <% if @all_badges.length > 2 %>
-          <h3><%= show_recent_badge(2) %></h3><% end %>
+            <p><%= show_recent_reward_employee(1) %></p>
+            <p><%= show_recent_reward_name(1) %></p>
+            <p><%= show_recent_reward_date(1) %></p>
+          <% end %>
         </section>
           <section class="bottomtexttiles">
                         <h3>RECENT REWARD</h3>
