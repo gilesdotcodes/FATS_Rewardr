@@ -14,7 +14,7 @@ $(document).ready(function() {
 
     $('#badge_name').val(reward[i])
 
-    if(i<5) {
+    if(i<6) {
        return i++;
     }
     else {

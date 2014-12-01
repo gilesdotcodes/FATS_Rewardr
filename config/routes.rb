@@ -14,6 +14,8 @@ Rails.application.routes.draw do
   # root 'welcome#index'
   root to: "home#index"
 
+  post 'makeAdmin' => 'users#make_admin'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
