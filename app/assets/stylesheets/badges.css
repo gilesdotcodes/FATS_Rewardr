@@ -89,7 +89,7 @@ body {
   float: right;
   color: white;
   font-size: 0.8em;
-  font-family: "proxima-nova-alt",sans-serif;
+  font-family: "proxima-nova-soft",sans-serif;
   -webkit-font-smoothing: antialiased;
   padding: 19px 10px 0 10px;
   opacity: 0.5;
@@ -143,7 +143,7 @@ body {
   border-color: #2F4F4F;
   border-style: solid;
   width: 500px;
-  height: 600px;
+  height: 420px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 118px;
@@ -156,7 +156,7 @@ body {
 
 #built_in_badges {
   position: relative;
-  font-family: "proxima-nova-alt",sans-serif;
+  font-family: "proxima-nova-soft",sans-serif;
   -webkit-font-smoothing: antialiased;
   text-align: center;
 }
@@ -193,8 +193,9 @@ body {
 
 .employee {
   /*color: white;*/
-  font-size: 2em;
-  margin-top: 15px;
+  color: #2F4F4F;
+  font-size: 18px;
+  margin: 15px;
 }
 
 .dropdown {
@@ -206,17 +207,31 @@ body {
   position: relative;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 15px;
 }
 
 .submit {
   font-size: 1.5em;
   position: relative;
-  top: 350px;
+  top: 190px;
   height: 20px;
-  width: 200px;
   margin-left: auto;
   margin-right: auto;
 }
+
+.submit_style {
+    width: 200px;
+    height: 32px;
+    border-style: none;
+    color: white;
+    background-color: #2F4F4F;
+    font-size: 18px;
+    margin: 20px;
+    border-radius: 6px;
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    border-bottom-color: #264040;
+  }
 
 .button {
   font-size: 12px;
@@ -232,14 +247,6 @@ body {
   border:0px ;
   cursor:pointer ;
   border-radius: 24px;
-}
-
-.button:hover {
-  background:#85001b
-}
-
-.button:active {
-  background:#200007
 }
 
 /*======================
@@ -265,7 +272,7 @@ body {
 
 #custom_badges {
   text-align: center;
-  font-family: "proxima-nova-alt",sans-serif;
+  font-family: "proxima-nova-soft",sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -301,7 +308,7 @@ body {
 }
 
 .submit1 {
-  font-family: "proxima-nova-alt",sans-serif;
+  font-family: "proxima-nova-soft",sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 1.2em;
   position: relative;
