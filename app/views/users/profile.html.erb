@@ -22,13 +22,13 @@
 
   <p id='profile-flash-notice'><%= notice %></p>
 
-  <h1 id='h1-profile-page-name'><%= current_user.name %>'s Profile Page</h1>
+  <h1 id='h1-profile-page-name'><%= current_user.name %>'s Profile</h1>
 
   <section id='profile-page-container'>
 
     <section id='my-badges-archive' class='profile-page-information-box'>
 
-    <h2 class='h2-header-title'>My Badges Archive:</h2>
+    <h2 class='h2-header-title'>MY REWARD ARCHIVE</h2>
 
     <% if @my_badges.any? %>
 
@@ -39,7 +39,7 @@
       </ul>
 
     <% else %>
-
+<br>
       You have not won any badges yet!
 
     <% end %>
@@ -48,13 +48,13 @@
 
     <section id='recent-news' class='profile-page-information-box'>
 
-      <h2 class='h2-header-title'>Recent News:</h2>
+      <h2 class='h2-header-title'>RECENT NEWS</h2>
 
       <% if @all_badges.any? %>
 
         <ul id='recent-badges-awarded'>
           <% @all_badges.each do |badge| %>
-            <li class='li-award-entry'><img src='/images/small-badge-icon-2.png' alt='Small icon of badge' /><%= badge_name(badge) %> earned by <%= badge_recipient_name(badge) %> on <%= badge_award_date(badge) %></li>
+            <li class='li-award-entry'><img id="logo-1" src='/images/small-badge-icon-2.png' alt='Small icon of badge' />&nbsp&nbsp&nbsp<b><%= badge_recipient_name(badge) %></b> earned the <%= badge_name(badge) %> reward on <%= badge_award_date(badge) %></li>
           <% end %>
         </ul>
 

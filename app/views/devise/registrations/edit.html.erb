@@ -10,27 +10,18 @@
       <a href="/users/profile"><section class="avatarnav"></section></a>
 
     </section>
+  <section id='editformbox'>
 
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-
-  <section id='edit-profile-form-box'>
-<br />
-<br />
-
-  <h2 id='h2-edit-profile-title'>Edit My Profile</h2>
+  <h2 id='editprofiletitle'>Edit My Profile</h2>
+  <section id="formswrap">
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= devise_error_messages! %>
 
-  <div class="field">
-    <%= f.label :email %>
-    <%= f.email_field :email, autofocus: true %>
+  <div usersap>
+    <!-- <%= f.label :email, class: 'email_label' %><br> -->
+    <%= f.email_field :email, autofocus: true, placeholder: "Email", class: 'email_field' %>
   </div>
-  <br />
 
  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
@@ -39,30 +30,31 @@
   <!-- 216px -->
 
   <div class="field">
-    <%= f.label :name %>
-    <%= f.text_field :name %>
+    <!-- <%= f.label :name, class: 'namelabel' %><br> -->
+    <%= f.text_field :name, placeholder: "Name", class: 'namefield' %>
+  </div>
+
+  <div class="field">
+    <!-- <%= f.label :password, class: 'passwordlabel' %><p id='password-change-notice'>Note: leave blank if you don't want to change it</p><br> -->
+    <%= f.password_field :password, autocomplete: "off", placeholder: "Password", class: 'password_field' %>
   </div>
   <br />
 
   <div class="field">
-    <%= f.label :password %><p id='password-change-notice'>Note: leave blank if you don't want to change it</p>
-    <%= f.password_field :password, autocomplete: "off", placeholder: "Password" %>
-  </div>
-  <br />
-
-  <div class="field">
-    <%= f.label :password_confirmation %>
-    <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: "Password Confirmation" %>
+    <!-- <%= f.label :password_confirmation, class: 'passwordcon_label' %><br> -->
+    <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: "Password Confirmation", class: 'passwordcon' %>
   </div>
   <br />
 
   <div class="actions">
-    <%= f.submit "Update", class: 'submitbutton' %></section>
+    <%= f.submit "Update", class: 'submitbutton_edit' %></section>
   </div>
 <% end %>
 
 <br />
 <br />
+
+</section>
 
 <!-- button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete -->
 
