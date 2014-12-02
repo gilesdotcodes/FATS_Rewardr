@@ -7,8 +7,9 @@ h1 {
 }
 
 h2 {
-  font-size: 54px;
-  margin-right: 25px;
+  padding-top: 10px;
+  font-size: 24px;
+  margin-right: 20px;
 }
 
 h3 {
@@ -17,9 +18,16 @@ h3 {
   padding-top: 7px;
 }
 
+h4 {
+  padding-top: 20px;
+  font-size: 24px;
+  margin-right: 20px;
+}
+
 p {
   margin-right: 20px;
   font-size: 12px;
+  padding: 2px;
 }
 
 #tileswrap {
@@ -78,7 +86,7 @@ p {
 }
 
 .tileheader {
-  background-color: rgba(114, 127, 127, 1.0);
+  background-color: rgba(114, 127, 127, 0.4);
   width: 245px;
   left: 430px;
   height: 32px;
@@ -89,6 +97,11 @@ p {
   margin-left: 58px;
   margin-top: 20px;
   margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+.topnumber {
+  margin-top: 10px;
 }
 
 /*                   */
@@ -104,8 +117,7 @@ p {
   height: 70px;
   position: relative;
   color: white;
-  background-color: #
-  ;
+  background-color: #2F4F4F;
   font-family: "proxima-nova-soft",sans-serif;  -webkit-font-smoothing: antialiased;
   font-size: 50px;
   text-align: right;

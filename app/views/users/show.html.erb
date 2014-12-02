@@ -31,8 +31,8 @@
               <section class="infotile">
                 <section class="topnumbertiles">
                   <img class="rewardicon" src="/images/rewardicon-01.png">
-                  <h2><%= days_since_last_reward(current_user) %></h2>
-                  <p>days ago</p>
+                  <h4><%= days_since_last_reward(current_user) %></h4>
+                  <p>day(s) ago</p>
                 </section>
                   <section class="toptexttiles">
                     <h3>DAYS SINCE LAST REWARD</h3>
@@ -45,8 +45,8 @@
                 <section class="topnumbertiles">
                   <% if @my_badges.any? %>
                     <img class="rewardicon" src=<%= reward_image(most_popular_reward(current_user)) %>>
-                    <p><%= most_popular_reward(current_user) %> </p>
-                    <p><%= count_of_most_popular_reward(current_user) %></p>
+                    <h4><%= most_popular_reward(current_user) %> </h4>
+                    <p><%= count_of_most_popular_reward(current_user) %> time(s) awarded</p>
                   <% else %>
                     <img class="rewardicon" src='/images/rewardicon-01.png'>
                   <% end %>
@@ -62,7 +62,7 @@
                 <section class="topnumbertiles">
                   <% if @my_badges.any? %>
                   <img class="rewardicon" src="/images/rewardicon2-01.png">
-                  <h2><%= total_number_of_rewards(current_user) %></h2>
+                  <h4><%= total_number_of_rewards(current_user) %></h4>
                   <% else %>
                     <img class="rewardicon" src='/images/rewardicon-01.png'>
                   <% end %>
@@ -89,11 +89,11 @@
         <section class="middlebadgetiles">
           <% if @my_badges.length > 0 %>
           <img class="rewardicon" src=<%= reward_image(show_last_six_rewards_reward(current_user, 1)) %>>
-            <p><%= show_last_six_rewards_reward(current_user, 1) %></p>
+            <h4><%= show_last_six_rewards_reward(current_user, 1) %></h4>
             <p><%= show_last_six_rewards_date(current_user, 1) %></p>
           <% else %>
             <img class="rewardicon" src='/images/rewardicon-01.png'>
-            <p>There is no reward</p>
+            <h2>There is no reward</h2>
           <% end %>
         </section>
           <section class="middletexttiles">
@@ -107,11 +107,11 @@
         <section class="middlebadgetiles">
           <% if @my_badges.length > 1 %>
           <img class="rewardicon" src=<%= reward_image(show_last_six_rewards_reward(current_user, 2)) %>>
-             <p><%= show_last_six_rewards_reward(current_user, 2) %></p>
+             <h4><%= show_last_six_rewards_reward(current_user, 2) %></h4>
             <p><%= show_last_six_rewards_date(current_user, 2) %></p>
           <% else %>
             <img class="rewardicon" src='/images/rewardicon-01.png'>
-            <p>There is no reward</p>
+            <h2>There is no reward</h2>
           <% end %>
         </section>
           <section class="middletexttiles">
@@ -125,11 +125,11 @@
           <section class="middlebadgetiles">
           <% if @my_badges.length > 2 %>
             <img class="rewardicon" src=<%= reward_image(show_last_six_rewards_reward(current_user, 3)) %>>
-            <p><%= show_last_six_rewards_reward(current_user, 3) %></p>
+            <h4><%= show_last_six_rewards_reward(current_user, 3) %></h4>
             <p><%= show_last_six_rewards_date(current_user, 3) %></p>
           <% else %>
             <img class="rewardicon" src='/images/rewardicon-01.png'>
-            <p>There is no reward</p>
+            <h2>There is no reward</h2>
           <% end %>
         </section>
         <section class="middletexttiles">
@@ -153,8 +153,8 @@
         <section class="bottombadgetiles">
           <% if @all_badges.length > 0 %>
             <img class="rewardicon" src=<%= reward_image(show_recent_reward_name(0)) %>>
-            <p><%= show_recent_reward_employee(0) %></p>
-            <p><%= show_recent_reward_name(0) %></p>
+            <h2><%= show_recent_reward_employee(0) %></h2>
+            <p><b><%= show_recent_reward_name(0) %></b></p>
             <p><%= show_recent_reward_date(0) %></p>
           <% else %>
             <img class="rewardicon" src='/images/rewardicon-01.png'>
@@ -171,7 +171,7 @@
         <section class="bottombadgetiles">
           <% if @all_badges.length > 1 %>
             <img class="rewardicon" src=<%= reward_image(show_recent_reward_name(1)) %>>
-            <p><%= show_recent_reward_employee(1) %></p>
+            <h2><%= show_recent_reward_employee(1) %></h2>
             <p><%= show_recent_reward_name(1) %></p>
             <p><%= show_recent_reward_date(1) %></p>
           <% else %>
@@ -189,7 +189,7 @@
         <section class="bottombadgetiles">
           <% if @all_badges.length > 2 %>
             <img class="rewardicon" src=<%= reward_image(show_recent_reward_name(2)) %>>
-            <p><%= show_recent_reward_employee(1) %></p>
+            <h2><%= show_recent_reward_employee(1) %></h2>
             <p><%= show_recent_reward_name(1) %></p>
             <p><%= show_recent_reward_date(1) %></p>
           <% else %>
