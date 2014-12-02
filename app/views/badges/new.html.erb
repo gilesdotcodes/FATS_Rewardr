@@ -15,7 +15,7 @@
             <section id='built_in_badges'>
               <section class="selection-form-custom">
                 <%= form_for @badge do |f| %>
-                  <%= f.label :employee, class: "employee" %><br>
+                  <%= f.label :select_an_employee, class: "employee" %><br>
                   <section class="dropdown">
                     <%= f.collection_select :user, User.all, :id, :name %>
                   </section>
@@ -41,7 +41,7 @@
             <section class="custom-heading">Create your own</section><br><br><br>
               <section class="custom-badges-form">
                 <%= form_for @badge do |f| %>
-                  <%= f.label :employee, class: "employee" %><br><br>
+                  <%= f.label :select_an_employee, class: "employee" %><br><br>
                   <section class="dropdownarea">
                     <%= f.collection_select :user, User.all, :id, :name, class: "dropdown" %>
                   </section><br>

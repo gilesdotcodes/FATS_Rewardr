@@ -259,16 +259,12 @@ body {
   border-width: 0px;
   width: 500px;
   height: 420px;  
-  margin: auto;
   color: #2F4F4F;
   background-color: white;
-    border-top-left-radius: 12px;
+  border-top-left-radius: 12px;
   border-top-right-radius: 12px;
-  margin-left: 10%;
-    margin-top: 70px;
-/*  margin-right: 10%;*/
-    display: inline-block;
-
+  margin-top: 70px;
+  display: inline-block;
 }
 
 #custom_badges {
@@ -310,11 +306,19 @@ body {
   width: 200px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 70px;
 }
 
 .boxstyle {
   border-radius: 6px;
-  border-color: #4C7F7F;
+  border-color: #E7E7E7;
+  font-family: "proxima-nova-soft",sans-serif;
+  -webkit-font-smoothing: antialiased;
   border-style: solid;
-  width: 200px;
+  border-width: 2px;
+  border-bottom-width: 4px;
+  width: 190px;
+  margin-top: 50px;
+  position: relative;
+  margin-left: 40px;
 }
