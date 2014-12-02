@@ -26,7 +26,6 @@
  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
   <% end %>
-
   <!-- 216px -->
 
   <div class="field">
@@ -50,6 +49,8 @@
     <%= f.submit "Update", class: 'submitbutton_edit' %></section>
   </div>
 <% end %>
+
+</section>
 
 <br />
 <br />

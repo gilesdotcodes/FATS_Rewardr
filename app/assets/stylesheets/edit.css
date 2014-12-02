@@ -96,11 +96,9 @@ border-color: #E7E7E7;
 
 #formswrap {
 	background-color: white;
-	padding: 20px;
 	border-bottom-left-radius: 12px;
 	border-bottom-right-radius: 12px;
-	width: 500px;
-	margin-left: 50%;
+	width: 540px;
 }
 
 p#password-change-notice {
@@ -116,14 +114,17 @@ p#password-change-notice {
   color: white;
   width: 500px;
   text-align: center;
-  position: relative;
-  padding: 100px;
+  position: fixed;
+  display: inline-block;
+  margin-left: 50%;
+  left: -250px;
+  margin-top: 25%;
+  top: -147px;
+
 }
 
 #editprofiletitle {
-	margin-left: 50%;
 	position: relative;
-	margin-top: 10%;
 	font-size: 24px;
     font-family: "proxima-nova-soft",sans-serif;
   -webkit-font-smoothing: antialiased;
