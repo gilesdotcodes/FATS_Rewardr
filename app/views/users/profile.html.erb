@@ -41,7 +41,7 @@
       <ul id='badge-archive'>
 
       <% @my_badges.reverse.each do |badge| %>
-        <li class='li-award-entry'><img src=<%= reward_image(badge_name(badge)) %> alt='Small icon of badge' class="rewardiconprofile"/>Earned <%= badge_name(badge) %> received on <%= badge_award_date(badge) %></li>
+        <li class='li-award-entry'><img src=<%= reward_image(badge_name(badge)) %> alt='Small icon of badge' class="rewardiconprofile"/><%= badge_name(badge) %> rewarded on <%= badge_award_date(badge) %></li>
       <% end %>
       </ul>
 
