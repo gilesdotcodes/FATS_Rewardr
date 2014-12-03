@@ -10,7 +10,8 @@ class UsersController < ApplicationController
 
   def profile
     @my_badges = Badge.where(:user_id => current_user.id)
-    @all_badges = Badge.all.reverse
+    @all_badges = Badge.all
+    @all_badges.reverse
   end
 
   def make_admin

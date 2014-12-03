@@ -62,8 +62,12 @@ module UsersHelper
   def reward_image(reward)
     @images = ['/images/Angel.gif', '/images/sales.jpeg', '/images/service.png', '/images/Star.png', '/images/Positive.png', '/images/lean.png', '/images/team.png'];
     @reward = ['Angel', 'Sales', 'Service', 'Star', 'Positive', 'Lean', 'Team']
-    @position = @reward.index(reward)
-    @images[@position.to_i]
+    if @reward.include?(reward)
+      @position = @reward.index(reward)
+      @images[@position.to_i]
+    else
+      '/images/rewardicon-01.png'
+    end
   end
 
 
