@@ -65,7 +65,7 @@
 }
 
 #logintext {
-	text-align: center;
+	text-align: right;
 	text-transform: uppercase;
 	-webkit-font-smoothing: antialiased;
 	color: white;
@@ -84,7 +84,7 @@
   margin-right: 10px;
   text-transform: uppercase;
   background-color: rgba(0, 0, 0, 0.2);
-  text-align: center;
+  text-align: right;
 }
 
 #signup:hover {
