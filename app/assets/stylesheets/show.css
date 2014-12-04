@@ -30,28 +30,38 @@ p {
   padding: 2px;
 }
 
+#mainbody {
+  position: relative;
+  top: 60px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
 #tileswrap {
-  position: absolute;
+  position: relative;
   margin-left: 50%;
   left: -645px;
-  margin-top: 25%;
-  top: -306px;
+  margin-top: 50%;
+  height: -307.5px;
 }
 
 #topwrap {
   position:relative;
   width: 1290px;
-  height: 148px;
+    height: 185px;
 }
 
 #middlewrap {
   position: relative;
   width: 1290px;
-  height: 148px;
+  height: 185px;
 }
 
 #bottomwrap {
   position: relative;
+  width: 1290px;
+  height: 185px;
 }
 
 .rewardicon {
@@ -285,4 +295,10 @@ p {
   height: 113px;
   width: 330px;
   display: inline-block;
+}
+
+@media screen and (max-width: 1200px) {
+
+
+
 }

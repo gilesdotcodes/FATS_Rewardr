@@ -7,6 +7,8 @@
 
 <body>
 
+  <section id="mainbody">
+
   <section class="navbar">
       <a href="/users/show"><img src="/images/logo-01.png" class="navlogo"></a>
       <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: "signoutnav" %>
@@ -16,8 +18,6 @@
       <% end %>
 
     </section>
-
-      <!-- TOP ROW -->
 
       <section id="tileswrap">
 
@@ -204,6 +204,8 @@
     </section>
 
   </section>
+</section>
+
 </section>
 
 </body>
