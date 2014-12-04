@@ -32,7 +32,10 @@ p {
 
 #tileswrap {
   position: absolute;
-  margin-top: 60px;
+  margin-left: 50%;
+  left: -645px;
+  margin-top: 25%;
+  top: -306px;
 }
 
 #topwrap {
@@ -139,7 +142,7 @@ p {
 /*      TILE 1      */
 
 #tile1 {
-  position: relative;
+  position: absolute;
   left: 0px;
   width: 330px;
   height: 113px;
