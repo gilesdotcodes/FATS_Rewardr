@@ -114,13 +114,11 @@ p#password-change-notice {
   color: white;
   width: 500px;
   text-align: center;
-  position: fixed;
-  display: inline-block;
+  position: relative;
   margin-left: 50%;
-  left: -250px;
+  left: -270px;
   margin-top: 25%;
-  top: -147px;
-
+  top: -145.5px;
 }
 
 #editprofiletitle {
