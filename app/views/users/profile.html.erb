@@ -7,7 +7,7 @@
       <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: "signoutnav" %>
       <%= link_to 'Dashboard', users_show_path, class: 'signoutnav' %>
       <%= link_to 'Edit Profile', edit_user_registration_path, class: 'signoutnav'%>
-      <a href="/users/profile"><section class="avatarnav"></section></a>
+      <span class="pic"><a href="/users/profile"><section class="avatarnav"></section></a></span>
       <% if current_user.role == 'admin' %>
         <%= link_to 'Reward Employee', new_badge_path, class: "signoutnav" %>
       <% end %>
