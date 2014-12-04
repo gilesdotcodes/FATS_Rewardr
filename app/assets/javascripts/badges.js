@@ -5,8 +5,8 @@
 $(document).ready(function() {
 
   var i = 0;
-  var images = ['/images/Angel.gif', '/images/sales.jpeg', '/images/service.png', '/images/Star.png', '/images/Positive.png', '/images/lean.png', '/images/team.png'];
-  var reward = ['Angel', 'Sales', 'Service', 'Star', 'Positive', 'Lean', 'Team']
+  var images = ['/images/angel.png', '/images/sales.png', '/images/customer.png', '/images/hardworker.png', '/images/team.png', '/images/leanonme.png'];
+  var reward = ['Office Angel', 'Top Sales Person', 'Outstanding Customer Service', 'Grafter', 'Team Player', 'Lean On Me']
 
   $('.button').on('click', function(){
 
