@@ -7,9 +7,12 @@
       <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: "signoutnav" %>
       <%= link_to 'Dashboard', users_show_path, class: 'signoutnav' %>
       <%= link_to 'My Profile', users_profile_path, class: 'signoutnav'%>
-      <a href="/users/profile"><section class="avatarnav"></section></a>
+      <span class="pic"><a href="/users/profile"><section class="avatarnav"></section></a></span>
 
     </section>
+
+  <section id="mainbody">
+
   <section id='editformbox'>
 
   <h2 id='editprofiletitle'>Edit My Profile</h2>
@@ -55,6 +58,7 @@
 <br />
 <br />
 
+</section>
 </section>
 
 <!-- button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete -->

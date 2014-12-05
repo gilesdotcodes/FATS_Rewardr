@@ -7,7 +7,7 @@
       <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: "signoutnav" %>
       <%= link_to 'Dashboard', users_show_path, class: 'signoutnav' %>
       <%= link_to 'Edit Profile', edit_user_registration_path, class: 'signoutnav'%>
-      <a href="/users/profile"><section class="avatarnav"></section></a>
+      <span class="pic"><a href="/users/profile"><section class="avatarnav"></section></a>
       <% if current_user.role == 'admin' %>
         <%= link_to 'Reward Employee', new_badge_path, class: "signoutnav" %>
       <% end %>
@@ -37,8 +37,10 @@
 
     <h2 class='h2-header-title'>MY REWARD ARCHIVE</h2>
 
-    <% if @my_badges.any? %>
+    <section class="listofbadges">
+      <% if @my_badges.any? %>
       <ul id='badge-archive'>
+      </section>
 
       <% @my_badges.each do |badge| %>
         <li class='li-award-entry'><img src=<%= reward_image(badge_name(badge)) %> alt='Small icon of badge' class="rewardiconprofile"/><%= badge_name(badge) %> rewarded on <%= badge_award_date(badge) %></li>
@@ -57,7 +59,7 @@
 
       <h2 class='h2-header-title'>RECENT NEWS</h2>
 
-      <% if @all_badges.any? %>
+      <section class="listofbadges"><% if @all_badges.any? %></section>
 
         <ul id='recent-badges-awarded'>
           <% @all_badges.each do |badge| %>

@@ -69,6 +69,7 @@ body {
   border-bottom-width: 8px;
   border-bottom-color: #264040;
   height: 60px;
+  top: 0px;
 }
 
 .navlogo {
@@ -131,6 +132,15 @@ body {
   opacity: 1;
 }
 
+@media screen and (max-width: 550px) {
+
+  .pic {
+    display:none;
+  }
+
+}
+
+
 /*======================
       REWARD PRESET
 ======================*/
@@ -145,7 +155,7 @@ body {
   margin-right: auto;
   margin-top: 118px;
   color: #2F4F4F;
-  background-color: white;
+  background-color: #4C7F7F;
     border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   display: inline-block;
@@ -260,7 +270,7 @@ body {
   width: 500px;
   height: 420px;  
   color: #2F4F4F;
-  background-color: white;
+  background-color: #4C7F7F;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   margin-top: 70px;
@@ -321,4 +331,8 @@ body {
   margin-top: 50px;
   position: relative;
   margin-left: 40px;
+}
+
+.employee {
+  color: white;
 }
