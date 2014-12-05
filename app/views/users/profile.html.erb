@@ -37,8 +37,10 @@
 
     <h2 class='h2-header-title'>MY REWARD ARCHIVE</h2>
 
-    <% if @my_badges.any? %>
+    <section class="listofbadges">
+      <% if @my_badges.any? %>
       <ul id='badge-archive'>
+      </section>
 
       <% @my_badges.reverse.each do |badge| %>
         <li class='li-award-entry'><img src=<%= reward_image(badge_name(badge)) %> alt='Small icon of badge' class="rewardiconprofile"/>Earned <%= badge_name(badge) %> received on <%= badge_award_date(badge) %></li>
@@ -57,7 +59,7 @@
 
       <h2 class='h2-header-title'>RECENT NEWS</h2>
 
-      <% if @all_badges.any? %>
+      <section class="listofbadges"><% if @all_badges.any? %></section>
 
         <ul id='recent-badges-awarded'>
           <% @all_badges.each do |badge| %>
