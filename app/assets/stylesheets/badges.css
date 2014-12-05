@@ -155,7 +155,7 @@ body {
   margin-right: auto;
   margin-top: 118px;
   color: #2F4F4F;
-  background-color: white;
+  background-color: #4C7F7F;
     border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   display: inline-block;
@@ -270,7 +270,7 @@ body {
   width: 500px;
   height: 420px;  
   color: #2F4F4F;
-  background-color: white;
+  background-color: #4C7F7F;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   margin-top: 70px;
@@ -331,4 +331,8 @@ body {
   margin-top: 50px;
   position: relative;
   margin-left: 40px;
+}
+
+.employee {
+  color: white;
 }
