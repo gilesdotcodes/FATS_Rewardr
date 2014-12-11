@@ -40,10 +40,11 @@ p {
 
 #tileswrap {
   position: relative;
-  margin-left: 50%;
-  left: -645px;
-  margin-top: 50%;
-  height: -307.5px;
+  /*margin-left: 50%;*/
+  /*left: -645px;*/
+  /*margin-top: 20%;*/
+  /*height: -307.5px;*/
+  /*The above CSS was commented out by Steve on 11th Dec 2014 to allow user to see the Dashboard. It is not centred though.*/
 }
 
 #topwrap {
@@ -191,7 +192,7 @@ p {
   position: relative;
   -webkit-font-smoothing: antialiased;
   color: white;
-  font-family: "proxima-nova-soft",sans-serif;  
+  font-family: "proxima-nova-soft",sans-serif;
   font-size: 24px;
   text-align: right;
   background-color: #2F4F4F;
