@@ -5,9 +5,9 @@ Rewardr - Reward your employees!
 
 FATS Inc. are proud to present their first product - Rewardr. This is a corporate reward system which forms part of our Final Project at Makers Academy. Rewardr allows Managers to issue their staff with a Reward in the forms of a badge via a Web App built with Ruby on Rails. It was designed to be simple to use for both Managers and Employees. It is not a social media site for the office. Employees log in and see their Dashboard which lists personal stats and a few company stats too. Managers have an additional page where they can select from a list of Rewards or even name their own.
 
-![Screen Shot Home Page](https://raw.githubusercontent.com/HatStephens/)
-![Screen Shot Dashboard](https://raw.githubusercontent.com/HatStephens/)
-![Screen Shot Reward Employee](https://raw.githubusercontent.com/HatStephens/)
+![Screen Shot Home Page](https://raw.githubusercontent.com/HatStephens/FATS_Rewardr/master/Screen%20Shots/rewardr_main_page_image.png)
+![Screen Shot Dashboard](https://raw.githubusercontent.com/HatStephens/FATS_Rewardr/master/Screen%20Shots/rewardr_dashboard_image.png)
+![Screen Shot Reward Employee](https://raw.githubusercontent.com/HatStephens/FATS_Rewardr/master/Screen%20Shots/rewardr_reward_image.png)
 
 ## Technologies Used
 
