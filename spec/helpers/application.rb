@@ -4,6 +4,10 @@ module ApplicationHelper
     User.create(email: email, name: name, password: '12345678', password_confirmation: '12345678')
   end
 
+  def sign_up_admin_user(email, name)
+    User.create(email: email, name: name, password: '12345678', password_confirmation: '12345678', role: 'admin')
+  end
+
   def sign_up_with_created_date(email, name)
     User.create(email: email, name: name, password: '12345678', password_confirmation: '12345678', created_at: Time.new(2014, 11, 19))
   end

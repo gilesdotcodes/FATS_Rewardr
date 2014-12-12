@@ -7,13 +7,13 @@ describe 'Badges' do
 
   before do
     visit '/'
-    sign_up('bob@test.com', 'Bob Owner')
+    sign_up_admin_user('bob@test.com', 'Bob Owner')
     sign_up('employee@test.com', 'Test Employee')
   end
 
   context 'Owner' do
     it 'can award a single badge' do
-      award_regular_badge('Test Employee')
+      sign_in('bob@test.com')
       expect(page).to have_link 'Reward Employee'
       expect(current_path).to eq '/users/show'
     end
